@@ -1,0 +1,71 @@
+.welcomeSection {
+  display: flex;
+  position: relative;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.contentBox {
+  flex: 1;
+  padding: 60px 40px;
+  background-color: #f9f3ef;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subHeading {
+  color: var(--theme-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1b1b1b;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  background: var(--theme-color);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #cc4d2d;
+}
+
+.imageBox {
+  flex: 1;
+  position: relative;
+  min-height: 500px;
+}
+
+.backgroundImage {
+  object-fit: cover;
+  filter: blur(2px) brightness(0.9);
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), transparent);
+  z-index: 2;
+}

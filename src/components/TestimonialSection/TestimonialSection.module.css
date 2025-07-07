@@ -1,0 +1,132 @@
+.testimonialSection {
+  background: linear-gradient(to bottom, #f8f9ff, #ffffff);
+  padding: 60px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.subtitle {
+  /* display: inline-block;
+  background-color: var(--fade-theme-color);
+  color: var(--theme-color);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 10px; */
+  display: inline-block;
+  color: var(--theme-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: var(--fade-theme-color);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #0a1f2c;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--theme-color);
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card:hover::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.quoteIcon {
+  font-size: 24px;
+  color: #2b4d66;
+  margin-bottom: 10px;
+}
+
+.card:hover .quoteIcon {
+  color: var(--theme-color);
+}
+
+.feedback {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #2b4d66;
+  margin-bottom: 20px;
+}
+
+.clientInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.clientImage {
+  border-radius: 50%;
+}
+
+.clientName {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0a1f2c;
+}
+
+.clientRole {
+  margin: 0;
+  font-size: 14px;
+  color: #7a8ca2;
+}
+
+/* Swiper Pagination Dots */
+
+.swiperContainer {
+  padding-bottom: 40px;
+}
+
+.swiper-pagination {
+  text-align: center;
+  margin-top: 20px;
+  position: relative !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ff5a5f;
+  opacity: 0.4;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #ff5a5f;
+}

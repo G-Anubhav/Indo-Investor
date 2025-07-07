@@ -1,0 +1,120 @@
+.aboutSection {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.aboutWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.imageCarousel {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.imageCarousel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.aboutContent {
+  flex: 1;
+  min-width: 300px;
+}
+
+.label {
+  background: var(--fade-theme-color);
+  color: var(--theme-color);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.dot {
+  color: var(--theme-color);
+}
+
+.desc {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.featureGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  margin-bottom: 30px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #444;
+  font-weight: 500;
+}
+
+.icon {
+  background: var(--fade-theme-color);
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--theme-color);
+  font-size: 1rem;
+}
+
+.noteBox {
+  background: #e3edff;
+  border-left: 4px solid var(--theme-color);
+  padding: 15px 20px;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.ctaButton {
+  background: var(--theme-color);
+  border: none;
+  padding: 14px 30px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: var(--hover-color);
+}
+
+@media (max-width: 768px) {
+  .aboutWrapper {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

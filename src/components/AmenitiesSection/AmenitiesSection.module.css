@@ -1,0 +1,94 @@
+.amenitiesSection {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.labelWrapper {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.label {
+  display: inline-block;
+  padding: 6px 18px;
+  background-color: var(--fade-theme-color);
+  color: var(--theme-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 999px;
+}
+
+.heading {
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #111;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: var(--theme-color);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.iconWrapper {
+  background: var(--fade-theme-color);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.icon {
+  color: var(--theme-color);
+  font-size: 24px;
+}
+
+.index {
+  font-weight: 600;
+  color: var(--theme-color);
+  margin-bottom: 6px;
+}
+
+.card:hover .index{
+    color: var(--offwhite-color);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.card:hover .title{
+    color: var(--text-color);
+}
+
+.desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.card:hover .desc{
+    color: var(--offwhite-color);
+}

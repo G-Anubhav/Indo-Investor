@@ -1,0 +1,115 @@
+.ctaSection {
+  padding: 30px 0 0;
+  min-height: 300px; /* ensure it has height */
+  background-image: url('/images/cta/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.leftImage,
+.rightImage {
+  flex: 0 0 auto;
+}
+
+.centerContent {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.leftImage img {
+  width: 400px;
+  height: auto;
+}
+
+.rightImage img {
+  width: 280px;
+  height: auto;
+}
+
+.subText {
+  display: inline-block;
+  padding: 4px 12px;
+  color: var(--theme-color);
+  font-weight: 500;
+  font-size: 20px;
+  background-color: var(--fade-theme-color);
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.phone {
+  font-size: 36px;
+  color: var(--text-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.callButton {
+  background-color: var(--theme-color);
+  border: none;
+  color: white;
+  padding: 14px 32px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.callButton:hover {
+  background-color: var(--hover-color);
+}
+
+.outlineButton {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 14px 32px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.outlineButton:hover {
+  background-color: white;
+  color: #06252e;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftImage,
+  .rightImage {
+    order: unset;
+    text-align: center;
+  }
+
+  .leftImage img,
+  .rightImage img {
+    width: 100%;
+    max-width: 300px;
+  }
+}

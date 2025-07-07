@@ -1,0 +1,50 @@
+.section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.titleLine {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--theme-color);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.titleLine::before,
+.titleLine::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: var(--theme-color);
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 40px;
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  padding: 20px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.logoBox:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  max-height: 100px;
+  object-fit: contain;
+}

@@ -1,0 +1,150 @@
+.jobSection {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+
+.headingWrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subheading {
+  display: inline-block;
+  color: var(--theme-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: var(--fade-theme-color);
+}
+
+.heading {
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.jobWrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.sidebar {
+  width: 25%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  /* font-weight: 600; */
+  color: var(--theme-color);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.sidebar li:hover,
+.sidebar .active {
+  background-color: var(--fade-theme-color);
+  color: var(--theme-color);
+}
+
+.jobs {
+  width: 75%;
+}
+
+.jobs h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+}
+
+.jobCard {
+  background: #fff;
+  border-left: 4px solid var(--theme-color);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 25px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobInfo h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.highlight{
+  color: var(--theme-color);
+}
+
+.jobInfo p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--fade-theme-color);
+  color: var(--theme-color);
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--theme-color);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #004aad;
+}
+
+.icon {
+  margin-left: 8px;
+}
+
+.noJobs {
+  font-size: 16px;
+  color: #888;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .jobWrapper {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .jobs {
+    width: 100%;
+  }
+}

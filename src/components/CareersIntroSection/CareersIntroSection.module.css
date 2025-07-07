@@ -1,0 +1,76 @@
+.careersIntroSection {
+  padding: 60px 0;
+  background: #f9fbfd;
+}
+
+.headingWrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subheading {
+  display: inline-block;
+  color: var(--background-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #ddd;
+}
+
+.line {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: var(--theme-color);
+}
+
+.heading {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--theme-color);
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.tagline {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+}
+
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--theme-color);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #004aad;
+}
+
+.ctaIcon {
+  font-size: 14px;
+  transition: transform 0.3s;
+}
+
+.ctaBtn:hover .ctaIcon {
+  transform: translateX(5px);
+}

@@ -1,0 +1,135 @@
+.whyChooseUs {
+  padding: 80px 0;
+  text-align: center;
+  background: #f9fbfd;
+}
+
+.subTitle {
+  display: inline-block;
+  color: var(--theme-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  background-color: var(--fade-theme-color);
+}
+
+.mainTitle {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #101828;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  color: #475467;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.statCard {
+  position: relative;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.statCard:hover {
+  transform: translateY(-8px);
+}
+
+.statCard::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 3px;
+  background-color: var(--theme-color);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: width 0.4s ease, opacity 0.3s ease;
+}
+
+.statCard:hover::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--theme-color);
+}
+
+.statCard h3 {
+  color: #101828;
+  margin-top: 8px;
+}
+
+.statCard p {
+  margin-top: 4px;
+  color: #475467;
+}
+
+/* Feature Cards */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.featureCard {
+  padding: 30px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.featureCard:hover {
+  background-color: var(--theme-color) !important;
+  color: var(--text-color) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+}
+
+/* .featureIcon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
+} */
+
+.iconWrapper {
+  background-color: var(--theme-color);
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+

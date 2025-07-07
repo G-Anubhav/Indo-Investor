@@ -1,0 +1,77 @@
+.bannerSection {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  padding: 80px 0 10px;
+  background-color: #000000d2;
+  overflow: hidden;
+}
+
+.bannerBg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.bannerImage {
+  object-fit: cover;
+  opacity: 0.35;
+}
+
+.bannerContent {
+  position: relative;
+  z-index: 2;
+  padding: 80px 50px 20px;
+  color: #111;
+}
+
+.pageTitle {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  color: var(--offwhite-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.breadcrumbItem:hover {
+  font-weight: 600;
+  color: var(--menu-background);;
+}
+
+.breadcrumbWrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.homeIcon {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-color);
+}
+
+.caret {
+  color: var(--text-color); 
+}
+
+.current {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--menu-background);
+}

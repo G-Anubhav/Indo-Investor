@@ -1,0 +1,105 @@
+.latestNewsSection {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.sectionSubtitle {
+  display: inline-block;
+  background-color: var(--fade-theme-color);
+  color: var(--theme-color);
+  padding: 6px 16px;
+  border-radius: 20px;
+  color: var(--theme-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sectionTitle {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #121212;
+}
+
+.newsCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.newsCard:hover {
+  transform: translateY(-10px);
+}
+
+.newsCard::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--theme-color);
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.newsCard:hover::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.newsImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.newsContent {
+  padding: 20px;
+  text-align: left;
+}
+
+.newsDate {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.newsTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.newsTitle:hover {
+  color: var(--theme-color);
+  cursor: pointer;
+}
+
+.newsSummary {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.viewDetails {
+  background-color: var(--theme-color);
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.viewDetails:hover {
+  background-color: var(--hover-color);
+}

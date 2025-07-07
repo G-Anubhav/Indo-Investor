@@ -18,15 +18,15 @@ export default function Home() {
     <>
       <HeroBanner />
       <AboutSection />
+      <AllProperties />
       <TopBuilders />
       <ProjectsSection />
+      <OurMissionSection />
       <AmenitiesSection />
       <CounterSection />
-      <WelcomeSection />
-      <OurMissionSection />
-      <TeamSection />
-      <AllProperties />
       <OurValuesSection />
+      <WelcomeSection />
+      <TeamSection />
       <CTASection />
       <TestimonialSection />
       <LatestNewsSection />

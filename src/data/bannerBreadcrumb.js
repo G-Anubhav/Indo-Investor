@@ -15,6 +15,11 @@ const bannerBreadcrumb = {
     title: "Residential Properties",
     bannerImage: "/images/banners/pagebanner.png",
     breadcrumbs: ["Home", "Properties", "Residential"],
+    oneGlobalGoa: {
+      title: "One Global Goa",
+      bannerImage: "/images/banners/pagebanner.png",
+      breadcrumbs: ["Home", "Properties", "Residential", "One Global Goa"],
+    },
   },
   videos: {
     title: "Videos",

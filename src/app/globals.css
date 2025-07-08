@@ -21,6 +21,13 @@
   font-family: 'Nunito Sans', sans-serif;
   /* font-family: 'Heebo', sans-serif; */
 }
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* 
 body {
   background-color: var(--background-dark);

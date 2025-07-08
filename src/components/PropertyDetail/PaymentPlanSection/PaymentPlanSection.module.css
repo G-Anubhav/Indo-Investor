@@ -1,0 +1,97 @@
+.paymentPlanSection {
+  padding: 60px 0;
+  background-color: #f8f9fb;
+}
+
+.headingRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--theme-color);
+}
+
+.downloadBtn {
+  background: var(--theme-color);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.downloadBtn:hover {
+  background: var(--hover-color);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.planTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.planTable thead {
+  background-color: #eef1f6;
+}
+
+.planTable th,
+.planTable td {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.planTable th {
+  font-weight: 600;
+  color: #333;
+}
+
+.planTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.planTable tbody tr:hover {
+  background-color: #f1f6ff;
+}
+
+.planTable td {
+  color: #444;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 22px;
+  }
+
+  .downloadBtn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .planTable th,
+  .planTable td {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+}

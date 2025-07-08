@@ -1,0 +1,143 @@
+.contactCta {
+  position: relative;
+  background: url('/images/banners/pagebanner.png') no-repeat center center/cover;
+  padding: 50px 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.contactCta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+
+.text h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 17px;
+  color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.phone:hover {
+    color: var(--hover-color);
+}
+
+.phoneIcon {
+  font-size: 22px;
+  color: var(--theme-color);
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btnPrimary,
+.btnOutline {
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btnPrimary {
+  background: var(--theme-color);
+  color: var(--text-color);
+}
+
+.btnPrimary::after,
+.btnOutline::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.btnPrimary:hover::after,
+.btnOutline:hover::after {
+  left: 100%;
+}
+
+.btnOutline {
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.btnOutline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text h2 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  .phone {
+    font-size: 16px;
+  }
+
+  .btnPrimary,
+  .btnOutline {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

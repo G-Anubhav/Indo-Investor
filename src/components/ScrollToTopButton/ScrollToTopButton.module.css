@@ -1,0 +1,64 @@
+.wrapper {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.buttonWrapper {
+  position: relative;
+  display: inline-block;
+  animation: floatUp 3s ease-in-out infinite, fadeIn 0.4s ease-in;
+}
+
+.icon {
+  font-size: 40px;
+  color: var(--theme-color);
+  transition: transform 0.3s ease;
+}
+
+.buttonWrapper:hover .icon {
+  transform: scale(1.15);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  text-transform: capitalize;
+}
+
+.buttonWrapper:hover .tooltip {
+  opacity: 1;
+}
+
+@keyframes floatUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

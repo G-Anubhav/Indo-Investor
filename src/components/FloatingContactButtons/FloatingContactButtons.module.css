@@ -1,0 +1,78 @@
+.floatingContainer {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 999;
+}
+
+.floatingBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.floatingBtn:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp {
+  background-color: #25d366;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  font-size: 28px; 
+  position: relative;
+  animation: chatPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes chatPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.call {
+  background-color: var(--theme-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  left: 60px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.floatingBtn:hover .tooltip {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .tooltip {
+    display: none;
+  }
+}

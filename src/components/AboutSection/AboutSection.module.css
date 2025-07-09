@@ -13,17 +13,36 @@
 .imageCarousel {
   flex: 1;
   min-width: 300px;
+  max-width: 100%;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.imageCarousel img {
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+/* .imageCarousel {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .imageCarousel img {
   width: 100%;
   height: auto;
+  max-height: 500px;
   display: block;
   object-fit: cover;
-}
+} */
 
 .aboutContent {
   flex: 1;
@@ -109,12 +128,76 @@
   background: var(--hover-color);
 }
 
-@media (max-width: 768px) {
+/* ------------------------------
+   📱 Responsive Styles Only
+-------------------------------- */
+
+/* Tablet (up to 992px) */
+@media (max-width: 991px) {
   .aboutWrapper {
     flex-direction: column;
   }
 
+  .featureItem {
+    flex: 1 1 100%;
+  }
+
+  .ctaButton {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .imageCarousel img {
+    max-height: 400px;
+  }
+
   .title {
     font-size: 2rem;
+  }
+
+  .desc {
+    font-size: 0.95rem;
+  }
+
+  .featureGrid {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .noteBox {
+    font-size: 0.9rem;
+  }
+
+  .ctaButton {
+    font-size: 0.95rem;
+    padding: 12px 24px;
+  }
+}
+
+/* Extra small devices (≤480px) */
+@media (max-width: 480px) {
+  .imageCarousel img {
+    max-height: 220px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .label {
+    font-size: 0.75rem;
+  }
+
+  .icon {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .ctaButton {
+    font-size: 0.9rem;
+    padding: 10px 20px;
   }
 }

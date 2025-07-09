@@ -69,3 +69,55 @@
   background: linear-gradient(to left, rgba(0, 0, 0, 0.1), transparent);
   z-index: 2;
 }
+
+/* ===========================
+   📱 Responsive Adjustments
+============================= */
+
+/* Tablet and smaller */
+@media (max-width: 991px) {
+  .welcomeSection {
+    flex-direction: column-reverse;
+    max-height: none;
+  }
+
+  .contentBox {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .ctaButton {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .imageBox {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .ctaButton {
+    font-size: 0.95rem;
+    padding: 10px 24px;
+  }
+
+  .imageBox {
+    min-height: 220px;
+  }
+}

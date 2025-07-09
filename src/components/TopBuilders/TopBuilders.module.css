@@ -30,6 +30,16 @@
   margin-bottom: 40px;
 }
 
+/* .logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  padding: 20px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
 .logoBox {
   display: flex;
   align-items: center;
@@ -38,13 +48,41 @@
   padding: 20px;
   background: #fff;
   transition: all 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 200px;
 }
 
 .logoBox:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.logo {
+/* .logo {
   max-height: 100px;
   object-fit: contain;
+} */
+
+.logo {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 640px) {
+  .logoBox {
+    padding: 12px;
+    max-width: 120px;
+    max-height: 120px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }

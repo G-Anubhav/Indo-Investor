@@ -55,20 +55,33 @@
 
 .searchBox {
   width: 100%;
-  padding: 10px 14px 10px 40px;
+  padding: 10px 14px 10px 42px;
+  /* left padding increased from 40px to 42px */
   font-size: 14px;
   border-radius: 25px;
   border: 1px solid #ccc;
   outline: none;
 }
 
-.searchIcon {
+/* .searchIcon {
   position: absolute;
   left: 14px;
   top: 50%;
   transform: translateY(-50%);
   color: #999;
   font-size: 14px;
+} */
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  /* was 14px, reduced spacing */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 16px;
+  /* slightly larger for clarity */
+  pointer-events: none;
 }
 
 .card {
@@ -190,8 +203,142 @@
   transform: scale(1.1);
 }
 
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 1.6rem;
+  }
+
+  .label {
+    font-size: 0.9rem;
+  }
+
+  .searchBox {
+    font-size: 13px;
+    padding: 10px 12px 10px 38px;
+  }
+
+  .tabButton {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+
+  .info h5 {
+    font-size: 1rem;
+  }
+
+  .infoItem {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 0.95rem;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .statusBadge {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+}
+
 @media (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .searchInputContainer {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .searchIcon {
+    left: 20px;
+    font-size: 15px;
+  }
+
+  .searchBox {
+    padding: 9px 12px 9px 40px;
+    font-size: 13px;
+  }
+
   .imageWrapper {
-    height: 180px;
+    height: 360px;
+  }
+
+  .info {
+    padding: 16px;
+  }
+
+  .tabButton {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+    /* Optional: Hide nav arrows on small screens for simplicity */
+  }
+}
+
+@media (max-width: 480px) {
+  .label {
+    font-size: 0.8rem;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .searchBox {
+    font-size: 12px;
+    padding: 8px 10px 8px 36px;
+  }
+
+  .tabButton {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .card {
+    border-radius: 10px;
+  }
+
+  .imageWrapper {
+    height: 300px;
+  }
+
+  .info h5 {
+    font-size: 0.95rem;
+  }
+
+  .infoItem {
+    font-size: 0.85rem;
+  }
+
+  .price {
+    font-size: 0.9rem;
+  }
+
+  .modalContent {
+    width: 90%;
+    padding: 16px;
+    font-size: 0.95rem;
+  }
+
+  .closeBtn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }

@@ -103,3 +103,50 @@
 .viewDetails:hover {
   background-color: var(--hover-color);
 }
+
+@media (max-width: 991px) {
+  .sectionTitle {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .newsImage {
+    height: 160px;
+  }
+
+  .newsTitle {
+    font-size: 16px;
+  }
+
+  .newsSummary {
+    font-size: 14px;
+  }
+
+  .viewDetails {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sectionTitle {
+    font-size: 22px;
+  }
+
+  .newsImage {
+    height: 140px;
+  }
+
+  .newsContent {
+    padding: 16px;
+  }
+
+  .newsSummary {
+    font-size: 13px;
+  }
+
+  .viewDetails {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+}

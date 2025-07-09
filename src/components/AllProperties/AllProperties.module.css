@@ -120,8 +120,18 @@
 }
 
 @media (max-width: 768px) {
+  .AllPropertiesSection {
+    padding: 50px 20px;
+  }
   .card {
     width: 100%;
+  }
+  .cardTitle {
+    font-size: 1.2rem;
+  }
+
+  .cardDesc {
+    font-size: 14px;
   }
 }
 

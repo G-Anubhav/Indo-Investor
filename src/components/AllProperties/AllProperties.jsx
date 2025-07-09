@@ -96,8 +96,12 @@ const AllProperties = () => {
                             className={styles.card}
                             key={index}
                             whileHover={{ y: -6, boxShadow: "0 8px 24px rgba(0, 0, 0, 0.12)" }}
-                            transition={{ duration: 0.4, ease: "easeInOut" }}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
+
                             <div className={styles.iconBox}>
                                 <Image src={item.icon} alt={item.title} />
                             </div>

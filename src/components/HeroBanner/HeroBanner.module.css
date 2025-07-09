@@ -73,6 +73,8 @@
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.2);
   flex-wrap: nowrap;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .select,
@@ -89,6 +91,10 @@
 .select {
   max-width: 160px;
   flex: none;
+}
+
+.select option {
+  color: var(--background-dark);
 }
 
 .searchBar input::placeholder {
@@ -132,5 +138,101 @@
     display: flex;
     font-size: 18px;
     padding: 12px;
+  }
+}
+
+/* Optional: Smooth text scaling on medium screens */
+@media screen and (max-width: 1024px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .content h4 {
+    font-size: 1.2rem;
+  }
+
+  .select,
+  .searchBar input {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+
+  .searchBar button {
+    font-size: 18px;
+    padding: 0 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    top: 30%;
+    padding: 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin: 1rem 0;
+  }
+
+  .content h4 {
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+  }
+
+  .searchBar {
+    flex-direction: column;
+    border-radius: 6px;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .select,
+  .searchBar input,
+  .searchBar button {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .select {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 !important;
+  }
+
+  .searchBar input::placeholder {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    top: 28%;
+    padding: 1rem;
+  }
+
+  .content h1 {
+    font-size: 1.6rem;
+  }
+
+  .content h4 {
+    font-size: 0.9rem;
+  }
+
+  .searchBar {
+    padding: 8px;
+    border-width: 1px;
+  }
+
+  .select,
+  .searchBar input,
+  .searchBar button {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .searchBar button {
+    font-size: 16px;
   }
 }

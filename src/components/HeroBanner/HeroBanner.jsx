@@ -44,41 +44,6 @@ const HeroBanner = () => {
   const { image, title, subtitle } = bannerData[currentIndex];
 
   return (
-    // <section className={styles.hero}>
-    //   <div className={`${styles.imageWrapper} ${fade ? "active" : ""}`}>
-    //     <Image
-    //       src={image}
-    //       alt={title}
-    //       fill
-    //       style={{ objectFit: "cover" }}
-    //       priority
-    //     />
-    //   </div>
-
-    //   <div className={styles.overlay}>
-    //     <div className={styles.content}>
-    //       <h4>{title}</h4>
-    //       <h1>{subtitle}</h1>
-
-    //       <form className={styles.searchBar} onSubmit={handleSearch}>
-    //         <select value={city} onChange={(e) => setCity(e.target.value)} className={styles.select}>
-    //           <option>Gurugram</option>
-    //           <option>Noida</option>
-    //           <option>Delhi</option>
-    //         </select>
-    //         <input
-    //           type="text"
-    //           value={query}
-    //           onChange={(e) => setQuery(e.target.value)}
-    //           placeholder="Find Project, Builder or Location"
-    //         />
-    //         <button type="submit">
-    //           <span>&#128269;</span>
-    //         </button>
-    //       </form>
-    //     </div>
-    //   </div>
-    // </section>
     <div className={styles.hero}>
       {bannerData.map((banner, i) => (
         <div

@@ -6,13 +6,6 @@
 }
 
 .subtitle {
-  /* display: inline-block;
-  background-color: var(--fade-theme-color);
-  color: var(--theme-color);
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-weight: 600;
-  margin-bottom: 10px; */
   display: inline-block;
   color: var(--theme-color);
   font-weight: 600;
@@ -129,4 +122,57 @@
 .swiper-pagination-bullet-active {
   opacity: 1;
   background-color: #ff5a5f;
+}
+
+@media (max-width: 991px) {
+  .title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .feedback {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .clientInfo {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .clientImage {
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  .clientName {
+    font-size: 15px;
+  }
+
+  .clientRole {
+    font-size: 13px;
+  }
+
+  .quoteIcon {
+    font-size: 20px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .feedback {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 20px;
+  }
 }

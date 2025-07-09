@@ -20,6 +20,11 @@
   font-family: 'Nunito Sans', sans-serif; 
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container::after {
   content: "";
   display: table;

@@ -238,3 +238,80 @@
   padding: 20px 20px 5px;
   background: #0d1118;
 }
+
+@media (max-width: 768px) {
+  .footerRow {
+    flex-direction: column;
+    padding: 80px 30px 30px;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+
+  .ctaBanner {
+    padding: 20px;
+    flex-direction: column;
+    top: -100px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ctaText h2 {
+    font-size: 22px;
+  }
+
+  .ctaText p {
+    /* font-size: 14px; */
+    display: none;
+  }
+
+  .exploreBtn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .hoverItem {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .linkItem {
+    font-size: 15px;
+  }
+
+  .caretIcon {
+    font-size: 15px;
+  }
+
+  .newsletterForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .newsletterForm input,
+  .newsletterForm select,
+  .newsletterForm button {
+    width: 80%;
+    max-width: 300px;
+    /* text-align: center; */
+  }
+
+  .newsletterForm input::placeholder,
+  .newsletterForm select {
+    font-size: 13px;
+  }
+
+  .newsletterForm input,
+  .newsletterForm select {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .newsletterForm button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}

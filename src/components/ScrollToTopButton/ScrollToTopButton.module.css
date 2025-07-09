@@ -62,3 +62,19 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .icon {
+    font-size: 32px;
+  }
+
+  .tooltip {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}

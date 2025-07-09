@@ -2,6 +2,7 @@
 
 import styles from "./TopBuilders.module.css";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import lodhaLogo from "@/images/builder-partners/lodha.png";
@@ -47,21 +48,28 @@ const TopBuilders = () => {
           className={styles.swiper}
         >
           {builders.map((builder, index) => (
-            <SwiperSlide key={index} className={styles.slide}>
-              <div className={styles.logoBox}>
-                <Image
-                  src={builder.src}
-                  alt={builder.name}
-                  width={150}
-                  height={150}
-                  className={styles.logo}
-                  onError={(e) => {
-                    e.target.src = "/default.png";
-                    e.target.onerror = null;
-                  }}
-                />
-              </div>
-            </SwiperSlide>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+            >
+              <SwiperSlide key={index} className={styles.slide}>
+                <div className={styles.logoBox}>
+                  <Image
+                    src={builder.src}
+                    alt={builder.name}
+                    width={150}
+                    height={150}
+                    className={styles.logo}
+                    onError={(e) => {
+                      e.target.src = "/default.png";
+                      e.target.onerror = null;
+                    }}
+                  />
+                </div>
+              </SwiperSlide>
+            </motion.div>
           ))}
         </Swiper>
       </div>

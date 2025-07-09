@@ -70,9 +70,43 @@
   opacity: 1;
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-  .tooltip {
-    display: none;
+@media (max-width: 768px) {
+  .floatingContainer {
+    left: 15px;
+    bottom: 15px;
+    gap: 15px;
+  }
+
+  .floatingBtn {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  .whatsapp {
+    font-size: 24px;
   }
 }
+
+@media (max-width: 480px) {
+  .floatingContainer {
+    left: 12px;
+    bottom: 12px;
+    gap: 12px;
+  }
+
+  .floatingBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .whatsapp {
+    font-size: 22px;
+  }
+
+  .tooltip {
+    display: none; /* already present, keeping it here for clarity */
+  }
+}
+

@@ -66,16 +66,16 @@ const Footer = () => {
             <li><FaEnvelope /> example@example.com</li>
           </ul>
           <div className={styles.socialIcons}>
-            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className={styles.facebook}>
+            <Link href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className={styles.facebook}>
               <FaFacebookF />
             </Link>
-            <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={styles.instagram}>
+            <Link href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className={styles.instagram}>
               <FaInstagram />
             </Link>
-            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.linkedin}>
+            <Link href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className={styles.linkedin}>
               <FaLinkedinIn />
             </Link>
-            <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer" className={styles.youtube}>
+            <Link href="https://youtube.com" aria-label="Youtube" target="_blank" rel="noopener noreferrer" className={styles.youtube}>
               <FaYoutube />
             </Link>
           </div>

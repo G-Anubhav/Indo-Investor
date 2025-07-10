@@ -241,3 +241,74 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .headingWrapper {
+    padding: 0 15px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .leftPanel,
+  .form {
+    padding: 25px 20px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .infoBlock {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .infoBlock h4 {
+    font-size: 15px;
+  }
+
+  .infoBlock p {
+    font-size: 14px;
+  }
+
+  .inputGroup {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .inputField input,
+  .textareaField textarea {
+    font-size: 14px;
+    padding: 16px 12px 10px;
+  }
+
+  .submitBtn {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .subheading {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .submitBtn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

@@ -74,3 +74,77 @@
 .ctaBtn:hover .ctaIcon {
   transform: translateX(5px);
 }
+
+@media (max-width: 991px) {
+  .heading {
+    font-size: 36px;
+  }
+
+  .tagline {
+    font-size: 18px;
+  }
+
+  .content {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .ctaBtn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 30px;
+  }
+
+  .tagline {
+    font-size: 17px;
+  }
+
+  .content {
+    font-size: 15px;
+    padding: 0 16px;
+  }
+
+  .ctaBtn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .ctaIcon {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headingWrapper {
+    margin-bottom: 20px;
+  }
+
+  .heading {
+    margin-top: 5px;
+    font-size: 26px;
+  }
+
+  .tagline {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .content {
+    font-size: 14px;
+    padding: 0 14px;
+  }
+
+  .ctaBtn {
+    font-size: 13.5px;
+    padding: 9px 16px;
+  }
+
+  .ctaIcon {
+    font-size: 12px;
+  }
+}

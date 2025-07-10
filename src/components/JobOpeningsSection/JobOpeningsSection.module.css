@@ -148,3 +148,68 @@
     width: 100%;
   }
 }
+
+@media (max-width: 991px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .sidebar h3,
+  .jobs h3 {
+    font-size: 20px;
+  }
+
+  .jobCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .jobInfo h4 {
+    font-size: 17px;
+  }
+
+  .jobInfo p {
+    font-size: 14px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .jobInfo h4 {
+    font-size: 16px;
+  }
+
+  .jobInfo p {
+    font-size: 13px;
+  }
+
+  .button {
+    font-size: 13.5px;
+    padding: 7px 12px;
+  }
+
+  .icon {
+    margin-left: 6px;
+    font-size: 13px;
+  }
+
+  .sidebar li {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}

@@ -16,6 +16,13 @@ const MapSection = () => {
             referrerPolicy="no-referrer-when-downgrade"
             title="Google Map"
           ></iframe>
+          <div className={styles.mobileInfo}>
+            <FaMapMarkerAlt className={styles.mobileIcon} />
+            <div>
+              <h4>Our Office</h4>
+              <p>71 Madison Ave, New York, NY 10013</p>
+            </div>
+          </div>
 
           <div className={styles.mapOverlay}>
             <FaMapMarkerAlt className={styles.icon} />

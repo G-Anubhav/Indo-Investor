@@ -75,3 +75,72 @@
   font-weight: 600;
   color: var(--menu-background);
 }
+
+@media (max-width: 991px) {
+  .bannerSection {
+    height: 260px;
+    padding: 80px 0 10px;
+  }
+
+  .bannerContent {
+    padding: 60px 30px 10px;
+  }
+
+  .pageTitle {
+    font-size: 26px;
+  }
+
+  .breadcrumbItem {
+    font-size: 16px;
+  }
+
+  .current {
+    font-size: 16px;
+  }
+
+  .homeIcon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bannerSection {
+    height: 220px;
+    padding: 70px 0 5px;
+  }
+
+  .bannerContent {
+    padding: 50px 20px 10px;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .pageTitle {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .breadcrumbItem {
+    font-size: 14px;
+    gap: 4px;
+  }
+
+  .current {
+    font-size: 14px;
+  }
+
+  .homeIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .caret {
+    font-size: 12px;
+  }
+}

@@ -140,6 +140,11 @@
   font-size: 28px;
   font-weight: 700;
   color: var(--theme-color);
+  cursor: default;
+}
+
+.title:hover {
+  color: var(--hover-color);
 }
 
 .location,
@@ -217,7 +222,7 @@
   .infoPanel {
     width: 100%;
     float: none;
-    padding: 0;
+    padding: 20px;
   }
 
   .infoPanel {

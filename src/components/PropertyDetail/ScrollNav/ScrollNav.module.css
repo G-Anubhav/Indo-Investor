@@ -1,6 +1,6 @@
 .scrollNav {
   position: sticky;
-  top: 70px; /* adjust based on header height */
+  top: 70px;
   background: #ffffff;
   z-index: 999;
   border-bottom: 1px solid #ddd;
@@ -35,4 +35,39 @@
   background: var(--theme-color);
   color: var(--text-color);
   font-weight: 600;
+}
+
+.progressBar {
+  height: 4px;
+  background: var(--theme-color);
+  background-size: 200% 100%;
+  animation: scrollStripe 2s linear infinite;
+  position: absolute;
+  top: 60;
+  left: 0;
+  z-index: 1000;
+  transition: width 1.2s ease-out;
+  border-radius: 2px;
+}
+
+@keyframes scrollStripe {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .progressBar {
+    height: 3px;
+    top: 50;
+  }
+
+  .navItem {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
 }

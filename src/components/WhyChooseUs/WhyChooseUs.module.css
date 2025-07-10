@@ -133,3 +133,63 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 991px) {
+  .mainTitle {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .statCard {
+    width: 180px;
+    padding: 25px 16px;
+  }
+
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .whyChooseUs {
+    padding: 60px 0;
+  }
+
+  .mainTitle {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+
+  .statCard {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 20px 16px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .featureCard {
+    text-align: center;
+  }
+
+  .iconWrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

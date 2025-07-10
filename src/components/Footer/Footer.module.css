@@ -252,7 +252,7 @@
   .ctaBanner {
     padding: 20px;
     flex-direction: column;
-    top: -100px;
+    top: -90px;
     align-items: center;
     text-align: center;
   }
@@ -313,5 +313,9 @@
   .newsletterForm button {
     font-size: 14px;
     padding: 10px 16px;
+  }
+
+  .footerBottom{
+    font-size: 14px;
   }
 }

@@ -25,6 +25,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 100px; /* match header offset */
+}
+
 .container::after {
   content: "";
   display: table;

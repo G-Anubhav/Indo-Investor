@@ -121,7 +121,7 @@
     align-items: stretch;
     padding: 8px;
     border-radius: 8px;
-    gap: 10px;
+    gap: 5px;
   }
 
   .select,
@@ -165,7 +165,7 @@
 
 @media screen and (max-width: 768px) {
   .content {
-    top: 30%;
+    top: 35%;
     padding: 1.5rem;
   }
 
@@ -207,8 +207,12 @@
 }
 
 @media screen and (max-width: 480px) {
+  .hero{
+    height: 97vh;
+  }
+
   .content {
-    top: 28%;
+    top: 40%;
     padding: 1rem;
   }
 

@@ -4,28 +4,28 @@ import styles from "./OurMissionSection.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe, faHandshake, faChartLine } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe, faHandshake, faChartLine, faUserCheck, faAward, faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
 const missionPoints = [
   {
-    icon: faGlobe,
-    title: "Global Vision",
-    desc: "We connect people with property across the globe, helping you make sound real estate investments."
-  },
-  {
     icon: faHandshake,
-    title: "Client Commitment",
-    desc: "We value trust, transparency, and long-term partnerships with every client we serve."
+    title: "Integrity",
+    desc: "We uphold honesty and transparency in every dealing."
   },
   {
-    icon: faChartLine,
-    title: "Sustainable Growth",
-    desc: "Focused on innovation and eco-friendly spaces for better living and investment returns."
+    icon: faUserCheck,
+    title: "Customer First",
+    desc: "Your satisfaction, trust, and financial security are our top priorities."
   },
   {
-    icon: faChartLine,
-    title: "Market Insights",
-    desc: "We use data-driven strategies and market analysis to guide our clients to smarter investments.",
+    icon: faAward,
+    title: "Excellence",
+    desc: "We aim to exceed expectations with every project we take on."
+  },
+  {
+    icon: faLightbulb,
+    title: "Innovation",
+    desc: "Bringing modern, tech-enabled solutions to traditional investments for a smarter.",
   },
 ];
 
@@ -47,9 +47,9 @@ const OurMissionSection = () => {
 
           {/* Right: Content */}
           <div className={styles.content}>
-            <span className={styles.label}>Our Mission</span>
+            <span className={styles.label}>Our Values</span>
             <h2 className={styles.heading}>
-              Driving <span>Real Estate Excellence</span> with Purpose
+              Building Every Investment with <span>Strong Principles</span>
             </h2>
 
             <div className={styles.pointsGrid}>
@@ -69,7 +69,7 @@ const OurMissionSection = () => {
               ))}
             </div>
 
-            <button className={styles.ctaButton}>Learn More</button>
+            {/* <button className={styles.ctaButton}>Learn More</button> */}
           </div>
         </div>
       </div>

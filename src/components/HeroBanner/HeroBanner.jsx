@@ -9,7 +9,7 @@ import banner3 from "@/images/banner/slider3.jpg";
 import banner4 from "@/images/banner/slider4.jpg";
 
 const bannerData = [
-  { image: banner1, title: "Experience Luxury With", subtitle: "INVEST 24 BY 7" },
+  { image: banner1, title: "Experience Luxury With", subtitle: "INDO INVESTOR INFRA" },
   { image: banner2, title: "Find Your Dream Home", subtitle: "WITH CONFIDENCE" },
   { image: banner3, title: "Prime Locations Await", subtitle: "BOOK TODAY" },
   { image: banner4, title: "Redefining Realty", subtitle: "WITH INTEGRITY" },

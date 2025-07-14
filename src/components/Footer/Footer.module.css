@@ -34,11 +34,13 @@
   font-size: 28px;
   font-weight: 700;
   margin: 0 0 8px;
+  cursor: default;
 }
 
 .ctaText p {
   margin: 0;
   font-size: 16px;
+  cursor: default;
 }
 
 .exploreBtn {
@@ -87,7 +89,7 @@
 }
 
 .logoImg {
-  width: 120px;
+  width: 200px;
   height: auto;
   margin-bottom: 15px;
 }
@@ -95,6 +97,7 @@
 .column h4 {
   margin-bottom: 20px;
   font-weight: 600;
+  cursor: default;
 }
 
 .column ul {
@@ -113,6 +116,11 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 8px;
+  cursor: default;
+}
+
+.marker {
+  font-size: 28px;
 }
 
 .socialIcons {
@@ -144,7 +152,7 @@
 
 .instagram:hover {
   background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   border-color: #833AB4;
   color: #fff;
 }
@@ -271,6 +279,10 @@
     padding: 10px 20px;
   }
 
+  .marker {
+    font-size: 16px;
+  }
+
   .hoverItem {
     font-size: 15px;
     margin-bottom: 8px;
@@ -315,7 +327,7 @@
     padding: 10px 16px;
   }
 
-  .footerBottom{
+  .footerBottom {
     font-size: 14px;
   }
 }

@@ -29,10 +29,10 @@ const CareersIntroSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h3 className={styles.tagline}>
-            Exciting Careers Await at Invest24by7: Join Our Dynamic Team!
+            Exciting Careers Await at Indo Investor Infra: Join Our Dynamic Team!
           </h3>
           <p>
-            Looking for an exciting career in the real estate industry? Invest24by7 is seeking
+            Looking for an exciting career in the real estate industry? Indo Investor Infra is seeking
             talented individuals like you to join our team. We offer a supportive work environment,
             professional growth opportunities, and a chance to make a meaningful impact. Whether
             you have expertise in sales, marketing, finance, or property management, we invite you
@@ -41,7 +41,7 @@ const CareersIntroSection = () => {
           <p>
             Join us in creating a diverse and inclusive workplace where your skills and passion
             can thrive. Visit our Careers page and take the next step towards an exciting future
-            with Invest24by7!
+            with Indo Investor Infra!
           </p>
 
           <a href="#jobOpens" className={styles.ctaBtn}>

@@ -6,13 +6,13 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faCamera, faGem, faShieldAlt } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faCamera, faGem, faShieldAlt, faUserTie } from "@fortawesome/free-solid-svg-icons";
 
 const featureList = [
-  { icon: faHome, title: "Smart Home Design" },
-  { icon: faCamera, title: "Beautiful Scene Around" },
-  { icon: faGem, title: "Exceptional Lifestyle" },
-  { icon: faShieldAlt, title: "Complete 24/7 Security" },
+  { icon: faGem, title: "Verified Investment Deals" },
+  { icon: faHome, title: "Prime Growth Locations" },
+  { icon: faUserTie, title: "Expert Guidance & Support" },
+  { icon: faShieldAlt, title: "100% Trusted Processes" },
 ];
 
 const AboutSection = () => {
@@ -40,12 +40,11 @@ const AboutSection = () => {
           <div className={styles.aboutContent}>
             <span className={styles.label}>About Us</span>
             <h2 className={styles.title}>
-              The Leading Real Estate<br />
-              Rental Marketplace<span className={styles.dot}>.</span>
+              Investing with Indo Investors:
+              Turning Dreams into Assets<span className={styles.dot}>.</span>
             </h2>
             <p className={styles.desc}>
-              Over 39,000 people work for us in more than 70 countries all over the world.
-              This breadth of global coverage, combined with specialist services.
+              At Indo Investors, we believe investing in land and property is far more than just a transaction — it’s a journey towards building a secure, prosperous future for you and your family.
             </p>
 
             <div className={styles.featureGrid}>
@@ -58,11 +57,13 @@ const AboutSection = () => {
             </div>
 
             <div className={styles.noteBox}>
-              Enimad minim veniam quis nostrud exercitation
-              ullamco laboris. Lorem ipsum dolor sit amet.
+              Founded with a clear vision to make real estate investment simple, transparent, and genuinely rewarding for every Indian, we have grown into a name synonymous with trust and growth.
             </div>
 
-            <button className={styles.ctaButton}>OUR SERVICES</button>
+            {/* <button className={styles.ctaButton}>OUR SERVICES</button> */}
+            <a href="#servicesection" className={styles.ctaButton}>
+              OUR SERVICES
+            </a>
           </div>
         </div>
       </div>

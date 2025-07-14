@@ -22,7 +22,7 @@
 }
 
 .heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #1b1b1b;
   line-height: 1.4;
@@ -35,7 +35,7 @@
   line-height: 1.6;
   margin-bottom: 30px;
 }
-
+/* 
 .ctaButton {
   background: var(--theme-color);
   color: white;
@@ -44,6 +44,21 @@
   border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
+  transition: background 0.3s ease;
+} */
+
+.ctaButton {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 24px;
+  background: var(--theme-color);
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
   transition: background 0.3s ease;
 }
 
@@ -87,7 +102,7 @@
   }
 
   .heading {
-    font-size: 1.8rem;
+    font-size: 1.45rem;
   }
 
   .ctaButton {
@@ -105,7 +120,7 @@
 /* Mobile */
 @media (max-width: 600px) {
   .heading {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 
   .description {

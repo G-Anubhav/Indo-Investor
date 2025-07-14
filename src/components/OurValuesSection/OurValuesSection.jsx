@@ -3,28 +3,36 @@
 import React from "react";
 import styles from "./OurValuesSection.module.css";
 import { motion } from "framer-motion";
-import { FaHandshake, FaLightbulb, FaUsers, FaShieldAlt } from "react-icons/fa";
+import { FaUsers, FaShieldAlt, FaSearchLocation, FaHandsHelping } from "react-icons/fa";
+import { MdVerified } from "react-icons/md";
+import { RiUserStarFill } from "react-icons/ri";
+import { TbHours24 } from "react-icons/tb";
 
 const values = [
   {
-    icon: <FaHandshake />,
-    title: "Integrity",
-    desc: "We do the right thing, even when no one is watching. Honesty and ethics drive our every action.",
+    icon: <MdVerified />,
+    title: "Verified & Legally Clear Properties",
+    desc: "Every project undergoes rigorous due diligence, so your investment remains 100% secure and worry-free.",
   },
   {
-    icon: <FaLightbulb />,
-    title: "Innovation",
-    desc: "We're always improving—adapting new technologies and smarter strategies for better results.",
+    icon: <FaSearchLocation />,
+    title: "High Appreciation Locations",
+    desc: "We focus on emerging growth corridors that maximize future appreciation of your investment.",
   },
   {
-    icon: <FaUsers />,
-    title: "Customer Focus",
-    desc: "We build lasting relationships by putting your needs at the center of everything we do.",
+    icon: <FaHandsHelping />,
+    title: "Transparent Deals",
+    desc: "No hidden fees, no last-minute surprises. We build trust through complete clarity.",
   },
   {
-    icon: <FaShieldAlt />,
-    title: "Reliability",
-    desc: "You can count on us to deliver on our promises with consistency and dedication.",
+    icon: <RiUserStarFill />,
+    title: "Expert Guidance",
+    desc: "From selecting the right location to hassle-free paperwork, our experienced team is by your side every step of the way.",
+  },
+  {
+    icon: <TbHours24 />,
+    title: "After-Sales Support",
+    desc: "Our relationship continues well beyond the purchase. Whether it’s site visits, documentation, resale, or future construction — we’re always here to assist.",
   },
 ];
 
@@ -53,7 +61,7 @@ const OurValuesSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
         >
-          Our Values
+          We Stand Apart
         </motion.p>
 
         <motion.h2
@@ -63,7 +71,7 @@ const OurValuesSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          What We Stand For
+          Why Choose Indo Investors?
         </motion.h2>
 
         <motion.p

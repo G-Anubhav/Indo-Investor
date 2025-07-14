@@ -1,8 +1,16 @@
 "use client";
-
+import Link from "next/link";
 import styles from "./WelcomeSection.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
+
+const LinkComponent = ({ href, children }) => {
+  return (
+    <Link href={href} passHref>
+      {children}
+    </Link>
+  );
+};
 
 const WelcomeSection = () => {
   return (
@@ -14,7 +22,7 @@ const WelcomeSection = () => {
           transition={{ duration: 0.4 }}
           className={styles.subHeading}
         >
-          INDO INVESTORS / Simplifying Your Realty Needs
+          INDO INVESTORS MISSION / Simplifying Your Realty Needs
         </motion.h6>
 
         <motion.h2
@@ -23,7 +31,7 @@ const WelcomeSection = () => {
           transition={{ duration: 0.5 }}
           className={styles.heading}
         >
-          Your Trusted Partner for Hassle-Free Investments
+          To empower individuals and families to achieve financial freedom through secure, transparent, and growth-driven real estate investments.
         </motion.h2>
 
         <motion.p
@@ -32,7 +40,7 @@ const WelcomeSection = () => {
           transition={{ duration: 0.6 }}
           className={styles.description}
         >
-          We help you explore the best properties with seamless financing options and top-notch support. Join thousands of satisfied clients today.
+          We bridge the gap between quality real estate assets and investors by offering verified projects, honest expert advice, and complete end-to-end support. <br /> Our primary focus areas include Noida, Greater Noida, NCR, and rapidly emerging hotspots like Jewar (near the upcoming International Airport) — along with selective opportunities in promising regions across India.
         </motion.p>
 
         <motion.button
@@ -42,6 +50,16 @@ const WelcomeSection = () => {
         >
           Book Project Preview
         </motion.button>
+
+        {/* <LinkComponent  href="/contact-us">
+          <motion.a
+            className={styles.ctaButton}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Book Project Preview
+          </motion.a>
+        </LinkComponent > */}
       </div>
 
       <div className={styles.imageBox}>

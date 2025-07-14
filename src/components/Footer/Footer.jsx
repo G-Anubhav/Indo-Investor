@@ -5,7 +5,7 @@ import Link from "next/link";
 import styles from "./Footer.module.css";
 import { FaCaretRight, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
-import logo from "@/images/logo/logo.png";
+import logo from "@/images/logo/logo.svg";
 
 const companyLinks = [
   { label: "About", href: "/about" },
@@ -59,11 +59,11 @@ const Footer = () => {
         {/* Column 1: Logo and Address */}
         <div className={styles.column}>
           <Image src={logo} alt="logo" className={styles.logoImg} />
-          <p>Lorem Ipsum is simply dummy text of the and typesetting industry.</p>
+          <p>Indo Investors is a Trusted Real Estate Investment Firm specializing in Secure, High-return Properties.</p>
           <ul className={styles.contactInfo}>
-            <li><FaMapMarkerAlt /> Brooklyn, NY, United States</li>
-            <li><FaPhoneAlt /> +0123-456789</li>
-            <li><FaEnvelope /> example@example.com</li>
+            <li><FaMapMarkerAlt className={styles.marker} /> F-16, First Floor, Block D-242, Sector 63, Noida, Uttar Pradesh 201301</li>
+            <li><FaPhoneAlt /> 01204302435 </li>
+            <li><FaEnvelope /> info@indoinvestor.com</li>
           </ul>
           <div className={styles.socialIcons}>
             <Link href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className={styles.facebook}>

@@ -21,11 +21,11 @@ export default function Home() {
       <AllProperties />
       <TopBuilders />
       <ProjectsSection />
+      <WelcomeSection />
       <OurMissionSection />
-      <AmenitiesSection />
+      {/* <AmenitiesSection /> */}
       <CounterSection />
       <OurValuesSection />
-      <WelcomeSection />
       <TeamSection />
       <CTASection />
       <TestimonialSection />

@@ -24,12 +24,11 @@
   color: var(--theme-color);
   margin-bottom: 15px;
 }
-/* 
+
 .count {
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff;
-} */
+  font-size: 26px;
+  font-weight: 600;
+}
 
 .label {
   margin-top: 6px;

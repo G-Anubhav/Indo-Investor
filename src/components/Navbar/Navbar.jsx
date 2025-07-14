@@ -6,6 +6,7 @@ import { Navbar as BootstrapNavbar, Nav, Container } from "react-bootstrap";
 import navLinks from "@/data/navLinks";
 import styles from "./Navbar.module.css";
 import logo from "@/images/logo/logo.png";
+import logo2 from "@/images/logo/logo.svg";
 
 const SiteNavbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -48,10 +49,10 @@ const SiteNavbar = () => {
                     <Link href="/" className="navbar-brand">
                         <div className={`${styles.logoWrapper} ${scrolled ? styles.logoShrink : ''}`}>
                             <Image
-                                src={logo}
+                                src={logo2}
                                 alt="IndoRealEstate Logo"
-                                width={100}
-                                height={100}
+                                width={220}
+                                height={50}
                                 priority
                             />
                         </div>

@@ -74,7 +74,7 @@ const TeamSection = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Our experienced professionals bring your dreams to life with dedication and creativity.
+          Guided by seasoned founders and powered by a dedicated team of real estate consultants, legal experts, and customer support professionals, we work tirelessly to make your investment journey smooth, informed, and truly rewarding.
         </motion.p>
 
         <div className={styles.teamGrid}>

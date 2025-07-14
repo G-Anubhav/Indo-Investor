@@ -16,11 +16,17 @@ const CTASection = () => {
           {/* Center Content */}
           <div className={styles.centerContent}>
             <p className={styles.subText}>Any Questions ?</p>
-            <h2 className={styles.phone}>897–876–987–90</h2>
+            <h2 className={styles.phone}>012–043–024–35</h2>
 
             <div className={styles.buttonGroup}>
-              <button className={styles.callButton}>MAKE A CALL</button>
-              <button className={styles.outlineButton}>CONTACT US</button>
+              {/* <button className={styles.callButton}>MAKE A CALL</button> */}
+              <a href="tel:01204302435" className={styles.callButton}>
+                MAKE A CALL
+              </a>
+              {/* <button className={styles.outlineButton}>CONTACT US</button> */}
+              <a href="/contact-us" className={styles.outlineButton}>
+                CONTACT US
+              </a>
             </div>
           </div>
 

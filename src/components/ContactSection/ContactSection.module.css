@@ -361,6 +361,17 @@
 }
 
 /* Responsive */
+@media (max-width: 991px) {
+  .subtitle {
+    /* font-size: 18px; */
+  }
+
+  .subtitle::before,
+  .subtitle::after {
+    width: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .contactGrid {
     grid-template-columns: 1fr;
@@ -384,6 +395,15 @@
   .title {
     font-size: 24px;
     margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .subtitle::before,
+  .subtitle::after {
+    width: 30px;
   }
 
   .infoBlock {

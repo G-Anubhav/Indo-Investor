@@ -7,8 +7,8 @@ import ScrollToTopButton from "@/components/ScrollToTopButton/ScrollToTopButton"
 import FloatingContactButtons from "@/components/FloatingContactButtons/FloatingContactButtons";
 
 export const metadata = {
-  title: "Indo Real Estate",
-  description: "Best Real Estate Website in India",
+  title: "Turning Dreams into Assets | Indo Investor Infra – Real Estate Experts",
+  description: "Invest in verified plots, villas, and commercial spaces with Indo Investor Infra. Trusted real estate experts delivering secure, high-growth opportunities.",
 };
 
 export default function RootLayout({ children }) {

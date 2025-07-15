@@ -11,6 +11,11 @@ const bannerBreadcrumb = {
     bannerImage: "/images/banners/pagebanner.png",
     breadcrumbs: ["Home", "Contact Us"],
   },
+  properties: {
+    title: "Properties",
+    bannerImage: "/images/banners/pagebanner.png",
+    breadcrumbs: ["Home", "Properties"],
+  },
   residential: {
     title: "Residential Properties",
     bannerImage: "/images/banners/pagebanner.png",

@@ -247,6 +247,15 @@
   background: #0d1118;
 }
 
+.footerBottom a {
+  text-decoration: none;
+  color: var(--menu-background);
+}
+
+.footerBottom a:hover {
+  color: var(--hover-color);
+}
+
 @media (max-width: 768px) {
   .footerRow {
     flex-direction: column;

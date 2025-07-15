@@ -50,7 +50,7 @@ const teamData = [
 
 const TeamSection = () => {
   return (
-    <section className={styles.teamSection}>
+    <section className={styles.teamSection} id="ourTeam">
       <div className="container text-center">
         <motion.h6
           className={styles.subheading}

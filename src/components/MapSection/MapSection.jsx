@@ -5,12 +5,12 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const MapSection = () => {
   return (
-    <section className={styles.mapSection}>
+    <section className={styles.mapSection} id="officemap">
       <div className="container">
         <div className={styles.mapWrapper}>
           <iframe
             className={styles.map}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9080148124235!2d-73.98676672480579!3d40.744679337999084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af3ef3514f%3A0x82439ab324dfc9a!2s71%20Madison%20Ave%2C%20New%20York%2C%20NY%2010016%2C%20USA!5e0!3m2!1sen!2sin!4v1622615949269!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0257685057873!2d77.38144907416842!3d28.62898978424397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceff9f50d60f5%3A0x5329eae568c4afe5!2sD%20242%2C%20Sector%2063%20Rd%2C%20D%20Block%2C%20Sector%2063%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1752560530277!5m2!1sen!2sin"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -20,14 +20,14 @@ const MapSection = () => {
             <FaMapMarkerAlt className={styles.mobileIcon} />
             <div>
               <h4>Our Office</h4>
-              <p>71 Madison Ave, New York, NY 10013</p>
+              <p>F-16, Block D-242, Sector 63, Noida, Uttar Pradesh 201301</p>
             </div>
           </div>
 
           <div className={styles.mapOverlay}>
             <FaMapMarkerAlt className={styles.icon} />
             <h3>Our Office</h3>
-            <p>71 Madison Ave, New York, NY 10013</p>
+            <p>F-16, Block D-242, Sector 63, Noida, Uttar Pradesh 201301</p>
           </div>
         </div>
       </div>

@@ -41,24 +41,25 @@ const ContactSection = () => {
             <div className={styles.infoBlock}>
               <FaMapMarkerAlt className={styles.icon} />
               <div>
-                <h4>Our Location</h4>
-                <p>71 Madison Ave 10013<br />New York, USA</p>
+                <h5>Our Location</h5>
+                <p>F-16, First Floor, Block D-242, Sector 63, Noida, Uttar Pradesh 201301</p>
               </div>
             </div>
 
             <div className={styles.infoBlock}>
               <FaPhoneAlt className={styles.icon} />
               <div>
-                <h4>Give Us A Call</h4>
-                <p>+6500-37-564-35</p>
+                <h5>Give Us A Call</h5>
+                <a href="tel:01204302435"> 012-043-024-35 </a>
+                <a href="tel: 9304301406">+91 9304301406</a>
               </div>
             </div>
 
             <div className={styles.infoBlock}>
               <FaEnvelope className={styles.icon} />
               <div>
-                <h4>Email Us</h4>
-                <p>contact@ochahouse.com</p>
+                <h5>Email Us</h5>
+                <a href="mailto: info@indoinvestor.com">info@indoinvestor.com</a>
               </div>
             </div>
           </motion.div>
@@ -94,8 +95,20 @@ const ContactSection = () => {
             </div>
 
             <div className={styles.textareaField}>
-              <textarea rows="5" placeholder=" " required></textarea>
+              <textarea rows="4" placeholder=" " required></textarea>
               <label>Message</label>
+            </div>
+
+            <div className={styles.toggleContainer}>
+              <label className={styles.toggleSwitch}>
+                <input type="checkbox" required />
+                <span className={styles.slider}></span>
+              </label>
+              <span className={styles.toggleText}>
+                By contacting us, you agree to our&nbsp;
+                <a href="/terms" target="_blank">Terms of services</a> and&nbsp;
+                <a href="/privacy" target="_blank">Privacy Policy</a>.
+              </span>
             </div>
 
             <button type="submit" className={styles.submitBtn}>

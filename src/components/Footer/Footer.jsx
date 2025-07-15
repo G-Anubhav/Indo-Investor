@@ -8,12 +8,36 @@ import Image from "next/image";
 import logo from "@/images/logo/logo.svg";
 
 const companyLinks = [
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
-  { label: "All Products", href: "/products" },
-  { label: "Locations Map", href: "/locations" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "Videos", href: "/videos" },
+  { label: "Properties", href: "/properties" },
+  { label: "News Events", href: "/resources/new-events" },
+  { label: "Careers", href: "/careers" },
+  { label: "Contact Us", href: "/contact-us" },
+];
+
+const propertyLinks = [
+  { label: "Residential", href: "/properties/residential" },
+  { label: "Commercial", href: "/properties/commercial" },
+  { label: "Farm House", href: "/properties/farm-house" },
+  { label: "Flat", href: "/properties/flat" },
+  { label: "Simplex", href: "/properties/simplex" },
+  { label: "Duplex", href: "/properties/duplex" },
+  { label: "Villas", href: "/properties/villas" },
+  { label: "Office Space", href: "/properties/office-space" },
+  { label: "Shop", href: "/properties/shop" },
+  { label: "Co-working Space", href: "/properties/coworking-space" },
+];
+
+const usefulLinks = [
+  { label: "Our Team", href: "/#ourTeam" },
+  { label: "Visit Our Office", href: "/contact-us#officemap" },
+  { label: "News Media", href: "/resources/new-events" },
+  { label: "Social Connect", href: "/resources/social-connect" },
+  { label: "Enquire Now", href: "/contact-us" },
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Terms & Conditions", href: "/terms" },
 ];
 
 const HoverableListItem = ({ label, href }) => {
@@ -91,16 +115,16 @@ const Footer = () => {
 
         {/* Column 3: Services */}
         <div className={styles.column}>
-          <h4>Company</h4>
-          {companyLinks.map((item, index) => (
+          <h4>Properties</h4>
+          {propertyLinks.map((item, index) => (
             <HoverableListItem key={index} label={item.label} href={item.href} />
           ))}
         </div>
 
         {/* Column 4: Customer Care */}
         <div className={styles.column}>
-          <h4>Company</h4>
-          {companyLinks.map((item, index) => (
+          <h4>Useful Links</h4>
+          {usefulLinks.map((item, index) => (
             <HoverableListItem key={index} label={item.label} href={item.href} />
           ))}
         </div>
@@ -127,7 +151,7 @@ const Footer = () => {
 
       {/* Bottom bar */}
       <div className={styles.footerBottom}>
-        <p>Copyright © 2025 IndoInvestors. All Rights Reserved.</p>
+        <p>Copyright © 2025 IndoInvestorInfra. All Rights Reserved. <br />Designed & Developed by <a href="https://github.com/g-anubhav" target="_blank">Anubhav Goyal</a>.</p>
       </div>
     </footer>
   );

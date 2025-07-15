@@ -72,16 +72,39 @@
   background: white;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.06);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
 }
 
-.subtitle {
+/* .subtitle {
+  display: inline-block;
   color: var(--theme-color);
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 1px;
+  padding: 6px 12px;
+  background-color: var(--fade-theme-color);
+} */
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--theme-color);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.subtitle::before,
+.subtitle::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: var(--theme-color);
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
 }
 
 .title {
@@ -94,7 +117,7 @@
   display: flex;
   align-items: flex-start;
   gap: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .icon {
@@ -103,16 +126,26 @@
   margin-top: 4px;
 }
 
-.infoBlock h4 {
+.infoBlock h5 {
   margin: 0 0 5px;
-  font-size: 16px;
   font-weight: 600;
 }
 
 .infoBlock p {
-  margin: 0;
-  color: #555;
-  font-size: 15px;
+  font-size: 16px;
+}
+
+.infoBlock a {
+  display: block;
+  margin: 0 0 5px;
+  text-decoration: none;
+  color: var(--background-color);
+  transition: color 0.3s ease;
+}
+
+.infoBlock a:hover {
+  color: var(--theme-color);
+  text-shadow: 0 0 0.3px currentColor;
 }
 
 /* Form Styling */
@@ -120,7 +153,7 @@
   background: white;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 0 25px rgba(0,0,0,0.07);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
 }
 
 .inputGroup {
@@ -133,7 +166,7 @@
 .inputField {
   position: relative;
   flex: 1;
-}   
+}
 
 .inputField input {
   width: 100%;
@@ -149,7 +182,7 @@
 /* Textarea */
 .textareaField {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .textareaField textarea {
@@ -170,7 +203,7 @@
   background: white;
   padding: 0 6px;
   color: #999;
-  font-size: 14px;
+  font-size: 16px;
   pointer-events: none;
   transition: 0.3s;
 }
@@ -183,15 +216,15 @@
   background: #fff;
   padding: 0 6px;
   color: #999;
-  font-size: 14px;
+  font-size: 15px;
   pointer-events: none;
   transition: 0.3s ease;
 }
 
-.inputField input:focus + label,
-.inputField input:not(:placeholder-shown) + label,
-.textareaField textarea:focus + label,
-.textareaField textarea:not(:placeholder-shown) + label {
+.inputField input:focus+label,
+.inputField input:not(:placeholder-shown)+label,
+.textareaField textarea:focus+label,
+.textareaField textarea:not(:placeholder-shown)+label {
   top: -10px;
   left: 10px;
   font-size: 12px;
@@ -206,6 +239,78 @@
   color: var(--theme-color);
 } */
 
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0 20px;
+  flex-wrap: wrap;
+}
+
+.toggleSwitch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+}
+
+.toggleSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: var(--text-dark);
+  border-radius: 24px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Checked State */
+.toggleSwitch input:checked+.slider {
+  background-color: var(--theme-color);
+}
+
+.toggleSwitch input:checked+.slider::before {
+  transform: translateX(20px);
+}
+
+.toggleText {
+  color: #000;
+  font-size: 15px;
+  /* line-height: 1.4; */
+  max-width: 90%;
+}
+
+.toggleText a {
+  font-weight: 500;
+  color: var(--theme-color);
+  text-decoration: none;
+  transition: all 0.6s ease;
+}
+
+.toggleText a:hover {
+  font-weight: 600;
+  color: var(--hover-color);
+}
+
 .submitBtn {
   background-color: var(--theme-color);
   color: #fff;
@@ -219,7 +324,7 @@
 }
 
 .submitBtn:hover {
-  background-color: #004aad;
+  background-color: var(--hover-color);
 }
 
 .fadeInUp {
@@ -267,11 +372,19 @@
     gap: 12px;
   }
 
-  .infoBlock h4 {
+  .icon {
+    font-size: 16px;
+  }
+
+  .infoBlock h5 {
     font-size: 15px;
   }
 
   .infoBlock p {
+    font-size: 14px;
+  }
+
+  .infoBlock a {
     font-size: 14px;
   }
 
@@ -284,6 +397,33 @@
   .textareaField textarea {
     font-size: 14px;
     padding: 16px 12px 10px;
+  }
+
+  .toggleContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .toggleText {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .toggleSwitch {
+    width: 40px;
+    height: 22px;
+  }
+
+  .slider::before {
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+  }
+
+  .toggleSwitch input:checked+.slider::before {
+    transform: translateX(18px);
   }
 
   .submitBtn {
@@ -305,6 +445,26 @@
 
   .title {
     font-size: 22px;
+  }
+
+  .toggleText {
+    font-size: 13px;
+  }
+
+  .toggleSwitch {
+    width: 36px;
+    height: 20px;
+  }
+
+  .slider::before {
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+  }
+
+  .toggleSwitch input:checked+.slider::before {
+    transform: translateX(16px);
   }
 
   .submitBtn {

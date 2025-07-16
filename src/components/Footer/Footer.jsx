@@ -11,7 +11,7 @@ const companyLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Videos", href: "/videos" },
-  { label: "Properties", href: "/properties" },
+  { label: "All Properties", href: "/properties" },
   { label: "News Events", href: "/resources/new-events" },
   { label: "Careers", href: "/careers" },
   { label: "Contact Us", href: "/contact-us" },

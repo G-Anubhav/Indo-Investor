@@ -6,6 +6,7 @@ const navLinks = [
     label: "Properties",
     dropdown: true,
     children: [
+      { label: "All Properties", href: "/properties" },
       { label: "Residential", href: "/properties/residential" },
       { label: "Commercial", href: "/properties/commercial" },
       { label: "Farm House", href: "/properties/farm-house" },

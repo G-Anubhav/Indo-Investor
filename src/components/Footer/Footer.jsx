@@ -5,7 +5,7 @@ import Link from "next/link";
 import styles from "./Footer.module.css";
 import { FaCaretRight, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
-import logo from "@/images/logo/logo.svg";
+import logo from "@/images/logo/logo.png";
 
 const companyLinks = [
   { label: "Home", href: "/" },

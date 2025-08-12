@@ -89,8 +89,9 @@
 }
 
 .logoImg {
-  width: 200px;
+  width: 300px;
   height: auto;
+  margin-left: -60px;
   margin-bottom: 15px;
 }
 

@@ -86,8 +86,8 @@ const Footer = () => {
           <p>Indo Investors is a Trusted Real Estate Investment Firm specializing in Secure, High-return Properties.</p>
           <ul className={styles.contactInfo}>
             <li><FaMapMarkerAlt className={styles.marker} /> F-16, First Floor, Block D-242, Sector 63, Noida, Uttar Pradesh 201301</li>
-            <li><FaPhoneAlt /> 01204302435 </li>
-            <li><FaEnvelope /> info@indoinvestor.com</li>
+            <li><Link href="tel:01204302435"><FaPhoneAlt /> 01204302435</Link> </li>
+            <li><Link href="mailto:info@indoinvestor.com"><FaEnvelope /> info@indoinvestor.com</Link></li>
           </ul>
           <div className={styles.socialIcons}>
             <Link href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className={styles.facebook}>

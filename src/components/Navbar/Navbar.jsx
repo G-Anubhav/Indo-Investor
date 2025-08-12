@@ -49,10 +49,10 @@ const SiteNavbar = () => {
                     <Link href="/" className="navbar-brand">
                         <div className={`${styles.logoWrapper} ${scrolled ? styles.logoShrink : ''}`}>
                             <Image
-                                src={logo2}
+                                src={logo}
                                 alt="IndoRealEstate Logo"
-                                width={220}
-                                height={50}
+                                width={290}
+                                height={70}
                                 priority
                             />
                         </div>

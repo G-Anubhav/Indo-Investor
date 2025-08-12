@@ -105,7 +105,12 @@
   padding: 0;
 }
 
-.column ul li:hover {
+.column ul li a {
+  text-decoration: none;
+  color: var(--offwhite-color);
+}
+
+.column ul li:hover, .column ul li a:hover {
   color: var(--hover-color);
   transform: translateX(5px);
   transition: all 0.5s ease;

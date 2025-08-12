@@ -6,76 +6,83 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import buyIcon from "@/images/property/plot1.png";
-import rentIcon from "@/images/property/plot1.png";
-import sellIcon from "@/images/property/plot1.png";
+import residentialIcon from "@/images/property/residential.png";
+import commercialIcon from "@/images/property/commercial.png";
+import farmHouseIcon from "@/images/property/farm-house.png";
+import flatIcon from "@/images/property/flat.png";
+import simplexIcon from "@/images/property/simplex.png";
+import duplexIcon from "@/images/property/duplex.png";
+import villasIcon from "@/images/property/villas.png";
+import officeSpaceIcon from "@/images/property/office-space.png";
+import shopIcon from "@/images/property/shop.png";
+import coworkingSpaceIcon from "@/images/property/coworking-space.png";
 
 const focusData = [
     {
-        icon: buyIcon,
+        icon: residentialIcon,
         title: "Residential",
         description: "Strategically located plots in the rapidly growing Jewar region, perfect for building your dream home or securing future growth.",
         linkText: "Explore Residential",
         href: "/properties/residential",
     },
     {
-        icon: buyIcon,
+        icon: commercialIcon,
         title: "Commercial",
         description: "Premium commercial land parcels ideal for shops, offices, and showrooms in thriving investment zones.",
         linkText: "Explore Commercial",
         href: "/properties/commercial",
     },
     {
-        icon: buyIcon,
+        icon: farmHouseIcon,
         title: "Farm House",
         description: "Escape the city life with spacious farmhouse plots, ideal for weekend getaways or serene living.",
         linkText: "Explore Farm House",
         href: "/properties/farm-house",
     },
     {
-        icon: rentIcon,
+        icon: flatIcon,
         title: "Flat",
         description: "Modern flats with functional layouts and smart amenities for comfortable urban living.",
         linkText: "Explore Flat",
         href: "/properties/flat",
     },
     {
-        icon: rentIcon,
+        icon: simplexIcon,
         title: "Simplex",
         description: "Compact and elegant single-floor homes designed for simplicity, ease, and comfort.",
         linkText: "Explore Simplex",
         href: "/properties/simplex",
     },
     {
-        icon: rentIcon,
+        icon: duplexIcon,
         title: "Duplex",
         description: "Stylishly designed dual-level homes offering more space, privacy, and premium features.",
         linkText: "Explore Duplex",
         href: "/properties/duplex",
     },
     {
-        icon: sellIcon,
+        icon: villasIcon,
         title: "Villas",
         description: "Luxurious villas that combine sophistication, space, and an elevated living experience.",
         linkText: "Explore Villas",
         href: "/properties/villas",
     },
     {
-        icon: sellIcon,
+        icon: officeSpaceIcon,
         title: "Office Space",
         description: "Well-planned office spaces suited for startups, professionals, and growing businesses.",
         linkText: "Explore Office Space",
-        href: "/office-space",
+        href: "/properties/office-space",
     },
     {
-        icon: sellIcon,
+        icon: shopIcon,
         title: "Shop",
         description: "Retail spaces in high-visibility areas to help you attract customers and boost business.",
         linkText: "Explore Shop",
         href: "/properties/shop",
     },
     {
-        icon: sellIcon,
+        icon: coworkingSpaceIcon,
         title: "Co-working Space",
         description: "Flexible, shared workspaces built for collaboration, creativity, and productivity.",
         linkText: "Explore Coworking Space",

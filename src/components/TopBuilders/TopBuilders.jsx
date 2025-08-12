@@ -5,26 +5,24 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import zxLogo from "@/images/builder-partners/zx.png";
+import bhutaniLogo from "@/images/builder-partners/bhutani.png";
+import sikkaLogo from "@/images/builder-partners/sikka.png";
+import mirrikhLogo from "@/images/builder-partners/mirrikh.png";
+import saraswatiLogo from "@/images/builder-partners/saraswati.png";
 import lodhaLogo from "@/images/builder-partners/lodha.png";
-import krasaLogo from "@/images/builder-partners/lodha.png";
-import godrejLogo from "@/images/builder-partners/lodha.png";
-import fairfoxLogo from "@/images/builder-partners/lodha.png";
-import bhutaniLogo from "@/images/builder-partners/lodha.png";
-
 
 import "swiper/css";
 import "swiper/css/autoplay";
 
 // List of builder partners with valid URLs
 const builders = [
-  { name: "Krasa", src: krasaLogo },
-  { name: "Godrej", src: godrejLogo },
-  { name: "Fairfox", src: fairfoxLogo },
+  { name: "Zameen Xpert", src: zxLogo },
+  { name: "Bhutani", src: bhutaniLogo },
+  { name: "Sikka", src: sikkaLogo },
+  { name: "Mirrikh", src: mirrikhLogo },
+  { name: "Saraswati", src: saraswatiLogo },
   { name: "Lodha", src: lodhaLogo },
-  { name: "Bhutani", src: bhutaniLogo },
-  { name: "Bhutani", src: bhutaniLogo },
-  { name: "Bhutani", src: bhutaniLogo },
-  { name: "Bhutani", src: bhutaniLogo },
 ];
 
 const TopBuilders = () => {
@@ -59,6 +57,7 @@ const TopBuilders = () => {
                   <Image
                     src={builder.src}
                     alt={builder.name}
+                    title={builder.name}
                     width={150}
                     height={150}
                     className={styles.logo}

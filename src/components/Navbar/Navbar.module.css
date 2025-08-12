@@ -13,8 +13,7 @@
 
 .logoWrapper {
   transition: all 0.3s ease;
-  max-height: 45px;
-
+  max-height: 55px;
 }
 
 .logoShrink {

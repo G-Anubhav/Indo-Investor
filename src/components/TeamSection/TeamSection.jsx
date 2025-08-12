@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 const teamData = [
   {
-    name: "Anjali Sharma",
-    role: "Founder & CEO",
+    name: "Sarvesh Singh",
+    role: "Founder & Managing Director",
     image: "/images/testimonial/testimonial1.jpg",
     socials: {
       facebook: "#",

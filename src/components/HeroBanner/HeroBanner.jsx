@@ -7,12 +7,18 @@ import banner1 from "@/images/banner/slider1.jpg";
 import banner2 from "@/images/banner/slider2.jpg";
 import banner3 from "@/images/banner/slider3.jpg";
 import banner4 from "@/images/banner/slider4.jpg";
+import banner5 from "@/images/banner/slider5.jpg";
+import banner6 from "@/images/banner/slider6.jpg";
+import banner7 from "@/images/banner/slider7.jpg";
 
 const bannerData = [
   { image: banner1, title: "Experience Luxury With", subtitle: "INDO INVESTOR INFRA" },
   { image: banner2, title: "Find Your Dream Home", subtitle: "WITH CONFIDENCE" },
   { image: banner3, title: "Prime Locations Await", subtitle: "BOOK TODAY" },
   { image: banner4, title: "Redefining Realty", subtitle: "WITH INTEGRITY" },
+  { image: banner5, title: "Experience Luxury With", subtitle: "INDO INVESTOR INFRA" },
+  { image: banner6, title: "Find Your Dream Home", subtitle: "WITH CONFIDENCE" },
+  { image: banner7, title: "Prime Locations Await", subtitle: "BOOK TODAY" },
 ];
 
 const HeroBanner = () => {

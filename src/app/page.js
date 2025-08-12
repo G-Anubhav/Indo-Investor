@@ -12,6 +12,7 @@ import LatestNewsSection from "@/components/LatestNewsSection/LatestNewsSection"
 import TeamSection from "@/components/TeamSection/TeamSection";
 import OurValuesSection from "@/components/OurValuesSection/OurValuesSection";
 import AllProperties from "@/components/AllProperties/AllProperties";
+import VideoTestimonials from "@/components/VideoTestimonials/VideoTestimonials";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <TeamSection />
       <CTASection />
       <TestimonialSection />
+      <VideoTestimonials />
       <LatestNewsSection />
     </>
   );

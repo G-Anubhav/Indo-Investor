@@ -83,7 +83,7 @@ const Footer = () => {
         {/* Column 1: Logo and Address */}
         <div className={styles.column}>
           <Image src={logo} alt="logo" className={styles.logoImg} />
-          <p>Indo Investors is a Trusted Real Estate Investment Firm specializing in Secure, High-return Properties.</p>
+          <p>Indo Investor Infra World is a Trusted Real Estate Investment Firm specializing in Secure, High-return Properties.</p>
           <ul className={styles.contactInfo}>
             <li><FaMapMarkerAlt className={styles.marker} /> F-16, First Floor, Block D-242, Sector 63, Noida, Uttar Pradesh 201301</li>
             <li><Link href="tel:01204302435"><FaPhoneAlt /> 01204302435</Link> </li>

@@ -19,7 +19,7 @@ const teamData = [
   {
     name: "Ashutosh Bharadwaj",
     role: "Director",
-    image: "/images/team/ashutosh.jpeg",
+    image: "/images/team/ashutosh-new.png",
     socials: {
       facebook: "#",
       twitter: "#",

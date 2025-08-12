@@ -12,11 +12,11 @@ import banner6 from "@/images/banner/slider6.jpg";
 import banner7 from "@/images/banner/slider7.jpg";
 
 const bannerData = [
-  { image: banner1, title: "Experience Luxury With", subtitle: "INDO INVESTOR INFRA" },
+  { image: banner1, title: "Experience Luxury With", subtitle: "INDO INVESTOR INFRA WORLD" },
   { image: banner2, title: "Find Your Dream Home", subtitle: "WITH CONFIDENCE" },
   { image: banner3, title: "Prime Locations Await", subtitle: "BOOK TODAY" },
   { image: banner4, title: "Redefining Realty", subtitle: "WITH INTEGRITY" },
-  { image: banner5, title: "Experience Luxury With", subtitle: "INDO INVESTOR INFRA" },
+  { image: banner5, title: "Experience Luxury With", subtitle: "INDO INVESTOR INFRA WORLD" },
   { image: banner6, title: "Find Your Dream Home", subtitle: "WITH CONFIDENCE" },
   { image: banner7, title: "Prime Locations Await", subtitle: "BOOK TODAY" },
 ];
@@ -24,7 +24,7 @@ const bannerData = [
 const HeroBanner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
-  const [city, setCity] = useState("Gurugram");
+  const [city, setCity] = useState("Noida");
   const [query, setQuery] = useState("");
 
   useEffect(() => {
@@ -77,8 +77,8 @@ const HeroBanner = () => {
               onChange={(e) => setCity(e.target.value)}
               className={styles.select}
             >
-              <option>Gurugram</option>
               <option>Noida</option>
+              <option>Gurugram</option>
               <option>Delhi</option>
             </select>
             <input

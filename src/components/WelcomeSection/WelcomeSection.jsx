@@ -22,7 +22,7 @@ const WelcomeSection = () => {
           transition={{ duration: 0.4 }}
           className={styles.subHeading}
         >
-          INDO INVESTORS MISSION / Simplifying Your Realty Needs
+          INDO INVESTOR INFRA WORLD MISSION / Simplifying Your Realty Needs
         </motion.h6>
 
         <motion.h2

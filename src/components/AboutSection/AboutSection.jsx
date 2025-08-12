@@ -40,11 +40,11 @@ const AboutSection = () => {
           <div className={styles.aboutContent}>
             <span className={styles.label}>About Us</span>
             <h2 className={styles.title}>
-              Investing with Indo Investors:
+              Investing with Indo Investor Infra World:
               Turning Dreams into Assets<span className={styles.dot}>.</span>
             </h2>
             <p className={styles.desc}>
-              At Indo Investors, we believe investing in land and property is far more than just a transaction — it’s a journey towards building a secure, prosperous future for you and your family.
+              At Indo Investor Infra World, we believe investing in land and property is far more than just a transaction — it’s a journey towards building a secure, prosperous future for you and your family.
             </p>
 
             <div className={styles.featureGrid}>

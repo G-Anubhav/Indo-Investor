@@ -71,7 +71,7 @@ const OurValuesSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Why Choose Indo Investors?
+          Why Choose Indo Investor Infra World?
         </motion.h2>
 
         <motion.p

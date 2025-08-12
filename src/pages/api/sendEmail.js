@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     });
 
     const mailOptions = {
-        from: `"Indo Investor Infra Website" <${process.env.SMTP_USER}>`,
+        from: `"Indo Investor Infra World Website" <${process.env.SMTP_USER}>`,
         to: "info@indoinvestorinfra.com", // Where leads are received
         subject: `New Lead from <${email}>`,
         html: `

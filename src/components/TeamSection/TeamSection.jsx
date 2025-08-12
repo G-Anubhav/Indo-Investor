@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 const teamData = [
   {
     name: "Sarvesh Singh",
-    role: "Founder & Managing Director",
-    image: "/images/testimonial/testimonial1.jpg",
+    role: "Founder & CEO",
+    image: "/images/team/sarvesh.jpeg",
     socials: {
       facebook: "#",
       twitter: "#",
@@ -17,35 +17,35 @@ const teamData = [
     },
   },
   {
-    name: "Ravi Verma",
-    role: "Head of Sales",
-    image: "/images/testimonial/testimonial1.jpg",
+    name: "Ashutosh Bharadwaj",
+    role: "Director",
+    image: "/images/team/ashutosh.jpeg",
     socials: {
       facebook: "#",
       twitter: "#",
       linkedin: "#",
     },
   },
-  {
-    name: "Simran Kaur",
-    role: "Marketing Lead",
-    image: "/images/testimonial/testimonial1.jpg",
-    socials: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
-    },
-  },
-  {
-    name: "Simran Kaur",
-    role: "Marketing Lead",
-    image: "/images/testimonial/testimonial1.jpg",
-    socials: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
-    },
-  },
+  // {
+  //   name: "Simran Kaur",
+  //   role: "Marketing Lead",
+  //   image: "/images/testimonial/testimonial1.jpg",
+  //   socials: {
+  //     facebook: "#",
+  //     twitter: "#",
+  //     linkedin: "#",
+  //   },
+  // },
+  // {
+  //   name: "Simran Kaur",
+  //   role: "Marketing Lead",
+  //   image: "/images/testimonial/testimonial1.jpg",
+  //   socials: {
+  //     facebook: "#",
+  //     twitter: "#",
+  //     linkedin: "#",
+  //   },
+  // },
 ];
 
 const TeamSection = () => {

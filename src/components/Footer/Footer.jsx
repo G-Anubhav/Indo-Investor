@@ -151,7 +151,7 @@ const Footer = () => {
 
       {/* Bottom bar */}
       <div className={styles.footerBottom}>
-        <p>Copyright © 2025 IndoInvestorInfra. All Rights Reserved. <br />Designed & Developed by <a href="https://github.com/g-anubhav" target="_blank">Anubhav Goyal</a>.</p>
+        <p>Copyright © 2025 IndoInvestorInfraWorld. All Rights Reserved. <br />Designed & Developed by <a href="https://github.com/g-anubhav" target="_blank">Anubhav Goyal</a>.</p>
       </div>
     </footer>
   );

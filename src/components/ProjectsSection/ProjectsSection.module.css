@@ -84,6 +84,10 @@
   pointer-events: none;
 }
 
+.cardlink {
+  text-decoration: none;
+}
+
 .card {
   background: #ffffff;
   border-radius: 12px;
@@ -138,17 +142,39 @@
   background: var(--hover-color);
 }
 
+.statusContainer {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 6px; /* space between badges */
+  z-index: 2;
+  align-items: flex-end; /* keep badges right-aligned */
+}
+
+.statusBadge {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: 600;
+  color: white;
+  background-color: #555;
+  white-space: nowrap;
+}
+/* 
 .statusBadge {
   position: absolute;
   top: 12px;
   right: 12px;
+  margin-right: 6px;
   padding: 4px 10px;
   font-size: 12px;
   border-radius: 3px;
   font-weight: 600;
   color: white;
   z-index: 2;
-}
+} */
 
 .info {
   padding: 20px 18px;
@@ -163,6 +189,10 @@
   margin-bottom: 12px;
   line-height: 1.4;
   letter-spacing: 0.3px;
+}
+
+.card:hover .info h5 {
+  color: var(--hover-color);
 }
 
 .infoItem {

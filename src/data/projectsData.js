@@ -12,7 +12,7 @@ const projectsData = {
       status: ["Available", "New Launch"],
       badge: "Co-Working Space",
     },
-  ],
+  ], 
   officeSpace: [
     {
       name: "Bhutani Alphathum - Office Space",

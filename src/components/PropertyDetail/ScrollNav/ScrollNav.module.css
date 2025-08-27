@@ -1,8 +1,8 @@
 .scrollNav {
   position: sticky;
-  top: 70px;
+  top: 77px;
   background: #ffffff;
-  z-index: 999;
+  z-index: 9;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
@@ -61,6 +61,10 @@
 
 
 @media (max-width: 768px) {
+  .scrollNav {
+    top: 60;
+  }
+
   .progressBar {
     height: 3px;
     top: 50;

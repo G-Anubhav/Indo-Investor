@@ -319,7 +319,7 @@ const PropertySection = ({ category, title, data = [] }) => {
                     >
                       <div className={styles.imageWrapper}>
                         <img src={item.image} alt={item.name} />
-                        {item.newLaunch && <span className={styles.badge}>New Launch</span>}
+                        {item.newLaunch && <span className={styles.badge}>{item.newLaunch}</span>}
                       </div>
                       <div className={styles.cardContent}>
                         <h4 className={styles.name}>{item.name}</h4>

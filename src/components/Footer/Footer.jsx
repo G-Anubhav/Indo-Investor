@@ -72,9 +72,9 @@ const Footer = () => {
             <h2>Looking for a dream home?</h2>
             <p>We can help you realize your dream of a new home</p>
           </div>
-          <button className={styles.exploreBtn}>
+          <Link href="/properties" className={styles.exploreBtn}>
             Explore Properties <span>→</span>
-          </button>
+          </Link>
         </div>
       </div>
 

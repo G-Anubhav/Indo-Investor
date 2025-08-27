@@ -26,10 +26,10 @@ const ContactCTASection = () => {
           </div>
 
           <div className={styles.buttons}>
-            <a href="tel:+919876543210" className={styles.btnPrimary}>
+            <a href="tel:9304301406" className={styles.btnPrimary}>
               <FaPhoneAlt /> Make a Call
             </a>
-            <a href="#contact" className={styles.btnOutline}>
+            <a href="/contact-us" className={styles.btnOutline}>
               <FaEnvelope /> Contact Us
             </a>
           </div>

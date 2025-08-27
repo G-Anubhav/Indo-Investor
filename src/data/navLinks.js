@@ -16,7 +16,7 @@ const navLinks = [
       { label: "Villas", href: "/properties/villas" },
       { label: "Office Space", href: "/properties/office-space" },
       { label: "Shop", href: "/properties/shop" },
-      { label: "Co-working Space", href: "/properties/co-working-space" },
+      { label: "Co-working Space", href: "/properties/coworking-space" },
     ],
   },
   {

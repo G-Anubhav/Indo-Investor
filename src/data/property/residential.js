@@ -13,36 +13,36 @@ const residentialProperties = [
   {
     id: 2,
     name: "Aero Classic City",
-    image: "/images/all-properties/residential/aero-classic.jpg",
+    image: "/images/property/Aero Classic City.jpg",
     price: "₹ 20 to 28 Lakh*",
-    rating: 4.2,
+    rating: 4.5,
     area: "15 Acres",
-    location: "Yamuna Expressway, Noida",
+    location: "Yamuna Expressway, Near Jewar International Airport, Noida",
     newLaunch: "New Launch",
     slug: "aero-classic-city"
   },
-  {
-    id: 3,
-    name: "Neral Celebration Land",
-    image: "/images/all-properties/residential/aero-classic.jpg",
-    price: "₹ 37.99 to 64.99 Lakh*",
-    rating: 4.0,
-    area: "104 Acres",
-    location: "Neral, Maharashtra, Mumbai",
-    newLaunch: "New Launch",
-    slug: "neral-celebration"
-  },
-  {
-    id: 4,
-    name: "Neral Celebration Land Gold",
-    image: "/images/all-properties/residential/aero-classic.jpg",
-    price: "₹ 37.99 to 64.99 Lakh*",
-    rating: 4.0,
-    area: "104 Acres",
-    location: "Neral, Maharashtra, Mumbai",
-    newLaunch: "New Launch",
-    slug: "neral-celebration"
-  },
+  // {
+  //   id: 3,
+  //   name: "Neral Celebration Land",
+  //   image: "/images/all-properties/residential/aero-classic.jpg",
+  //   price: "₹ 37.99 to 64.99 Lakh*",
+  //   rating: 4.0,
+  //   area: "104 Acres",
+  //   location: "Neral, Maharashtra, Mumbai",
+  //   newLaunch: "New Launch",
+  //   slug: "neral-celebration"
+  // },
+  // {
+  //   id: 4,
+  //   name: "Neral Celebration Land Gold",
+  //   image: "/images/all-properties/residential/aero-classic.jpg",
+  //   price: "₹ 37.99 to 64.99 Lakh*",
+  //   rating: 4.0,
+  //   area: "104 Acres",
+  //   location: "Neral, Maharashtra, Mumbai",
+  //   newLaunch: "New Launch",
+  //   slug: "neral-celebration"
+  // },
 ];
 
 export default residentialProperties;

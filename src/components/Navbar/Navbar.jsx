@@ -40,6 +40,7 @@ const SiteNavbar = () => {
             <BootstrapNavbar
                 expand="lg"
                 fixed="top"
+                data-bs-theme="dark"
                 // expanded={expanded}
                 // onToggle={() => setExpanded((prev) => !prev)}
                 className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}
@@ -58,7 +59,7 @@ const SiteNavbar = () => {
                         </div>
                     </Link>
                     
-                    <BootstrapNavbar.Toggle aria-controls="mainNavbar" className="ms-auto navbar-toggler" />
+                    <BootstrapNavbar.Toggle aria-controls="mainNavbar" className={`ms-auto navbar-toggler ${styles.toggler}`} />
                     <BootstrapNavbar.Collapse id="mainNavbar">
                         <Nav className="ms-auto">
                             <ul className={styles.navList}>

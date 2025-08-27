@@ -25,6 +25,71 @@ const bannerBreadcrumb = {
       bannerImage: "/images/banners/pagebanner.png",
       breadcrumbs: ["Home", "Properties", "Residential", "One Global Goa"],
     },
+    aeroClassicCity: {
+      title: "Aero Classic City",
+      bannerImage: "/images/banners/pagebanner.png",
+      breadcrumbs: ["Home", "Properties", "Residential", "Aero Classic City"],
+    },
+  },
+  commercial: {
+    title: "Commercial Properties",
+    bannerImage: "/images/banners/pagebanner.png",
+    breadcrumbs: ["Home", "Properties", "Commercial Properties"],
+  },
+  farmhouse: {
+    title: "Farm Houses Properties",
+    bannerImage: "/images/banners/pagebanner.png",
+    breadcrumbs: ["Home", "Properties", "Farm Houses Properties"],
+  },
+  flat: {
+    title: "Flats",
+    bannerImage: "/images/banners/pagebanner.png",
+    breadcrumbs: ["Home", "Properties", "Flats"],
+  },
+  simplex: {
+    title: "Simplex",
+    bannerImage: "/images/banners/pagebanner.png",
+    breadcrumbs: ["Home", "Properties", "Simplex"],
+  },
+  duplex: {
+    title: "Duplex",
+    bannerImage: "/images/banners/pagebanner.png",
+    breadcrumbs: ["Home", "Properties", "Duplex"],
+  },
+  villas: {
+    title: "Villas",
+    bannerImage: "/images/banners/pagebanner.png",
+    breadcrumbs: ["Home", "Properties", "Villas"],
+  },
+  office: {
+    title: "Office Spaces",
+    bannerImage: "/images/banners/pagebanner.png",
+    breadcrumbs: ["Home", "Properties", "Office Spaces"],
+    bhutaniCyberthum: {
+      title: "Bhutani Cyberthum",
+      bannerImage: "/images/banners/pagebanner.png",
+      breadcrumbs: ["Home", "Properties", "Office Space", "Bhutani Cyberthum"],
+    },
+  },
+  shop: {
+    title: "Shops",
+    bannerImage: "/images/banners/pagebanner.png",
+    breadcrumbs: ["Home", "Properties", "Shops"],
+  },
+  coworking: {
+    title: "Co-Working Spaces",
+    bannerImage: "/images/banners/pagebanner.png",
+    breadcrumbs: ["Home", "Properties", "Co-Working Spaces"],
+    bhutaniAlphathum: {
+      title: "Bhutani Alphathum",
+      bannerImage: "/images/banners/pagebanner.png",
+      breadcrumbs: ["Home", "Properties", "Co Working Space", "Bhutani Alphathum"],
+    },
+    bhutaniCyberthum: {
+      title: "Bhutani Cyberthum",
+      bannerImage: "/images/banners/pagebanner.png",
+      breadcrumbs: ["Home", "Properties", "Co Working Space", "Bhutani Cyberthum"],
+    },
   },
   videos: {
     title: "Videos",

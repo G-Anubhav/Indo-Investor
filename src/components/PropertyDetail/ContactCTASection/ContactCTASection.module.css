@@ -65,6 +65,15 @@
   color: var(--theme-color);
 }
 
+.phone a {
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.phone a:hover {
+  color: var(--hover-color);
+}
+
 .buttons {
   display: flex;
   gap: 20px;

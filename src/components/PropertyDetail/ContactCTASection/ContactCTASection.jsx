@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import styles from './ContactCTASection.module.css';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
@@ -21,7 +22,7 @@ const ContactCTASection = () => {
             <p>Talk to our team now or leave a message to schedule a visit!</p>
             <div className={styles.phone}>
               <FaPhoneAlt className={styles.phoneIcon} />
-              <span>+91 98765 43210</span>
+              <Link href="tel:9304301406" >+91 93043 01406</Link>
             </div>
           </div>
 

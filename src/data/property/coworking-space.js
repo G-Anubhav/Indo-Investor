@@ -3,7 +3,7 @@ const coworkingSpaceProperties = [
     id: 1,
     name: "Bhutani Alphathum",
     image: "/images/property/Alphathum.jpg",
-    slug: "bhutani-alphathum",
+    slug: "coworking-space/bhutani-alphathum",
     rating: 4.7,
     area: "Co-Working Spaces | 100 - 150 sq ft",
     location: "Sector 90, Noida",
@@ -19,7 +19,7 @@ const coworkingSpaceProperties = [
     area: "Co-working Pods (100 – 500 sq. ft.)",
     location: "Sector 140A, Noida",
     newLaunch: "Ready to Move",
-    slug: "bhutani-cyberthum",
+    slug: "coworking-space/bhutani-cyberthum",
   },
 ];
 

@@ -30,6 +30,11 @@ const bannerBreadcrumb = {
       bannerImage: "/images/banners/pagebanner.png",
       breadcrumbs: ["Home", "Properties", "Residential", "Aero Classic City"],
     },
+    skyGardens: {
+      title: "Shree Radha Sky Gardens ",
+      bannerImage: "/images/banners/pagebanner.png",
+      breadcrumbs: ["Home", "Properties", "Residential", "Shree Radha Sky Gardens"],
+    },
   },
   commercial: {
     title: "Commercial Properties",

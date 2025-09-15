@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React from 'react';
-import styles from './DescriptionSection.module.css';
-import { motion } from 'framer-motion';
+import React from "react";
+import styles from "./DescriptionSection.module.css";
+import { motion } from "framer-motion";
 
 const DescriptionSection = ({ description }) => {
   return (
@@ -15,7 +15,10 @@ const DescriptionSection = ({ description }) => {
           viewport={{ once: true }}
         >
           <h2 className={styles.heading}>Property Description</h2>
-          <p className={styles.text}>{description}</p>
+          {description.map((desc, i) => (
+            <p key={i} className={styles.text}>{desc}</p>
+          ))}
+          {/* <p className={styles.text}>{description}</p> */}
         </motion.div>
       </div>
     </section>

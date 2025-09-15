@@ -5,6 +5,7 @@ import Footer from "../components/Footer/Footer";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import ScrollToTopButton from "@/components/ScrollToTopButton/ScrollToTopButton";
 import FloatingContactButtons from "@/components/FloatingContactButtons/FloatingContactButtons";
+import FarmhousePopup from "@/components/PopupPoster/PopupPoster";
 
 export const metadata = {
   title: "Turning Dreams into Assets | Indo Investor Infra World – Real Estate Experts",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body>
         <ScrollToTopButton />
         <FloatingContactButtons />
+        <FarmhousePopup />
         <Navbar />
         {children}
         <Footer />

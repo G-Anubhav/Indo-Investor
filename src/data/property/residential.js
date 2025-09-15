@@ -1,17 +1,6 @@
 const residentialProperties = [
   {
     id: 1,
-    name: "One Global Goa",
-    image: "/images/all-properties/residential/aero-classic.jpg",
-    price: "₹ 84.99 to 1.02 Cr*",
-    rating: 4.7,
-    area: "30 Acres",
-    location: "Bicholim, Goa, Goa",
-    newLaunch: "New Launch",
-    slug: "one-global-goa"
-  },
-  {
-    id: 2,
     name: "Aero Classic City",
     image: "/images/property/Aero Classic City.jpg",
     price: "₹ 20 to 28 Lakh*",
@@ -19,30 +8,19 @@ const residentialProperties = [
     area: "15 Acres",
     location: "Yamuna Expressway, Near Jewar International Airport, Noida",
     newLaunch: "New Launch",
-    slug: "aero-classic-city"
+    slug: "residential/aero-classic-city"
   },
-  // {
-  //   id: 3,
-  //   name: "Neral Celebration Land",
-  //   image: "/images/all-properties/residential/aero-classic.jpg",
-  //   price: "₹ 37.99 to 64.99 Lakh*",
-  //   rating: 4.0,
-  //   area: "104 Acres",
-  //   location: "Neral, Maharashtra, Mumbai",
-  //   newLaunch: "New Launch",
-  //   slug: "neral-celebration"
-  // },
-  // {
-  //   id: 4,
-  //   name: "Neral Celebration Land Gold",
-  //   image: "/images/all-properties/residential/aero-classic.jpg",
-  //   price: "₹ 37.99 to 64.99 Lakh*",
-  //   rating: 4.0,
-  //   area: "104 Acres",
-  //   location: "Neral, Maharashtra, Mumbai",
-  //   newLaunch: "New Launch",
-  //   slug: "neral-celebration"
-  // },
+  {
+    id: 2,
+    name: "Shree Radha Sky Gardens",
+    image: "/images/all-properties/residential/sky-garden/main.png",
+    price: "₹ 43.68 Lakh to 2.04 Cr*",
+    rating: 4.56,
+    area: "16 Acres, 19 Towers, 1960 Flats",
+    location: "16B Sector, Greater Noida West",
+    newLaunch: "Exclusive New Launch, Ready to Move",
+    slug: "residential/sky-gardens"
+  },
 ];
 
 export default residentialProperties;

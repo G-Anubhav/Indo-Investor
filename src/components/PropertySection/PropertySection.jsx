@@ -313,7 +313,8 @@ const PropertySection = ({ category, title, data = [] }) => {
                     transition={{ duration: 0.3 }}
                   >
                     <Link
-                      href={`/properties/${category}/${item.slug}`}
+                      // href={`/properties/${category}/${item.slug}`}
+                      href={`/properties/${item.slug}`}
                       className={styles.linkContent}
                       aria-label={`View details for ${item.name}`}
                     >

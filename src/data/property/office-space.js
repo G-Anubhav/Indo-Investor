@@ -9,7 +9,7 @@ const officeSpaceProperties = [
     area: "Office & Retail Spaces",
     location: "Sector 90, Noida",
     newLaunch: "Ready to Move",
-    slug: "bhutani-alphathum-office-retail",
+    slug: "office-space/bhutani-alphathum",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const officeSpaceProperties = [
     area: "Office Spaces (200 – 750 sq. ft.)",
     location: "Sector 140A, Noida",
     newLaunch: "Ready to Move / Under Construction",
-    slug: "bhutani-cyberthum",
+    slug: "office-space/bhutani-cyberthum",
   },
 ];
 

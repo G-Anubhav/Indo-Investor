@@ -3,7 +3,7 @@ const commercialProperties = [
     id: 1,
     name: "Bhutani Alphathum",
     image: "/images/property/Alphathum.jpg",
-    slug: "bhutani-alphathum",
+    slug: "coworking-space/bhutani-alphathum",
     rating: 4.7,
     area: "Co-Working Spaces | 100 - 150 sq ft",
     location: "Sector 90, Noida",
@@ -19,7 +19,7 @@ const commercialProperties = [
     area: "Office Spaces (200 – 750 sq. ft.)",
     location: "Sector 140A, Noida",
     newLaunch: "Ready to Move / Under Construction",
-    slug: "bhutani-cyberthum-office",
+    slug: "coworking-space/bhutani-cyberthum",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const commercialProperties = [
     area: "Co-working Pods (100 – 500 sq. ft.)",
     location: "Sector 140A, Noida",
     newLaunch: "Ready to Move",
-    slug: "bhutani-cyberthum",
+    slug: "office-space/bhutani-cyberthum",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const commercialProperties = [
     area: "Office & Retail Spaces",
     location: "Sector 90, Noida",
     newLaunch: "Ready to Move",
-    slug: "bhutani-alphathum-office-retail",
+    slug: "office-space/bhutani-alphathum-office-retail",
   },
 ];
 

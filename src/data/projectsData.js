@@ -12,7 +12,19 @@ const projectsData = {
       status: ["Available", "New Launch"],
       badge: "Fully Gated Society",
     },
-  ], 
+    {
+      name: "Shree Radha Sky Gardens",
+      image: "/images/all-properties/residential/sky-garden/1.jpeg",
+      slug: "residential/sky-gardens",
+      size: "16 Acres | 19 Towers | 1960 Flats",
+      location:
+        "Sector 16B, Greater Noida West, Near Gaur City Mall & Gaur City Centre",
+      price: "₹43.68 Lakh to ₹2.04 Cr* | ₹7800 Per Sq. Ft onwards",
+      status: ["Ready to Move", "Available"],
+      badge: "Premium Township with Senior Citizen Club",
+    },
+  ],
+
   officeSpace: [
     {
       name: "Bhutani Alphathum - Office Space",
@@ -84,7 +96,7 @@ const projectsData = {
       slug: "one-global-goa",
       size: "30 Acres",
       location: "Bicholim, Goa",
-      status: ["Available",],
+      status: ["Available"],
       price: "₹ 84.99 to 1.02 Cr*",
     },
   ],

@@ -5,11 +5,11 @@ import styles from './BrochureSection.module.css';
 import { motion } from 'framer-motion';
 import { FaDownload, FaFilePdf } from 'react-icons/fa';
 
-const BrochureSection = ({ data }) => {
+const BrochureSection = ({ data, previewImage }) => {
   if (!data.brochureUrl) return null;
 
   // Derive preview image by replacing .pdf with .jpg
-  const previewImage = data.brochureUrl.replace(/\.pdf$/, '.jpg');
+  // const previewImage = data.brochureUrl.replace(/\.pdf$/, '.jpg');
 
   return (
     <section id="brochure" className={styles.brochureSection}>

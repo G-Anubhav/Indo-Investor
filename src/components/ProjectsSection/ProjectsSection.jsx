@@ -18,10 +18,10 @@ import projectsData from "@/data/projectsData";
 import { motion, AnimatePresence } from "framer-motion";
 
 const categories = [
-  { key: "officeSpace", label: "Office Space" },
-  { key: "coworking", label: "Co Working Space" },
   { key: "residential", label: "Residential" },
   { key: "commercial", label: "Commercial" },
+  { key: "officeSpace", label: "Office Space" },
+  { key: "coworking", label: "Co Working Space" },
 ];
 
 const statusColors = {
@@ -34,7 +34,7 @@ const statusColors = {
 };
 
 const ProjectsSection = () => {
-  const [activeTab, setActiveTab] = useState("officeSpace");
+  const [activeTab, setActiveTab] = useState("residential");
   const [searchTerm, setSearchTerm] = useState("");
   const [modalProject, setModalProject] = useState(null);
 

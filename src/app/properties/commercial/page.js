@@ -16,6 +16,7 @@ const CommercialPage = () => {
       <PropertySection category="commercial" title="Commercial Projects" data={commercialProperties} />
     </>
   );
+  
 }
 
 export default CommercialPage;

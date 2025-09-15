@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import styles from "./HeroBanner.module.css";
 
+import farmhouseBanner from "@/images/banner/farmhouse.webp";
 import banner1 from "@/images/banner/slider1.jpg";
 import banner2 from "@/images/banner/slider2.jpg";
 import banner3 from "@/images/banner/slider3.jpg";
@@ -13,6 +14,7 @@ import banner7 from "@/images/banner/slider7.jpg";
 
 const bannerData = [
   { image: banner1, title: "Experience Luxury With", subtitle: "INDO INVESTOR INFRA WORLD" },
+  { image: farmhouseBanner, title: "Indo Investor Infra Presents", subtitle: "Exclusive Luxury Farmhouses at Jewar" },
   { image: banner2, title: "Find Your Dream Home", subtitle: "WITH CONFIDENCE" },
   { image: banner3, title: "Prime Locations Await", subtitle: "BOOK TODAY" },
   { image: banner4, title: "Redefining Realty", subtitle: "WITH INTEGRITY" },

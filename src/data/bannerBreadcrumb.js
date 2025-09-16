@@ -75,6 +75,11 @@ const bannerBreadcrumb = {
       bannerImage: "/images/banners/pagebanner.png",
       breadcrumbs: ["Home", "Properties", "Office Space", "Bhutani Cyberthum"],
     },
+    bhutaniAlphathum: {
+      title: "Bhutani Alphathum Retail & Office",
+      bannerImage: "/images/banners/pagebanner.png",
+      breadcrumbs: ["Home", "Properties", "Office Space", "Bhutani Alphathum Office & Retail"],
+    },
   },
   shop: {
     title: "Shops",

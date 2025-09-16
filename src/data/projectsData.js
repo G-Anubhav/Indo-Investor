@@ -20,8 +20,8 @@ const projectsData = {
       location:
         "Sector 16B, Greater Noida West, Near Gaur City Mall & Gaur City Centre",
       price: "₹43.68 Lakh to ₹2.04 Cr* | ₹7800 Per Sq. Ft onwards",
-      status: ["Ready to Move", "Available"],
-      badge: "Premium Township with Senior Citizen Club",
+      status: ["Ready to Move", "Available", "New Launch"],
+      badge: ["Premium Township",],
     },
   ],
 

@@ -1,6 +1,6 @@
 const aeroClassicCity = {
   name: "Aero Classic City",
-  image: "/images/property/Aero-Classic-City.jpg", // add actual image later
+  image: "/images/property/Aero-Classic-City.jpg",
   slug: "residential/aero-classic-city",
   size: "Approx. 10–15 Acres",
   location: "Yamuna Expressway, Near Jewar International Airport, Noida",

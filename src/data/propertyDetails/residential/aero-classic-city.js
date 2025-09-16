@@ -1,81 +1,66 @@
 const aeroClassicCity = {
-  id: 1,
   name: "Aero Classic City",
-  location: "Bicholim, Goa, Goa",
-  price: "84.99 to 1.02 Cr*",
-  perUnit: "₹ 5522 Per Sq. Yd Onwards",
-  rating: 4.0,
-  reviewCount: 7,
-  status: "New Launch",
-  size: "30 Acres",
-  configurations: ["3-BHK ", "4-BHK"],
-  forSale: true,
-  planUrl: "/pdfs/payment-plan.pdf",
-  brochureUrl: "one-global-goa/brochure/sample.pdf",
-  images: [
-    "/images/all-properties/residential/one-global-goa-1.jpg",
-    "/images/all-properties/residential/one-global-goa-1.jpg",
-    "/images/all-properties/residential/one-global-goa-1.jpg",
-  ],
-  description: "One Global Goa is a premium residential project that offers modern living spaces surrounded by the serene beauty of Goa. Designed for comfort and luxury, the property features well-planned amenities, contemporary architecture, and easy access to key destinations, making it an ideal choice for both investment and personal living.",
-  paymentPlan: [
-    { milestone: "At Booking", amount: "₹1,00,000" },
-    { milestone: "Within 30 Days", amount: "10% of Total Amount" },
-    { milestone: "On Plinth", amount: "15%" },
-    { milestone: "On Slab Completion", amount: "25%" },
-    { milestone: "On Possession", amount: "Balance Amount" }
+  image: "/images/property/Aero-Classic-City.jpg", // add actual image later
+  slug: "residential/aero-classic-city",
+  size: "Approx. 10–15 Acres",
+  location: "Yamuna Expressway, Near Jewar International Airport, Noida",
+  price: "₹18–28 Lakh* onwards | Competitive per sq. yd pricing",
+  status: ["Available", "Upcoming Project"],
+  badge: "Fully Gated Township",
+  description: `Aero Classic City is a thoughtfully planned residential township strategically located near Jewar International Airport on the Yamuna Expressway. With modern infrastructure, easy highway connectivity, and the promise of future growth in the region, this project offers an ideal opportunity for both investment and end-use living. Designed to provide a safe, community-driven environment, Aero Classic City blends affordability with promising appreciation potential.`,
+  highlights: [
+    "Strategic location near Jewar International Airport",
+    "Excellent connectivity via Yamuna Expressway and upcoming metro routes",
+    "Plots available in multiple sizes with wide roads and green surroundings",
+    "Ideal for both investors and families looking for affordable housing",
+    "Close to proposed industrial and IT hubs in Jewar and Greater Noida",
   ],
   amenities: [
-    { label: "Swimming Pool", icon: "/images/icons/pool.svg" },
-    { label: "Club House", icon: "/images/icons/clubhouse.svg" },
-    { label: "24x7 Security", icon: "/images/icons/security.svg" },
-    { label: "Power Backup", icon: "/images/icons/power.png" },
-    { label: "Gymnasium", icon: "/images/icons/gym.svg" },
+    "Gated Community with 24×7 Security",
+    "Wide Internal Roads",
+    "Green Landscaped Parks",
+    "Underground Electricity & Water Supply",
+    "Children’s Play Area",
+    "Community Centre",
+    "Jogging Tracks",
   ],
-  gallery: [
-    '/images/all-properties/residential/goa-1.webp',
-    '/images/all-properties/residential/goa-2.webp',
-    '/images/all-properties/residential/goa-3.webp',
-    '/images/all-properties/residential/goa-4.webp',
+  faqs: [
+    {
+      question: "Where is Aero Classic City located?",
+      answer:
+        "Aero Classic City is located on the Yamuna Expressway, near the upcoming Jewar International Airport, making it a prime investment destination in Noida.",
+    },
+    {
+      question: "What types of properties are available?",
+      answer:
+        "The project primarily offers residential plots of varying sizes suitable for building independent houses or villas.",
+    },
+    {
+      question: "Is Aero Classic City RERA registered?",
+      answer:
+        "Official RERA details are awaited. Buyers are advised to confirm RERA registration status before purchase.",
+    },
+    {
+      question: "Why should I invest in Aero Classic City?",
+      answer:
+        "The project benefits from its proximity to Jewar Airport, growing industrial hubs, and increasing demand for residential and commercial spaces in the Yamuna Expressway region.",
+    },
   ],
-  videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14009.701237962152!2d77.355155932727!3d28.617012587389283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce55e6c23b983%3A0x742cc2661a6d7a87!2sSector%2062%20Noida!5e0!3m2!1sen!2sin!4v1751952311255!5m2!1sen!2sin",
-  developer: {
-    name: 'ABC Group',
-    description: 'ABC Group is one of India’s leading real estate developers, known for innovation, integrity, and timely delivery. With a legacy of excellence across 2 decades, ABC has shaped skylines with residential, commercial, and luxury projects.',
-    image: '/images/developers/lodha.png',
-  },
   reviews: [
     {
-      name: 'Ravi Sharma',
+      name: "Rohit Sharma",
       rating: 5,
-      review: 'Excellent project and support. Highly recommended!',
-      image: '/images/clients/ravi.jpg',
+      text: "The location is excellent with future growth potential. Being near Jewar Airport, I believe this project will offer great appreciation in the next few years.",
     },
     {
-      name: 'Meena Kapoor',
+      name: "Priya Mehta",
       rating: 4,
-      review: 'The team was professional and everything was on time.',
+      text: "The township looks promising. I booked a plot for investment, and the pricing seems reasonable compared to other projects on Yamuna Expressway.",
     },
     {
-      name: 'Aman Gupta',
-      rating: 5,
-      review: 'Loved the amenities and construction quality!',
-      image: '/images/clients/aman.jpg',
-    },
-  ],
-  questions: [
-    {
-      question: 'What is the possession date of the property?',
-      answer: 'The expected possession date is December 2025.',
-    },
-    {
-      question: 'Is home loan available from major banks?',
-      answer: 'Yes, home loans are available from HDFC, ICICI, SBI, and others.',
-    },
-    {
-      question: 'Are there any maintenance charges?',
-      answer: 'Yes, monthly maintenance charges are applicable as per RWA policy.',
+      name: "Arjun Verma",
+      rating: 4,
+      text: "Good connectivity and peaceful surroundings. If developed as planned, it will be a great place to settle in the future.",
     },
   ],
 };

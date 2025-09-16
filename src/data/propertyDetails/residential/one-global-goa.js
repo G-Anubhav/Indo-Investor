@@ -17,7 +17,7 @@ const oneGlobalGoa = {
     "/images/all-properties/residential/one-global-goa-1.jpg",
     "/images/all-properties/residential/one-global-goa-1.jpg",
   ],
-  description: "One Global Goa is a premium residential project that offers modern living spaces surrounded by the serene beauty of Goa. Designed for comfort and luxury, the property features well-planned amenities, contemporary architecture, and easy access to key destinations, making it an ideal choice for both investment and personal living.",
+  description: [ "One Global Goa is a premium residential project that offers modern living spaces surrounded by the serene beauty of Goa. Designed for comfort and luxury, the property features well-planned amenities, contemporary architecture, and easy access to key destinations, making it an ideal choice for both investment and personal living.", "The project offers intelligently designed co-working spaces, cutting-edge amenities, and sustainable green building practices. With premium business lounges, high-speed elevators, 24x7 security, and vibrant social spaces like cafeterias and sky gardens, Alphathum goes beyond being just a workplace—it’s a landmark for networking, innovation, and long-term investment growth. For investors, it provides assured returns and capital appreciation, making it one of the most rewarding commercial opportunities in NCR." ],
   paymentPlan: [
     { milestone: "At Booking", amount: "₹1,00,000" },
     { milestone: "Within 30 Days", amount: "10% of Total Amount" },

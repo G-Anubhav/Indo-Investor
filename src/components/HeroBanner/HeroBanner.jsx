@@ -14,7 +14,7 @@ import banner7 from "@/images/banner/slider7.jpg";
 
 const bannerData = [
   { image: banner1, title: "Experience Luxury With", subtitle: "INDO INVESTOR INFRA WORLD" },
-  { image: farmhouseBanner, title: "Indo Investor Infra Presents", subtitle: "Exclusive Luxury Farmhouses at Jewar" },
+  { image: farmhouseBanner, title: "Indo Investor Infra Presents", subtitle: "Exclusive Luxury Farmhouses" },
   { image: banner2, title: "Find Your Dream Home", subtitle: "WITH CONFIDENCE" },
   { image: banner3, title: "Prime Locations Await", subtitle: "BOOK TODAY" },
   { image: banner4, title: "Redefining Realty", subtitle: "WITH INTEGRITY" },

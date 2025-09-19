@@ -85,7 +85,7 @@ const Footer = () => {
           <Image src={logo} alt="logo" className={styles.logoImg} />
           <p>Indo Investor Infra World is a Trusted Real Estate Investment Firm specializing in Secure, High-return Properties.</p>
           <ul className={styles.contactInfo}>
-            <li><FaMapMarkerAlt className={styles.marker} /> F-16, First Floor, Block D-242, Sector 63, Noida, Uttar Pradesh 201301</li>
+            <li><FaMapMarkerAlt className={styles.marker} /> H-169, 1st Floor, Office No. F-04 Sector-63, Noida, U.P. 201301</li>
             <li><Link href="tel:01204302435"><FaPhoneAlt /> 01204302435</Link> </li>
             <li><Link href="mailto:info@indoinvestor.com"><FaEnvelope /> info@indoinvestor.com</Link></li>
           </ul>

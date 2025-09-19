@@ -14,7 +14,11 @@
 .logoWrapper {
   transition: all 0.3s ease;
   max-height: 55px;
-  margin-left: -100px;
+  margin-left: -80px;
+}
+
+.logoWrapper img {
+  border-radius: 30px;
 }
 
 .logoShrink {
@@ -223,6 +227,6 @@
 
 @media (max-width: 676px) {
   .logoWrapper {
-    margin-left: -30px;
+    margin-left: -5px;
   }
 }

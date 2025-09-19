@@ -90,10 +90,11 @@
 }
 
 .logoImg {
-  width: 300px;
+  width: 250px;
   height: auto;
-  margin-left: -60px;
+  margin-left: -10px;
   margin-bottom: 15px;
+  border-radius: 30px;
 }
 
 .column h4 {

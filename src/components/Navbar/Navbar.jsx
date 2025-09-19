@@ -52,8 +52,8 @@ const SiteNavbar = () => {
                             <Image
                                 src={logo}
                                 alt="IndoRealEstate Logo"
-                                width={290}
-                                height={70}
+                                width={250}
+                                height={60}
                                 priority
                             />
                         </div>

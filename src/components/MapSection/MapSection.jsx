@@ -10,7 +10,7 @@ const MapSection = () => {
         <div className={styles.mapWrapper}>
           <iframe
             className={styles.map}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0257685057873!2d77.38144907416842!3d28.62898978424397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceff9f50d60f5%3A0x5329eae568c4afe5!2sD%20242%2C%20Sector%2063%20Rd%2C%20D%20Block%2C%20Sector%2063%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1752560530277!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.152450002053!2d77.37360349678956!3d28.625192700000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a79fcba149%3A0x2be658accdf6761b!2sSector%2063%2C%20H-Block!5e0!3m2!1sen!2sin!4v1758307515079!5m2!1sen!2sin"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -20,14 +20,14 @@ const MapSection = () => {
             <FaMapMarkerAlt className={styles.mobileIcon} />
             <div>
               <h4>Our Office</h4>
-              <p>F-16, Block D-242, Sector 63, Noida, Uttar Pradesh 201301</p>
+              <p>H-169, 1st Floor, Office No. F-04 Sector-63, Noida, U.P. 201301</p>
             </div>
           </div>
 
           <div className={styles.mapOverlay}>
             <FaMapMarkerAlt className={styles.icon} />
             <h3>Our Office</h3>
-            <p>F-16, Block D-242, Sector 63, Noida, Uttar Pradesh 201301</p>
+            <p>H-169, 1st Floor, Office No. F-04 Sector-63, Noida, U.P. 201301</p>
           </div>
         </div>
       </div>

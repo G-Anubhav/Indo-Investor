@@ -34,7 +34,7 @@ const ClientReviewsSection = ({ reviews }) => {
                       {Array.from({ length: 5 }).map((_, i) => (
                         <FaStar
                           key={i}
-                          color={i < review.rating ? '#FF0000' : '#ddd'}
+                          color={i < review.rating ? '#ffae00ff' : '#ddd'}
                         />
                       ))}
                     </div>

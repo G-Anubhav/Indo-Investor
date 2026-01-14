@@ -1,0 +1,275 @@
+.section {
+  padding: 50px 0;
+  background: #f9fafc;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--theme-color);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-bottom: 5px;
+}
+
+.header p {
+  margin-top: 15px;
+  color: #555;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  gap: 30px;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.imageCard {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.imageCard img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.caption {
+  padding: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  background: #f1f3f7;
+}
+
+/* Download Card */
+.downloadCard {
+  background: linear-gradient(135deg, #0b4aa2, #0d6efd);
+  color: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(13, 110, 253, 0.35);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;        
+  align-self: center;        
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.downloadCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.downloadCard ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.downloadCard li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.downloadBtn {
+  background: #fff;
+  color: #0d6efd;
+  padding: 14px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.downloadBtn:hover {
+  background: var(--hover-color);
+  color: #fcfcfc;
+}
+
+.fileName {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  opacity: 0.85;
+  text-align: center;
+}
+
+/* TRUE FULLSCREEN OVERLAY */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Faded background */
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* Image container */
+.overlayContent {
+  position: relative;
+  z-index: 2;
+  max-width: 95%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.overlayContent img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 14px;
+}
+
+.overlayContent p {
+  margin-top: 12px;
+  color: #fff;
+}
+
+/* Close */
+/* .closeBtn {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+} */
+
+/* Zoom cursor */
+.imageCard {
+  cursor: zoom-in;
+}
+
+.viewer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.imageWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWrapper img {
+  max-width: 90%;
+  max-height: 80vh;
+  transition: transform 0.15s ease;
+}
+
+/* Top Bar */
+.topBar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.counter {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.zoomControls button,
+.closeBtn {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #fff;
+  padding: 8px 10px;
+  margin-left: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Nav arrows */
+.navLeft,
+.navRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 12px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.navLeft {
+  left: 20px;
+}
+.navRight {
+  right: 20px;
+}
+
+/* Caption */
+.captionOverlay {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .downloadCard {
+    align-self: center;
+  }
+
+}

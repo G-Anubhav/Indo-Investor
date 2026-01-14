@@ -13,6 +13,17 @@ const projectsData = {
       badge: "Fully Gated Society",
     },
     {
+      name: "Sky Rise Residency - Dholera",
+      image: "/images/all-properties/residential/dholera-sky-rise/1.jpeg",
+      slug: "residential/dholera-sky-rise-residency",
+      size: "10 Acres | 300 Plots | Max 130 Sq. Yards",
+      location:
+        "Dholera SIR, Ahmedabad–Bhavnagar Highway (Kotda Own), Near Diamond Circle",
+      price: "₹7.50 Lakh onwards | Limited Time ₹50,000 Discount*",
+      status: ["Exclusive", "Available", "New Launch"],
+      badge: ["Premium Township,", " Smart-City Investment"],
+    },
+    {
       name: "Shree Radha Sky Gardens",
       image: "/images/all-properties/residential/sky-garden/1.jpeg",
       slug: "residential/sky-gardens",

@@ -30,7 +30,8 @@ const statusColors = {
   "Under Construction" : "#dc8635ff",
   Upcoming: "#ffc107",
   "New Launch": "#007bff",
-  "Ready to Move": "#ffc107",
+  "Ready to Move": "#e76d57",
+  Exclusive: "#e1a140"
 };
 
 const ProjectsSection = () => {

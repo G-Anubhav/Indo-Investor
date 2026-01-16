@@ -37,7 +37,7 @@ const bannerBreadcrumb = {
     },
     dholeraSkyRise: {
       title: "Sky Rise Residency - Dholera",
-      bannerImage: "/images/banners/pagebanner.png",
+      bannerImage: "/images/all-properties/residential/dholera-sky-rise/1.jpg",
       breadcrumbs: ["Home", "Properties", "Residential", "Sky Rise Residency - Dholera"],
     }
   },

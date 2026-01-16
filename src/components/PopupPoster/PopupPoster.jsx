@@ -59,7 +59,7 @@ export default function FarmhousePopup({ delay = 1500, expireMinutes = 1 }) {
   const handleExplore = (e) => {
     e?.preventDefault();
     markAsShown();
-    window.location.href = "/properties/farm-house";
+    window.location.href = "/properties/residential/dholera-sky-rise-residency";
   };
 
   if (!showPopup) return null;
@@ -73,7 +73,7 @@ export default function FarmhousePopup({ delay = 1500, expireMinutes = 1 }) {
       <div className={styles.popup}>
         <div className={styles.posterWrapper}>
           <img
-            src="/images/all-properties/farmhouse/farmhouse.webp"
+            src="/images/all-properties/residential/dholera-sky-rise/poster.png"
             alt="Farmhouse Project"
             className={styles.poster}
           />
@@ -82,10 +82,10 @@ export default function FarmhousePopup({ delay = 1500, expireMinutes = 1 }) {
 
         <div className={styles.content}>
           <h2 className={styles.title}>
-            Indo Investor Infra Presents: Exclusive Farmhouse Living
+            Indo Investor Infra Presents: Exclusive Residential Township
           </h2>
           <p className={styles.subtitle}>
-            We’re Building Dreams in Nature — Book Your Slice of Paradise
+            Sky Rise Residential Township, Dholera — Book Your Slice of Paradise Today!
           </p>
 
           <div className={styles.actions}>

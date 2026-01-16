@@ -1,11 +1,11 @@
 const residentialProperties = [
   {
     id: 1,
-    name: "Dholera Sky Rise Residency",
+    name: "Sky Rise Residential Township - Dholera",
     image: "/images/all-properties/residential/dholera-sky-rise/main.png",
     price: "₹ 7.50 Lakh* Onwards",
     rating: 4.5,
-    area: "10 Acres, ~300 Plots",
+    area: "10 Acres, ~305 Plots",
     location: "Dholera SIR, Ahmedabad–Bhavnagar Highway",
     newLaunch: "Premium Township, NA Approved",
     slug: "residential/dholera-sky-rise-residency"

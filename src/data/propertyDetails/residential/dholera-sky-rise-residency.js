@@ -1,6 +1,6 @@
 const dholeraSkyRiseResidency = {
   id: 3,
-  name: "Dholera Sky Rise Residency",
+  name: "Sky Rise Residential Township - Dholera",
   location:
     "Dholera SIR, Ahmedabad–Bhavnagar Highway (Kotda Road), Near Diamond Circle",
   price: "₹ 7.50 Lakh* Onwards",
@@ -8,7 +8,7 @@ const dholeraSkyRiseResidency = {
   rating: 4.3,
   reviewCount: 12,
   status: "NA Approved, Immediate Registry & Mutation",
-  size: "10 Acres, ~300 Residential Plots",
+  size: "10 Acres, ~305 Residential Plots",
   configurations: [
     "Residential Plots – Up to 130 Sq. Yards",
   ],
@@ -17,20 +17,22 @@ const dholeraSkyRiseResidency = {
   brochureUrl: "/brochure/dholera-sky-rise/brochure.pdf",
   previewImage: "/brochure/dholera-sky-rise/preview-image.jpg",
   images: [
-    "/images/all-properties/residential/dholera-sky-rise/1.jpeg",
-    "/images/all-properties/residential/dholera-sky-rise/2.jpeg",
-    "/images/all-properties/residential/dholera-sky-rise/3.jpeg",
-    "/images/all-properties/residential/dholera-sky-rise/4.jpeg",
-    "/images/all-properties/residential/dholera-sky-rise/main.png",
-    "/images/all-properties/residential/dholera-sky-rise/5.jpeg",
-    "/images/all-properties/residential/dholera-sky-rise/6.jpeg",
+    "/images/all-properties/residential/dholera-sky-rise/3.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/1.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/2.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/4.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/1-1.png",
+    "/images/all-properties/residential/dholera-sky-rise/5.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/6.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/7.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/8.jpg",
   ],
   description: [
-    "Dholera Sky Rise Residency is a premium residential township located in the fast-developing Dholera SIR, India’s first government-backed smart city. Spread across approximately 10 acres with around 300 well-planned residential plots, the project is designed for investors and end-users seeking long-term appreciation, security, and modern infrastructure.",
+    "Sky Rise Residential Township - Dholera is a premium residential township located in the fast-developing Dholera SIR, India’s first government-backed smart city. Spread across approximately 10 acres with around 300 well-planned residential plots, the project is designed for investors and end-users seeking long-term appreciation, security, and modern infrastructure.",
 
     "Strategically situated on the Ahmedabad–Bhavnagar (Kotda) Highway, the project enjoys excellent connectivity and is just around 500 meters from Diamond Circle. Both Bhavnagar Airport and the upcoming Dholera International Airport are approximately 35 km away, making the location highly attractive for future growth. A serene bird sanctuary within 8–9 km adds to the project’s environmental appeal.",
 
-    "With NA approval, clear title, township-approved layout, and immediate registry & mutation, Dholera Sky Rise Residency offers complete peace of mind to buyers. Wide internal roads, planned development, and a government-supported smart city ecosystem make this project an ideal low-investment, high-return opportunity in Gujarat’s most promising growth corridor.",
+    "With NA approval, clear title, township-approved layout, and immediate registry & mutation, Sky Rise Residential Township - Dholera offers complete peace of mind to buyers. Wide internal roads, planned development, and a government-supported smart city ecosystem make this project an ideal low-investment, high-return opportunity in Gujarat’s most promising growth corridor.",
   ],
   layoutSection: {
     title: "Project Layout & Legal Approvals",
@@ -120,12 +122,14 @@ const dholeraSkyRiseResidency = {
     { label: "Club House", icon: "/images/icons/clubhouse.svg" },
   ],
   gallery: [
-    "/images/all-properties/residential/dholera-sky-rise/1.jpeg",
-    "/images/all-properties/residential/dholera-sky-rise/2.jpeg",
-    "/images/all-properties/residential/dholera-sky-rise/3.jpeg",
-    "/images/all-properties/residential/dholera-sky-rise/4.jpeg",
-    "/images/all-properties/residential/dholera-sky-rise/5.jpeg",
-    "/images/all-properties/residential/dholera-sky-rise/6.jpeg",
+    "/images/all-properties/residential/dholera-sky-rise/1.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/2.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/3.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/4.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/5.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/6.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/7.jpg",
+    "/images/all-properties/residential/dholera-sky-rise/8.jpg",
   ],
   videoUrl: "/images/all-properties/residential/dholera-sky-rise/dholera-sky-rise.mp4",
   mapEmbedUrl:
@@ -161,14 +165,14 @@ const dholeraSkyRiseResidency = {
   ],
   questions: [
     {
-      question: "Where is Dholera Sky Rise Residency located?",
+      question: "Where is Sky Rise Residential Township - Dholera located?",
       answer:
         "The project is located in Dholera SIR on the Ahmedabad–Bhavnagar (Kotda) Highway, near Diamond Circle. It enjoys excellent connectivity and lies within India’s first government-backed smart city zone.",
     },
     {
       question: "What type of property is available in this project?",
       answer:
-        "Dholera Sky Rise Residency offers residential plots with a maximum size of up to 130 square yards, suitable for future home construction or long-term investment.",
+        "Sky Rise Residential Township - Dholera offers residential plots with a maximum size of up to 130 square yards, suitable for future home construction or long-term investment.",
     },
     {
       question: "Is the project legally approved?",
@@ -181,14 +185,14 @@ const dholeraSkyRiseResidency = {
         "Plots are available starting from ₹7.50 Lakh, making it one of the most affordable entry points into the Dholera SIR investment market.",
     },
     {
-      question: "Why should I invest in Dholera Sky Rise Residency?",
+      question: "Why should I invest in Sky Rise Residential Township - Dholera?",
       answer:
         "The project offers low investment, high appreciation potential due to its strategic location in Dholera SIR, government-backed infrastructure development, and proximity to the upcoming international airport.",
     },
     {
       question: "Is this project suitable for long-term investment?",
       answer:
-        "Absolutely. Dholera Sky Rise Residency is ideal for long-term investors looking to benefit from smart city development, infrastructure growth, and land appreciation over the next 5–10 years.",
+        "Absolutely. Sky Rise Residential Township - Dholera is ideal for long-term investors looking to benefit from smart city development, infrastructure growth, and land appreciation over the next 5–10 years.",
     },
   ],
 };

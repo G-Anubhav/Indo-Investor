@@ -9,6 +9,7 @@ import zxLogo from "@/images/builder-partners/zx.png";
 import bhutaniLogo from "@/images/builder-partners/bhutani.png";
 import sikkaLogo from "@/images/builder-partners/sikka.png";
 import mirrikhLogo from "@/images/builder-partners/mirrikh.png";
+import nestoriaLogo from "@/images/builder-partners/nestoria-group.png";
 import saraswatiLogo from "@/images/builder-partners/saraswati.png";
 import nimbusLogo from "@/images/builder-partners/nimbus.png";
 import lodhaLogo from "@/images/builder-partners/lodha.png";
@@ -20,6 +21,7 @@ import "swiper/css/autoplay";
 const builders = [
   { name: "Zameen Xpert", src: zxLogo },
   { name: "Bhutani", src: bhutaniLogo },
+  { name: "Nestoria", src: nestoriaLogo },
   { name: "Sikka", src: sikkaLogo },
   { name: "Mirrikh", src: mirrikhLogo },
   { name: "Saraswati", src: saraswatiLogo },

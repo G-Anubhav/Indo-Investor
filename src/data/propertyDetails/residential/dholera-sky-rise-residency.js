@@ -3,8 +3,8 @@ const dholeraSkyRiseResidency = {
   name: "Sky Rise Residential Township - Dholera",
   location:
     "Dholera SIR, Ahmedabad–Bhavnagar Highway (Kotda Road), Near Diamond Circle",
-  price: "₹ 7.50 Lakh* Onwards",
-  perUnit: "₹ 5,800 per sq.yd onwards",
+  price: "Registration starts @ 50000 amount only",
+  perUnit: "₹ 5,900 per square yards onwards",
   rating: 4.3,
   reviewCount: 12,
   status: "NA Approved, Immediate Registry & Mutation",

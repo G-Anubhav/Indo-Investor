@@ -53,7 +53,7 @@ const HeroSection = ({ data }) => {
             </p>
 
             <div className={styles.area}>
-            Area: <strong>{perUnit}</strong>
+            Price: <strong>{perUnit}</strong>
             </div>
 
             <div className={styles.ratings}>

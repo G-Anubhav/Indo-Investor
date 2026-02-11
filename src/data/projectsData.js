@@ -16,10 +16,10 @@ const projectsData = {
       name: "Sky Rise Residential Township - Dholera",
       image: "/images/all-properties/residential/dholera-sky-rise/8.jpg",
       slug: "residential/dholera-sky-rise-residency",
-      size: "10 Acres | ~305 Plots | Max 130 Sq. Yards",
+      size: "10 Acres | ~305 Plots | Min 130 Sq. Yards",
       location:
         "Dholera SIR, Ahmedabad–Bhavnagar Highway (Kotda Own), Near Diamond Circle",
-      price: "₹5,999 per square yards | Limited Time ₹50,000 Discount*",
+      price: "₹5,999 per square yards | Limited Time Offer",
       status: ["Exclusive", "Available", "New Launch"],
       badge: ["Premium Township,", " Smart-City Investment"],
     },

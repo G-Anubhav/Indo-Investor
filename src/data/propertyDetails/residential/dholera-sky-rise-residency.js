@@ -4,7 +4,7 @@ const dholeraSkyRiseResidency = {
   location:
     "Dholera SIR, Ahmedabad–Bhavnagar Highway (Kotda Road), Near Diamond Circle",
   price: "Registration starts @ 50000 amount only",
-  perUnit: "₹ 5,900 per square yards onwards",
+  perUnit: "₹ 5,999 per square yards onwards",
   rating: 4.3,
   reviewCount: 12,
   status: "NA Approved, Immediate Registry & Mutation",
@@ -28,7 +28,7 @@ const dholeraSkyRiseResidency = {
     "/images/all-properties/residential/dholera-sky-rise/8.jpg",
   ],
   description: [
-    "Sky Rise Residential Township - Dholera is a premium residential township located in the fast-developing Dholera SIR, India’s first government-backed smart city. Spread across approximately 10 acres with around 300 well-planned residential plots, the project is designed for investors and end-users seeking long-term appreciation, security, and modern infrastructure.",
+    "Sky Rise Residential Township - Dholera is a premium residential township located in the fast-developing Dholera SIR, India’s first government-backed smart city. Spread across approximately 10 acres with around 305 well-planned residential plots, the project is designed for investors and end-users seeking long-term appreciation, security, and modern infrastructure.",
 
     "Strategically situated on the Ahmedabad–Bhavnagar (Kotda) Highway, the project enjoys excellent connectivity and is just around 500 meters from Diamond Circle. Both Bhavnagar Airport and the upcoming Dholera International Airport are approximately 35 km away, making the location highly attractive for future growth. A serene bird sanctuary within 8–9 km adds to the project’s environmental appeal.",
 
@@ -172,7 +172,7 @@ const dholeraSkyRiseResidency = {
     {
       question: "What type of property is available in this project?",
       answer:
-        "Sky Rise Residential Township - Dholera offers residential plots with a maximum size of up to 130 square yards, suitable for future home construction or long-term investment.",
+        "Sky Rise Residential Township - Dholera offers residential plots with a minimum size of up to 130 square yards, suitable for future home construction or long-term investment.",
     },
     {
       question: "Is the project legally approved?",

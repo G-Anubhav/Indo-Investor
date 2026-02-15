@@ -1,10 +1,10 @@
 const dholeraSkyRiseResidency = {
   id: 3,
-  name: "Sky Rise Residential Township - Dholera",
+  name: "Green Vista Residential Township - Dholera",
   location:
     "Dholera SIR, Ahmedabad–Bhavnagar Highway (Kotda Road), Near Diamond Circle",
   price: "Registration starts @ ₹50,000 amount only",
-  perUnit: "₹ 5,999 per square yards onwards",
+  perUnit: "₹ 9,999 per square yards onwards",
   rating: 4.3,
   reviewCount: 12,
   status: "NA Approved, Immediate Registry & Mutation",
@@ -28,11 +28,11 @@ const dholeraSkyRiseResidency = {
     "/images/all-properties/residential/dholera-sky-rise/8.jpg",
   ],
   description: [
-    "Sky Rise Residential Township - Dholera is a premium residential township located in the fast-developing Dholera SIR, India’s first government-backed smart city. Spread across approximately 10 acres with around 305 well-planned residential plots, the project is designed for investors and end-users seeking long-term appreciation, security, and modern infrastructure.",
+    "Green Vista Residential Township - Dholera is a premium residential township located in the fast-developing Dholera SIR, India’s first government-backed smart city. Spread across approximately 10 acres with around 305 well-planned residential plots, the project is designed for investors and end-users seeking long-term appreciation, security, and modern infrastructure.",
 
     "Strategically situated on the Ahmedabad–Bhavnagar (Kotda) Highway, the project enjoys excellent connectivity and is just around 500 meters from Diamond Circle. Both Bhavnagar Airport and the upcoming Dholera International Airport are approximately 35 km away, making the location highly attractive for future growth. A serene bird sanctuary within 8–9 km adds to the project’s environmental appeal.",
 
-    "With NA approval, clear title, township-approved layout, and immediate registry & mutation, Sky Rise Residential Township - Dholera offers complete peace of mind to buyers. Wide internal roads, planned development, and a government-supported smart city ecosystem make this project an ideal low-investment, high-return opportunity in Gujarat’s most promising growth corridor.",
+    "With NA approval, clear title, township-approved layout, and immediate registry & mutation, Green Vista Residential Township - Dholera offers complete peace of mind to buyers. Wide internal roads, planned development, and a government-supported smart city ecosystem make this project an ideal low-investment, high-return opportunity in Gujarat’s most promising growth corridor.",
   ],
   layoutSection: {
     title: "Project Layout & Legal Approvals",
@@ -64,7 +64,7 @@ const dholeraSkyRiseResidency = {
     ],
     pdf: {
       url: "/brochure/dholera-sky-rise/layout.pdf",
-      name: "Sky Rise Residency Layout & N.A. Order",
+      name: "Green Vista Residency Layout & N.A. Order",
     },
   },
   documentData : {
@@ -165,14 +165,14 @@ const dholeraSkyRiseResidency = {
   ],
   questions: [
     {
-      question: "Where is Sky Rise Residential Township - Dholera located?",
+      question: "Where is Green Vista Residential Township - Dholera located?",
       answer:
         "The project is located in Dholera SIR on the Ahmedabad–Bhavnagar (Kotda) Highway, near Diamond Circle. It enjoys excellent connectivity and lies within India’s first government-backed smart city zone.",
     },
     {
       question: "What type of property is available in this project?",
       answer:
-        "Sky Rise Residential Township - Dholera offers residential plots with a minimum size of up to 130 square yards, suitable for future home construction or long-term investment.",
+        "Green Vista Residential Township - Dholera offers residential plots with a minimum size of up to 130 square yards, suitable for future home construction or long-term investment.",
     },
     {
       question: "Is the project legally approved?",
@@ -185,14 +185,14 @@ const dholeraSkyRiseResidency = {
         "Plots are available starting from ₹7.50 Lakh, making it one of the most affordable entry points into the Dholera SIR investment market.",
     },
     {
-      question: "Why should I invest in Sky Rise Residential Township - Dholera?",
+      question: "Why should I invest in Green Vista Residential Township - Dholera?",
       answer:
         "The project offers low investment, high appreciation potential due to its strategic location in Dholera SIR, government-backed infrastructure development, and proximity to the upcoming international airport.",
     },
     {
       question: "Is this project suitable for long-term investment?",
       answer:
-        "Absolutely. Sky Rise Residential Township - Dholera is ideal for long-term investors looking to benefit from smart city development, infrastructure growth, and land appreciation over the next 5–10 years.",
+        "Absolutely. Green Vista Residential Township - Dholera is ideal for long-term investors looking to benefit from smart city development, infrastructure growth, and land appreciation over the next 5–10 years.",
     },
   ],
 };

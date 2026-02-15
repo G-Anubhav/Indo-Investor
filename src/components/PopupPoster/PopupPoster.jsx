@@ -85,7 +85,7 @@ export default function FarmhousePopup({ delay = 1500, expireMinutes = 1 }) {
             Indo Investor Infra Presents: Exclusive Residential Township
           </h2>
           <p className={styles.subtitle}>
-            Sky Rise Residential Township, Dholera — Book Your Slice of Paradise Today!
+            Green Vista Residential Township, Dholera — Book Your Slice of Paradise Today!
           </p>
 
           <div className={styles.actions}>

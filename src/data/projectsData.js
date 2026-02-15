@@ -3,17 +3,7 @@ import goaImg from "@/images/projects/goa.jpg";
 const projectsData = {
   residential: [
     {
-      name: "Aero Classic City",
-      image: "/images/property/Aero Classic City.jpg",
-      slug: "residential/aero-classic-city",
-      size: "15 Acres",
-      location: "Yamuna Expressway, Near Jewar International Airport, Noida",
-      price: "₹20 to ₹28 Lakh* | ₹24000 Per Sq. Yd onwards",
-      status: ["Available", "New Launch"],
-      badge: "Fully Gated Society",
-    },
-    {
-      name: "Sky Rise Residential Township - Dholera",
+      name: "Green Vista Residential Township - Dholera",
       image: "/images/all-properties/residential/dholera-sky-rise/8.jpg",
       slug: "residential/dholera-sky-rise-residency",
       size: "10 Acres | ~305 Plots | Min 130 Sq. Yards",
@@ -24,16 +14,26 @@ const projectsData = {
       badge: ["Premium Township,", " Smart-City Investment"],
     },
     {
-      name: "Shree Radha Sky Gardens",
-      image: "/images/all-properties/residential/sky-garden/1.jpeg",
-      slug: "residential/sky-gardens",
-      size: "16 Acres | 19 Towers | 1960 Flats",
-      location:
-        "Sector 16B, Greater Noida West, Near Gaur City Mall & Gaur City Centre",
-      price: "₹43.68 Lakh to ₹2.04 Cr* | ₹7800 Per Sq. Ft onwards",
-      status: ["Ready to Move", "Available", "New Launch"],
-      badge: ["Premium Township",],
+      name: "Aero Classic City",
+      image: "/images/property/Aero Classic City.jpg",
+      slug: "residential/aero-classic-city",
+      size: "15 Acres",
+      location: "Yamuna Expressway, Near Jewar International Airport, Noida",
+      price: "₹20 to ₹28 Lakh* | ₹24000 Per Sq. Yd onwards",
+      status: ["Available", "New Launch"],
+      badge: "Fully Gated Society",
     },
+    // {
+    //   name: "Shree Radha Sky Gardens",
+    //   image: "/images/all-properties/residential/sky-garden/1.jpeg",
+    //   slug: "residential/sky-gardens",
+    //   size: "16 Acres | 19 Towers | 1960 Flats",
+    //   location:
+    //     "Sector 16B, Greater Noida West, Near Gaur City Mall & Gaur City Centre",
+    //   price: "₹43.68 Lakh to ₹2.04 Cr* | ₹7800 Per Sq. Ft onwards",
+    //   status: ["Ready to Move", "Available", "New Launch"],
+    //   badge: ["Premium Township",],
+    // },
   ],
 
   officeSpace: [

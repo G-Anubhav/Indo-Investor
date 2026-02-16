@@ -130,7 +130,7 @@ const ContactSection = () => {
               <FaEnvelope className={styles.icon} />
               <div>
                 <h5>Email Us</h5>
-                <a href="mailto: info@indoinvestor.com">info@indoinvestorworld.com</a>
+                <a href="mailto: info@indoinvestorinfraworld.com">info@indoinvestorinfraworld.com</a>
               </div>
             </div>
           </motion.div>

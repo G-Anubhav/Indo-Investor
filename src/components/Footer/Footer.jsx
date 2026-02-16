@@ -87,7 +87,7 @@ const Footer = () => {
           <ul className={styles.contactInfo}>
             <li><FaMapMarkerAlt className={styles.marker} /> H-169, 1st Floor, Office No. F-04 Sector-63, Noida, U.P. 201301</li>
             <li><Link href="tel:01204302435"><FaPhoneAlt /> 01204302435</Link> </li>
-            <li><Link href="mailto:info@indoinvestor.com"><FaEnvelope /> info@indoinvestor.com</Link></li>
+            <li><Link href="mailto:info@indoinvestorinfraworld.com"><FaEnvelope /> info@indoinvestorinfraworld.com</Link></li>
           </ul>
           <div className={styles.socialIcons}>
             <Link href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className={styles.facebook}>

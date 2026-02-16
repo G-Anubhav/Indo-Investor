@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     const { firstName, lastName, phone, email, message } = req.body;
 
     const transporter = nodemailer.createTransport({
-        host: "smtpout.secureserver.net",
+        host: "smtp.hostinger.com",
         port: 465,
         secure: true,
         auth: {
@@ -17,8 +17,8 @@ export default async function handler(req, res) {
 
     const mailOptions = {
         from: `"Indo Investor Infra World Website" <${process.env.SMTP_USER}>`,
-        to: "info@indoinvestorinfra.com", // Where leads are received
-        subject: `New Lead from <${email}>`,
+        to: "info@indoinvestorinfraworld.com", // Where leads are received
+        subject: `New Lead from Website Indoinvestorinfraworld.com`,
         html: `
       <h2>New Contact Form Submission</h2>
       <p><strong>Name:</strong> ${firstName} ${lastName}</p>

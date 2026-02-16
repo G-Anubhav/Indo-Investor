@@ -8,7 +8,7 @@ const dholeraSkyRiseResidency = {
   rating: 4.3,
   reviewCount: 12,
   status: "NA Approved, Immediate Registry & Mutation",
-  size: "10 Acres, ~305 Residential Plots",
+  size: "10 Acres, ~206 Residential Plots",
   configurations: [
     "Residential Plots – Up to 130 Sq. Yards",
   ],
@@ -28,7 +28,7 @@ const dholeraSkyRiseResidency = {
     "/images/all-properties/residential/dholera-sky-rise/8.jpg",
   ],
   description: [
-    "Green Vista Residential Township - Dholera is a premium residential township located in the fast-developing Dholera SIR, India’s first government-backed smart city. Spread across approximately 10 acres with around 305 well-planned residential plots, the project is designed for investors and end-users seeking long-term appreciation, security, and modern infrastructure.",
+    "Green Vista Residential Township - Dholera is a premium residential township located in the fast-developing Dholera SIR, India’s first government-backed smart city. Spread across approximately 10 acres with around 206 well-planned residential plots, the project is designed for investors and end-users seeking long-term appreciation, security, and modern infrastructure.",
 
     "Strategically situated on the Ahmedabad–Bhavnagar (Kotda) Highway, the project enjoys excellent connectivity and is just around 500 meters from Diamond Circle. Both Bhavnagar Airport and the upcoming Dholera International Airport are approximately 35 km away, making the location highly attractive for future growth. A serene bird sanctuary within 8–9 km adds to the project’s environmental appeal.",
 

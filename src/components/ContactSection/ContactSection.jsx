@@ -122,7 +122,7 @@ const ContactSection = () => {
               <div>
                 <h5>Give Us A Call</h5>
                 <a href="tel:01204302435"> 012-043-024-35 </a>
-                <a href="tel: 9304301406">+91 9304301406</a>
+                {/* <a href="tel: 9304301406">+91 9304301406</a> */}
               </div>
             </div>
 
@@ -130,7 +130,7 @@ const ContactSection = () => {
               <FaEnvelope className={styles.icon} />
               <div>
                 <h5>Email Us</h5>
-                <a href="mailto: info@indoinvestor.com">info@indoinvestor.com</a>
+                <a href="mailto: info@indoinvestor.com">info@indoinvestorworld.com</a>
               </div>
             </div>
           </motion.div>

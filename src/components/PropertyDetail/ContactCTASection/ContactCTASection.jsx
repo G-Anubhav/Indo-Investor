@@ -22,12 +22,12 @@ const ContactCTASection = () => {
             <p>Talk to our team now or leave a message to schedule a visit!</p>
             <div className={styles.phone}>
               <FaPhoneAlt className={styles.phoneIcon} />
-              <Link href="tel:9304301406" >+91 93043 01406</Link>
+              <Link href="tel:01204302435" >012-043-024-35</Link>
             </div>
           </div>
 
           <div className={styles.buttons}>
-            <a href="tel:9304301406" className={styles.btnPrimary}>
+            <a href="tel:01204302435" className={styles.btnPrimary}>
               <FaPhoneAlt /> Make a Call
             </a>
             <a href="/contact-us" className={styles.btnOutline}>

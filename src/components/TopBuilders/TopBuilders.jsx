@@ -23,7 +23,6 @@ const builders = [
   { name: "Bhutani", src: bhutaniLogo },
   { name: "Nestoria", src: nestoriaLogo },
   { name: "Sikka", src: sikkaLogo },
-  { name: "Mirrikh", src: mirrikhLogo },
   { name: "Saraswati", src: saraswatiLogo },
   { name: "Nimbus", src: nimbusLogo },
   { name: "Lodha", src: lodhaLogo },

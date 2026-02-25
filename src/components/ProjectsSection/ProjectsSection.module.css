@@ -88,7 +88,7 @@
   text-decoration: none;
 }
 
-.card {
+/* .card {
   background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
@@ -97,6 +97,24 @@
   text-decoration: none;
   color: inherit;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+} */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.26);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease;
+  width: calc(66.333% - 20px);
+  min-width: 430px;
+  max-width: 600px;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  margin-left: 20px;
   cursor: pointer;
 }
 
@@ -107,7 +125,7 @@
 
 .imageWrapper {
   position: relative;
-  height: 220px;
+  height: 275px;
   overflow: hidden;
   border-radius: 12px 12px 0 0;
 }

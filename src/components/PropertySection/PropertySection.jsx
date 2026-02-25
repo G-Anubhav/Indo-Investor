@@ -254,7 +254,7 @@ const PropertySection = ({ category, title, data = [] }) => {
         <div className={styles.headingWrapper}>
           <h5 className={styles.subheading}>
             <FaSearchLocation className={styles.icon} />
-            Explore Properties
+              Explore Exclusive Properties
           </h5>
           <h2 className={styles.title}>{title}</h2>
         </div>

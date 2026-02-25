@@ -37,7 +37,7 @@ const GreenVistaPropertyPage = () => {
           <ImageGallerySection gallery={dholeraSkyRiseResidency.gallery} />
           <VideoTourSection videoUrl={dholeraSkyRiseResidency.videoUrl} />
           <GoogleMapSection mapEmbedUrl={dholeraSkyRiseResidency.mapEmbedUrl} />
-          <AboutDeveloperSection developer={dholeraSkyRiseResidency.developer} />
+          {/* <AboutDeveloperSection developer={dholeraSkyRiseResidency.developer} /> */}
           <ClientReviewsSection reviews={dholeraSkyRiseResidency.reviews} />
           <QASection questions={dholeraSkyRiseResidency.questions} />
           <ContactCTASection />

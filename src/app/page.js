@@ -20,7 +20,7 @@ export default function Home() {
       <HeroBanner />
       <AboutSection />
       <ProjectsSection />
-      <TopBuilders />
+      {/* <TopBuilders /> */}
       <AllProperties />
       <WelcomeSection />
       <OurMissionSection />

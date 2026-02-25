@@ -121,7 +121,7 @@ const ContactSection = () => {
               <FaPhoneAlt className={styles.icon} />
               <div>
                 <h5>Give Us A Call</h5>
-                <a href="tel:01204302435"> 012-043-024-35 </a>
+                <a href="tel:9910464557">+91 99104 64557 </a>
                 {/* <a href="tel: 9304301406">+91 9304301406</a> */}
               </div>
             </div>

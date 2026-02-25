@@ -20,13 +20,13 @@ const companyLinks = [
 const propertyLinks = [
   { label: "Residential", href: "/properties/residential" },
   { label: "Commercial", href: "/properties/commercial" },
-  { label: "Farm House", href: "/properties/farm-house" },
-  { label: "Flat", href: "/properties/flat" },
-  { label: "Simplex", href: "/properties/simplex" },
-  { label: "Duplex", href: "/properties/duplex" },
-  { label: "Villas", href: "/properties/villas" },
+  // { label: "Farm House", href: "/properties/farm-house" },
+  // { label: "Flat", href: "/properties/flat" },
+  // { label: "Simplex", href: "/properties/simplex" },
+  // { label: "Duplex", href: "/properties/duplex" },
+  // { label: "Villas", href: "/properties/villas" },
+  // { label: "Shop", href: "/properties/shop" },
   { label: "Office Space", href: "/properties/office-space" },
-  { label: "Shop", href: "/properties/shop" },
   { label: "Co-working Space", href: "/properties/coworking-space" },
 ];
 
@@ -86,7 +86,7 @@ const Footer = () => {
           <p>Indo Investor Infra World is a Trusted Real Estate Investment Firm specializing in Secure, High-return Properties.</p>
           <ul className={styles.contactInfo}>
             <li><FaMapMarkerAlt className={styles.marker} /> H-169, 1st Floor, Office No. F-04 Sector-63, Noida, U.P. 201301</li>
-            <li><Link href="tel:01204302435"><FaPhoneAlt /> 01204302435</Link> </li>
+            <li><Link href="tel:9910464557"><FaPhoneAlt /> +91 99104 64557</Link> </li>
             <li><Link href="mailto:info@indoinvestorinfraworld.com"><FaEnvelope /> info@indoinvestorinfraworld.com</Link></li>
           </ul>
           <div className={styles.socialIcons}>

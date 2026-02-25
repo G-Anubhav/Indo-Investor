@@ -2,17 +2,17 @@ import goaImg from "@/images/projects/goa.jpg";
 
 const projectsData = {
   residential: [
-    // {
-    //   name: "Green Vista Residential Township - Dholera",
-    //   image: "/images/all-properties/residential/dholera-sky-rise/8.jpg",
-    //   slug: "residential/dholera-sky-rise-residency",
-    //   size: "10 Acres | ~206 Plots | Min 130 Sq. Yards",
-    //   location:
-    //     "Dholera SIR, Ahmedabad–Bhavnagar Highway (Kotda Own), Near Diamond Circle",
-    //   price: "₹5,999 per square yards | Limited Time Offer",
-    //   status: ["Exclusive", "Available", "New Launch"],
-    //   badge: ["Premium Township,", " Smart-City Investment"],
-    // },
+    {
+      name: "Green Vista Residential Township - Dholera",
+      image: "/images/all-properties/residential/dholera-green-vista/1.jpeg",
+      slug: "residential/dholera-sky-rise-residency",
+      size: "6 Acres | 207 Plots | Min 97 Sq. Yards",
+      location:
+        "Bilkul Dholera SIR ke Boundaries par (TP-2 & TP-3)",
+      price: "₹8,999 per square yards | Limited Time Pre-Launch Offer",
+      status: ["Exclusive", "Available", "New Launch"],
+      badge: ["Premium Township,", " Smart-City Investment"],
+    },
     
     {
       name: "Aero Classic City",

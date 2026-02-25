@@ -17,7 +17,7 @@ import dholeraSkyRiseResidency from "@/data/propertyDetails/residential/dholera-
 import LayoutSection from "@/components/LayoutSection/LayoutSection";
 import PropertyDocuments from "@/components/PropertyDocuments/PropertyDocuments";
 
-const SkyGardensPropertyPage = () => {
+const GreenVistaPropertyPage = () => {
     const { title, bannerImage, breadcrumbs } = bannerBreadcrumb.residential.dholeraSkyRise;
     return (
         <>
@@ -44,4 +44,4 @@ const SkyGardensPropertyPage = () => {
         </>
     )
 }
-export default SkyGardensPropertyPage;
+export default GreenVistaPropertyPage;

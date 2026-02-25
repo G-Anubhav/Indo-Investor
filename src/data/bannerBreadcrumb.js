@@ -36,9 +36,9 @@ const bannerBreadcrumb = {
       breadcrumbs: ["Home", "Properties", "Residential", "Shree Radha Sky Gardens"],
     },
     dholeraSkyRise: {
-      title: "Green Vista Residency Township - Dholera",
-      bannerImage: "/images/all-properties/residential/dholera-sky-rise/1.jpg",
-      breadcrumbs: ["Home", "Properties", "Residential", "Green Vista Residency Township - Dholera"],
+      title: "Green Vista Residential Township - Dholera",
+      bannerImage: "/images/all-properties/residential/dholera-sky-rise/1.jpeg",
+      breadcrumbs: ["Home", "Properties", "Residential", "Green Vista Residential Township - Dholera"],
     }
   },
   commercial: {

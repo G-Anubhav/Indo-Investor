@@ -28,10 +28,10 @@ const AboutSection = () => {
               modules={[Autoplay]}
             >
               <SwiperSlide>
-                <img src="/images/about/Office-building1.jpeg" alt="Room Interior 1" />
+                <img src="/images/about/Office-building3.jpeg" alt="Room Interior 1" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/images/about/Office-building2.jpeg" alt="Room Interior 2" />
+                <img src="/images/about/Office-building1.jpeg" alt="Room Interior 2" />
               </SwiperSlide>
             </Swiper>
           </div>

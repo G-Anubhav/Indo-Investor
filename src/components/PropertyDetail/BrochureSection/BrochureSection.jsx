@@ -32,7 +32,6 @@ const BrochureSection = ({ data, previewImage }) => {
               <a
                 href={data.brochureUrl}
                 className={styles.downloadBtn}
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaDownload /> Download Brochure

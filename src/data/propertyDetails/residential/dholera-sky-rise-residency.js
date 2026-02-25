@@ -14,8 +14,8 @@ const dholeraSkyRiseResidency = {
   ],
   forSale: true,
   planUrl: "/brochure/dholera-green-vista/payment-plan.pdf",
-  brochureUrl: "/brochure/dholera-green-vista/brochure.pdf",
-  previewImage: "/brochure/dholera-green-vista/preview-image.jpg",
+  brochureUrl: "/contact-us",
+  previewImage: "/images/all-properties/residential/dholera-green-vista/brochure-preview.png",
   images: [
     "/images/all-properties/residential/dholera-green-vista/1.jpeg",
     "/images/all-properties/residential/dholera-green-vista/2.jpeg",
@@ -40,18 +40,18 @@ const dholeraSkyRiseResidency = {
     description:
       "View the complete land layout and download approved N.A. Order and layout documents.",
     images: [
-      {
-        src: "/images/all-properties/residential/dholera-green-vista/land-location.jpg",
-        caption: "Land Location & Connectivity",
-      },
+      // {
+      //   src: "/images/all-properties/residential/dholera-green-vista/land-location.jpg",
+      //   caption: "Land Location & Connectivity",
+      // },
       {
         src: "/images/all-properties/residential/dholera-green-vista/layout.png",
         caption: "Master Layout Plan – Phase 1",
       },
-      {
-        src: "/images/all-properties/residential/dholera-green-vista/na-order.jpg",
-        caption: "Plot Division & Road Network",
-      },
+      // {
+      //   src: "/images/all-properties/residential/dholera-green-vista/na-order.jpg",
+      //   caption: "Plot Division & Road Network",
+      // },
       {
         src: "/images/all-properties/residential/dholera-green-vista/ammenities.jpg",
         caption: "Connectivity & Ammenities",

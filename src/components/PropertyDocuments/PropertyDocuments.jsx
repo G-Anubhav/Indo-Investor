@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FaFilePdf,
@@ -12,6 +12,41 @@ import styles from "./PropertyDocuments.module.css";
 
 const PropertyDocuments = ({ data }) => {
   const [activeDoc, setActiveDoc] = useState(null);
+
+  const viewerRef = useRef(null);
+
+useEffect(() => {
+  const handleContextMenu = (e) => {
+    if (viewerRef.current && viewerRef.current.contains(e.target)) {
+      e.preventDefault();
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (!viewerRef.current) return;
+
+    // Block common shortcuts
+    if (
+      e.ctrlKey &&
+      ["s", "p", "u"].includes(e.key.toLowerCase())
+    ) {
+      e.preventDefault();
+    }
+
+    // Block F12
+    if (e.key === "F12") {
+      e.preventDefault();
+    }
+  };
+
+  document.addEventListener("contextmenu", handleContextMenu);
+  document.addEventListener("keydown", handleKeyDown);
+
+  return () => {
+    document.removeEventListener("contextmenu", handleContextMenu);
+    document.removeEventListener("keydown", handleKeyDown);
+  };
+}, []);
 
   return (
     <section className={styles.section}>
@@ -73,6 +108,7 @@ const PropertyDocuments = ({ data }) => {
             />
 
             <motion.div
+              ref={viewerRef}
               className={styles.viewer}
               initial={{ scale: 0.95 }}
               animate={{ scale: 1 }}
@@ -90,6 +126,7 @@ const PropertyDocuments = ({ data }) => {
                 src={`${activeDoc.file}#toolbar=0&navpanes=0&scrollbar=0`}
                 title={activeDoc.title}
                 className={styles.iframe}
+                onContextMenu={(e) => e.preventDefault()}
               />
 
               <div className={styles.notice}>

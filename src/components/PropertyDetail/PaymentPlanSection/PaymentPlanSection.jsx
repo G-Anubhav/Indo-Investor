@@ -24,7 +24,6 @@ const PaymentPlanSection = ({ paymentPlan, planUrl }) => {
               <a
                 href={planUrl}
                 className={styles.downloadBtn}
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaDownload /> Download PDF

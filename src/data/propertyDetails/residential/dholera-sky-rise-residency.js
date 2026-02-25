@@ -13,7 +13,7 @@ const dholeraSkyRiseResidency = {
     "Residential Plots – Up to 130 Sq. Yards",
   ],
   forSale: true,
-  planUrl: "/brochure/dholera-green-vista/payment-plan.pdf",
+  planUrl: "/contact-us",
   brochureUrl: "/contact-us",
   previewImage: "/images/all-properties/residential/dholera-green-vista/brochure-preview.png",
   images: [
@@ -33,17 +33,13 @@ const dholeraSkyRiseResidency = {
 
     "Strategically situated on the Ahmedabad–Bhavnagar (Kotda) Highway, the project enjoys excellent connectivity and is just around 500 meters from Diamond Circle. Both Bhavnagar Airport and the upcoming Dholera International Airport are approximately 35 km away, making the location highly attractive for future growth. A serene bird sanctuary within 8–9 km adds to the project’s environmental appeal.",
 
-    "With NA approval, clear title, township-approved layout, and immediate registry & mutation, Green Vista Residential Township - Dholera offers complete peace of mind to buyers. Wide internal roads, planned development, and a government-supported smart city ecosystem make this project an ideal low-investment, high-return opportunity in Gujarat’s most promising growth corridor.",
+    "With Government approval, clear title, township-approved layout, and immediate registry & mutation, Green Vista Residential Township - Dholera offers complete peace of mind to buyers. Wide internal roads, planned development, and a government-supported smart city ecosystem make this project an ideal low-investment, high-return opportunity in Gujarat’s most promising growth corridor.",
   ],
   layoutSection: {
     title: "Project Layout & Legal Approvals",
     description:
       "View the complete land layout and download approved N.A. Order and layout documents.",
     images: [
-      // {
-      //   src: "/images/all-properties/residential/dholera-green-vista/land-location.jpg",
-      //   caption: "Land Location & Connectivity",
-      // },
       {
         src: "/images/all-properties/residential/dholera-green-vista/layout.png",
         caption: "Master Layout Plan – Phase 1",
@@ -111,7 +107,7 @@ const dholeraSkyRiseResidency = {
     ],
   },
   paymentPlan: [
-    { milestone: "At Booking", amount: "Rs. 50,000/- Amount" },
+    { milestone: "At Registration", amount: "₹ 21,000/- Amount" },
     { milestone: "Within 30 Days", amount: "Remaining Amount" },
     { milestone: "Corner & Garden Face", amount: "10% PLC & 5% PLC respectively" },
   ],
@@ -148,10 +144,10 @@ const dholeraSkyRiseResidency = {
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d796793.2935655904!2d71.68306473448665!3d21.920092446675984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a9aad6b6255c2f%3A0x43c3a67782ecef7f!2sDholera%20smart%20city!5e0!3m2!1sen!2sin!4v1768371494630!5m2!1sen!2sin",
   developer: {
-    name: "Nestoria Group",
+    name: "Indo Investor Infra World",
     description:
-      "Nestoria Group is an emerging real estate developer focused on plotted developments and smart investment projects across Gujarat. The group emphasizes legal transparency, strategic locations, and long-term value creation for investors.",
-    image: "/images/all-properties/residential/dholera-green-vista/nestoria-group.png",
+      "Indo Investor Infra World Group is an emerging real estate developer focused on plotted developments and smart investment projects across Gujarat. The group emphasizes legal transparency, strategic locations, and long-term value creation for investors.",
+    image: "/images/all-properties/residential/dholera-green-vista/developer.png",
   },
   reviews: [
     {
@@ -190,12 +186,12 @@ const dholeraSkyRiseResidency = {
     {
       question: "Is the project legally approved?",
       answer:
-        "Yes, the project is NA approved with a clear title, township-approved layout, and provides immediate registry and mutation, ensuring complete legal safety for buyers.",
+        "Yes, the project is NA, Govt. approved with a clear title, township-approved layout, and provides immediate registry and mutation, ensuring complete legal safety for buyers.",
     },
     {
       question: "What is the starting price of the project?",
       answer:
-        "Plots are available starting from ₹7.50 Lakh, making it one of the most affordable entry points into the Dholera SIR investment market.",
+        "Plots are available starting from ₹8,999/- per Sq. Yard, making it one of the most affordable entry points into the Dholera SIR investment market.",
     },
     {
       question: "Why should I invest in Green Vista Residential Township - Dholera?",

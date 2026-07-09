@@ -5,6 +5,14 @@ import styles from "./DescriptionSection.module.css";
 import { motion } from "framer-motion";
 
 const DescriptionSection = ({ description }) => {
+  const descriptionItems = Array.isArray(description)
+    ? description
+    : description
+      ? [description]
+      : [];
+
+  if (descriptionItems.length === 0) return null;
+
   return (
     <section id="description" className={styles.descriptionSection}>
       <div className="container">
@@ -15,10 +23,9 @@ const DescriptionSection = ({ description }) => {
           viewport={{ once: true }}
         >
           <h2 className={styles.heading}>Property Description</h2>
-          {description.map((desc, i) => (
+          {descriptionItems.map((desc, i) => (
             <p key={i} className={styles.text}>{desc}</p>
           ))}
-          {/* <p className={styles.text}>{description}</p> */}
         </motion.div>
       </div>
     </section>

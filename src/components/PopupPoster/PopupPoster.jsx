@@ -1,105 +1,68 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import styles from "./PopupPoster.module.css";
 
-export default function FarmhousePopup({ delay = 1500, expireMinutes = 1 }) {
+export default function PopupPoster({ delay = 900 }) {
   const [showPopup, setShowPopup] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (pathname !== "/") {
+      setShowPopup(false);
+      return;
+    }
+
+    const timer = setTimeout(() => setShowPopup(true), delay);
+    return () => clearTimeout(timer);
+  }, [delay, pathname]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    console.log("[FarmhousePopup] mounted");
+    const handleHomeClick = (event) => {
+      const link = event.target.closest?.("a[href='/']");
+      if (link) setShowPopup(true);
+    };
 
-    let alreadyShown = false;
-    try {
-      const raw = localStorage.getItem("farmhousePopupShown");
-      if (raw) {
-        const parsed = JSON.parse(raw);
-        const shownAt = parsed?.shownAt || 0;
-        const minutes = parsed?.expireMinutes ?? expireMinutes;
-        const age = Date.now() - shownAt;
-        if (shownAt && age < minutes * 60 * 1000) {
-          alreadyShown = true;
-          console.log("[FarmhousePopup] not expired yet:", parsed);
-        } else {
-          console.log("[FarmhousePopup] expired, will show again");
-        }
-      }
-    } catch (err) {
-      console.warn("[FarmhousePopup] localStorage read failed:", err);
-    }
-
-    if (alreadyShown) return;
-
-    const t = setTimeout(() => {
-      console.log("[FarmhousePopup] showing popup");
-      setShowPopup(true);
-    }, delay);
-
-    return () => clearTimeout(t);
-  }, [delay, expireMinutes]);
-
-  const markAsShown = () => {
-    try {
-      localStorage.setItem(
-        "farmhousePopupShown",
-        JSON.stringify({ shownAt: Date.now(), expireMinutes })
-      );
-      console.log("[FarmhousePopup] marked as shown");
-    } catch (err) {
-      console.warn("[FarmhousePopup] write failed:", err);
-    }
-  };
+    document.addEventListener("click", handleHomeClick);
+    return () => document.removeEventListener("click", handleHomeClick);
+  }, []);
 
   const closePopup = () => {
-    markAsShown();
     setShowPopup(false);
   };
 
-  const handleExplore = (e) => {
-    e?.preventDefault();
-    markAsShown();
-    window.location.href = "/properties/residential/dholera-sky-rise-residency";
+  const onOverlayClick = (event) => {
+    if (event.target === event.currentTarget) closePopup();
   };
 
   if (!showPopup) return null;
 
-  const onOverlayClick = (e) => {
-    if (e.target === e.currentTarget) closePopup();
-  };
-
   return (
     <div className={styles.overlay} onClick={onOverlayClick}>
-      <div className={styles.popup}>
-        <div className={styles.posterWrapper}>
+      <div className={styles.popup} role="dialog" aria-modal="true">
+        <Link
+          href="/contact-us"
+          className={styles.posterLink}
+          aria-label="Contact us for the Patna event"
+        >
           <img
-            src="/images/all-properties/residential/dholera-sky-rise/poster.png"
-            alt="Farmhouse Project"
+            src="/images/event/patna-event-july.jpg"
+            alt="Patna event July"
             className={styles.poster}
           />
-          <div className={styles.gradient} />
-        </div>
+        </Link>
 
-        <div className={styles.content}>
-          <h2 className={styles.title}>
-            Indo Investor Infra Presents: Exclusive Residential Township
-          </h2>
-          <p className={styles.subtitle}>
-            Green Vista Residential Township, Dholera — Book Your Slice of Paradise Today!
-          </p>
-
-          <div className={styles.actions}>
-            <button className={styles.cta} onClick={handleExplore}>
-              Explore Now
-            </button>
-            {/* <button className={styles.secondary} onClick={closePopup}>
-              Maybe Later
-            </button> */}
-          </div>
-        </div>
-
-        <button className={styles.closeBtn} onClick={closePopup}>
-          ✕
+        <button
+          className={styles.closeBtn}
+          onClick={closePopup}
+          aria-label="Close event popup"
+        >
+          &times;
         </button>
       </div>
     </div>

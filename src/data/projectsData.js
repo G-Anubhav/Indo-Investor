@@ -14,16 +14,16 @@ const projectsData = {
       badge: ["Premium Township,", " Smart-City Investment"],
     },
     
-    // {
-    //   name: "Aero Classic City",
-    //   image: "/images/property/Aero Classic City.jpg",
-    //   slug: "residential/aero-classic-city",
-    //   size: "15 Acres",
-    //   location: "Yamuna Expressway, Near Jewar International Airport, Noida",
-    //   price: "₹20 to ₹28 Lakh* | ₹24000 Per Sq. Yd onwards",
-    //   status: ["Available", "New Launch"],
-    //   badge: "Fully Gated Society",
-    // },
+    {
+      name: "Aero Classic City",
+      image: "/images/property/Aero Classic City.jpg",
+      slug: "residential/aero-classic-city",
+      size: "15 Acres | Min Area 100 Sq. Yards",
+      location: "Yamuna Expressway, Near Jewar International Airport, Noida",
+      price: "₹20 to ₹28 Lakh* | ₹28000 Per Sq. Yd onwards",
+      status: ["Available", "New Launch"],
+      badge: "Fully Gated Society",
+    },
 
     
     // {

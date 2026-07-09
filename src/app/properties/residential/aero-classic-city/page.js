@@ -14,7 +14,7 @@ import ScrollNav from "@/components/PropertyDetail/ScrollNav/ScrollNav";
 import VideoTourSection from "@/components/PropertyDetail/VideoTourSection/VideoTourSection";
 import bannerBreadcrumb from "@/data/bannerBreadcrumb";
 import aeroClassicCity from "@/data/propertyDetails/residential/aero-classic-city";
-import oneGlobalGoa from "@/data/propertyDetails/residential/one-global-goa"
+import LayoutSection from "@/components/LayoutSection/LayoutSection";
 
 const AeroClassicCityPropertyPage = () => {
   const { title, bannerImage, breadcrumbs } = bannerBreadcrumb.residential.aeroClassicCity;
@@ -28,16 +28,17 @@ const AeroClassicCityPropertyPage = () => {
       />
       <HeroSection data={aeroClassicCity} />
       <ScrollNav />
-      <DescriptionSection description={oneGlobalGoa.description} />
-      <PaymentPlanSection paymentPlan={oneGlobalGoa.paymentPlan} planUrl={oneGlobalGoa.planUrl} />
-      <BrochureSection data={oneGlobalGoa} />
-      <AmenitiesSection amenities={oneGlobalGoa.amenities} />
-      <ImageGallerySection gallery={oneGlobalGoa.gallery} />
-      <VideoTourSection videoUrl={oneGlobalGoa.videoUrl} />
-      <GoogleMapSection mapEmbedUrl={oneGlobalGoa.mapEmbedUrl} />
-      <AboutDeveloperSection developer={oneGlobalGoa.developer} />
-      <ClientReviewsSection reviews={oneGlobalGoa.reviews} />
-      <QASection questions={oneGlobalGoa.questions} />
+      <DescriptionSection description={aeroClassicCity.description} />
+      <PaymentPlanSection paymentPlan={aeroClassicCity.paymentPlan} planUrl={aeroClassicCity.planUrl} />
+      <LayoutSection data={aeroClassicCity.layoutSection} />
+      <BrochureSection data={aeroClassicCity} previewImage={aeroClassicCity.previewImage} />
+      <AmenitiesSection amenities={aeroClassicCity.amenities} />
+      <ImageGallerySection gallery={aeroClassicCity.gallery} />
+      <VideoTourSection videoUrl={aeroClassicCity.videoUrl} />
+      <GoogleMapSection mapEmbedUrl={aeroClassicCity.mapEmbedUrl} />
+      <AboutDeveloperSection developer={aeroClassicCity.developer} />
+      <ClientReviewsSection reviews={aeroClassicCity.reviews} />
+      <QASection questions={aeroClassicCity.questions} />
       <ContactCTASection />
     </>
   );

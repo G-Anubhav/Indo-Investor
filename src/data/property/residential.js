@@ -1,15 +1,5 @@
 const residentialProperties = [
-  {
-    id: 1,
-    name: "Green Vista Residential Township - Dholera",
-    image: "/images/all-properties/residential/dholera-green-vista/1.jpeg",
-    price: "₹ 8,999 per square yards | Limited Time Pre-Launch Offer",
-    rating: 4.5,
-    area: "6 Acres, ~207 Plots",
-    location: "Bilkul Dholera SIR ke Boundaries par (TP-2 & TP-3)",
-    newLaunch: "Premium Township, Govt. Approved, Exclusive",
-    slug: "residential/dholera-sky-rise-residency"
-  },
+
   
   // {
   //   id: 2,
@@ -25,7 +15,7 @@ const residentialProperties = [
 
 
   {
-    id: 3,
+    id: 1,
     name: "Aero Classic City",
     image: "/images/property/Aero Classic City.jpg",
     price: "28 Lakh*",
@@ -36,7 +26,7 @@ const residentialProperties = [
     slug: "residential/aero-classic-city"
   },
   {
-    id: 4,
+    id: 2,
     name: "Aero Star City",
     image: "/images/property/projects/aero star city/WhatsApp Image 2026-07-10 at 12.54.48 PM.jpeg",
     price: "Lakh*",
@@ -45,6 +35,17 @@ const residentialProperties = [
     location: "Yamuna Expressway, Near Jewar International Airport, Noida",
     newLaunch: "New Launch",
     slug: "residential/aero-star-city"
+  },
+    {
+    id: 3,
+    name: "Green Vista Residential Township - Dholera",
+    image: "/images/all-properties/residential/dholera-green-vista/1.jpeg",
+    price: "₹ 8,999 per square yards | Limited Time Pre-Launch Offer",
+    rating: 4.5,
+    area: "6 Acres, ~207 Plots",
+    location: "Bilkul Dholera SIR ke Boundaries par (TP-2 & TP-3)",
+    newLaunch: "Premium Township, Govt. Approved, Exclusive",
+    slug: "residential/dholera-sky-rise-residency"
   },
 ];
 

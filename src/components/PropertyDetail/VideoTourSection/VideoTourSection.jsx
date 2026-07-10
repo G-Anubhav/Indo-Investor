@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 const VideoTourSection = ({ videoUrl }) => {
   if (!videoUrl) return null;
 
+  const isLocalVideo = /\.(mp4|webm|ogg)(\?.*)?$/i.test(videoUrl);
+
   return (
     <section id="video" className={styles.videoSection}>
       <div className="container">
@@ -18,13 +20,20 @@ const VideoTourSection = ({ videoUrl }) => {
         >
           <h2 className={styles.heading}>Video Tour</h2>
           <div className={styles.videoWrapper}>
-            <iframe
-              src={videoUrl}
-              title="Video Tour"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            {isLocalVideo ? (
+              <video controls playsInline preload="metadata">
+                <source src={videoUrl} />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <iframe
+                src={videoUrl}
+                title="Video Tour"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            )}
           </div>
         </motion.div>
       </div>

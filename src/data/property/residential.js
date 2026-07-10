@@ -28,12 +28,23 @@ const residentialProperties = [
     id: 3,
     name: "Aero Classic City",
     image: "/images/property/Aero Classic City.jpg",
-    price: "₹ 20 to 28 Lakh*",
+    price: "28 Lakh*",
     rating: 4.5,
     area: "15 Acres | Min Area 100 Sq. Yards",
     location: "Yamuna Expressway, Near Jewar International Airport, Noida",
     newLaunch: "New Launch",
     slug: "residential/aero-classic-city"
+  },
+  {
+    id: 4,
+    name: "Aero Star City",
+    image: "/images/property/projects/aero star city/WhatsApp Image 2026-07-10 at 12.54.48 PM.jpeg",
+    price: "Lakh*",
+    rating: 4.5,
+    area: "15 Acres | Min Area 100 Sq. Yards",
+    location: "Yamuna Expressway, Near Jewar International Airport, Noida",
+    newLaunch: "New Launch",
+    slug: "residential/aero-star-city"
   },
 ];
 

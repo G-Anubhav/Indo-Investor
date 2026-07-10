@@ -89,7 +89,7 @@ const aeroClassicCity = {
     "/images/property/projects/aero classic city/Gallery/3.jpg",
     "/images/property/projects/aero classic city/Gallery/4.jpg",
   ],
-  videoUrl: "",
+  videoUrl: "/images/property/projects/aero star city/WhatsApp Video 2026-07-10 at 12.54.44 PM.mp4",
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229944.92055938108!2d77.5743768494859!3d28.17314847489783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc49f5595d13b%3A0x1db4f2b958c9bfb4!2sYamuna%20Expressway!5e0!3m2!1sen!2sin!4v1767984000000!5m2!1sen!2sin",
   developer: {

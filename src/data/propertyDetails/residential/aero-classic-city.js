@@ -4,7 +4,7 @@ const aeroClassicCity = {
   image: "/images/property/projects/aero classic city/main image/aero classic city.jpg",
   slug: "residential/aero-classic-city",
   location: "Yamuna Expressway, Near Jewar International Airport, Noida",
-  price: "Plots from Rs. 20 Lakh* onwards",
+  price: "Plots from Rs. 28 Lakh* onwards",
   perUnit: "₹ 28,000 per sq. yd. onwards",
   rating: 4.6,
   reviewCount: 18,

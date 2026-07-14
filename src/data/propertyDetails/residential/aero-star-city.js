@@ -33,6 +33,7 @@ const aeroStarCity = {
   name: "Aero Star City",
   image: aeroStarImages[0],
   slug: "residential/aero-star-city",
+  price: "Plots from Rs. 25 Lakh* onwards",
   perUnit: "₹ 25,000 per sq. yd. onwards",
   previewImage: aeroStarImages[0],
   images: aeroStarImages,

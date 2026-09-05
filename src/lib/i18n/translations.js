@@ -5,6 +5,7 @@ export const translations = {
   en: {
     common: {
       brand: "Indo Investor",
+      brand1: "Infra World",
       language: "Language",
       english: "English",
       russian: "Russian",

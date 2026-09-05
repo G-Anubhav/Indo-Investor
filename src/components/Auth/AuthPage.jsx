@@ -14,6 +14,7 @@ export default function AuthPage({ children, dictionary }) {
         <div className={styles.visualText}>
           <span>{dictionary.auth.securePortal}</span>
           <strong>{dictionary.common.brand}</strong>
+          <strong>{dictionary.common.brand1}</strong>
         </div>
       </section>
       <section className={styles.formSide}>

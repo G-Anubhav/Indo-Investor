@@ -1,11 +1,14 @@
 // src/app/layout.js
 import "../app/globals.css";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import ScrollToTopButton from "@/components/ScrollToTopButton/ScrollToTopButton";
-import FloatingContactButtons from "@/components/FloatingContactButtons/FloatingContactButtons";
-import PopupPoster from "@/components/PopupPoster/PopupPoster";
+import SiteChrome from "@/components/SiteChrome/SiteChrome";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export const metadata = {
   title: "Turning Dreams into Assets | Indo Investor Infra World – Real Estate Experts",
@@ -15,13 +18,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <ScrollToTopButton />
-        <FloatingContactButtons />
-        <Navbar />
-        <PopupPoster />
-        {children}
-        <Footer />
+      <body className={inter.variable}>
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );

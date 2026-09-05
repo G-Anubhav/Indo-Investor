@@ -1,0 +1,40 @@
+.header { margin-bottom: 26px; }
+.eyebrow { color: #2872ca; font-size: .73rem; font-weight: 850; text-transform: uppercase; }
+.header h1 { margin: 6px 0 8px; color: #172438; font-size: clamp(1.7rem, 3vw, 2.2rem); }
+.header p { max-width: 780px; margin: 0; color: #647286; line-height: 1.65; }
+.metrics { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,230px),1fr)); gap: 18px; margin-bottom: 24px; }
+.metric { min-height: 126px; padding: 21px; border: 1px solid #d6dee7; border-bottom-color: #b8c5d1; border-top: 4px solid #2872ca; border-radius: 8px; background: linear-gradient(#fff,#f4f8fc); box-shadow: var(--portal-shadow); transition: transform .18s ease,box-shadow .18s ease; }
+.metric:nth-child(2) { border-color: #16846d; }
+.metric:nth-child(3) { border-color: #c36b3a; }
+.metric:nth-child(2) { background: linear-gradient(#fff,#f0f8f5); }
+.metric:nth-child(3) { background: linear-gradient(#fff,#fbf5f1); }
+.metric:hover { transform: translateY(-2px); box-shadow: var(--portal-shadow-lg); }
+.metric span { display: block; color: #748296; font-size: .7rem; font-weight: 850; text-transform: uppercase; }
+.metric strong { display: block; margin-top: 12px; color: #1c2d40; font-size: 1.55rem; }
+.surface { margin-bottom: 24px; border: 1px solid #d6dee7; border-bottom-color: #b8c5d1; border-radius: 8px; background: #fff; box-shadow: var(--portal-shadow); overflow: hidden; }
+.surface h2 { margin: 0; padding: 20px 22px; color: #25364a; font-size: 1rem; }
+.tableWrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: .86rem; }
+.table th { padding: 13px 15px; background: linear-gradient(#f8fafc,#e8eef4); color: #536376; font-size: .68rem; text-align: left; text-transform: uppercase; white-space: nowrap; }
+.table td { padding: 15px; border-top: 1px solid rgba(156,170,186,.25); color: #2b3d51; vertical-align: middle; }
+.table tr:hover td { background: rgba(255,255,255,.35); }
+.status { display: inline-flex; padding: 4px 9px; border-radius: 999px; background: #e8f4ed; color: #12643c; font-size: .7rem; font-weight: 850; text-transform: capitalize; white-space: nowrap; }
+.status[data-status="pending_verification"],.status[data-status="pending"] { background: #fff2c9; color: #785800; }
+.status[data-status="rejected"],.status[data-status="reversed"],.status[data-status="failed"],.status[data-status="discrepancy"] { background: #f8dddd; color: #963a34; }
+.empty,.error,.success { margin: 0; padding: 28px 22px; color: #68768a; text-align: center; }
+.error { color: #9b3933; }.success { color: #17694e; }
+.form { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 15px; padding: 0 22px 24px; }
+.field { display: grid; gap: 6px; }.fieldWide { grid-column: span 2; }
+.field label { color: #657487; font-size: .7rem; font-weight: 800; }
+.field input,.field select,.field textarea { width: 100%; min-height: 44px; padding: 9px 12px; border: 1px solid #cbd5df; border-radius: 7px; background: #fbfcfe; color: #24364a; box-shadow: var(--portal-shadow-inset); }
+.field textarea { min-height: 88px; resize: vertical; }
+.button { align-self: end; min-height: 38px; border: 0; border-radius: 7px; padding: 7px 12px; background: #2872ca; color: #fff; font-size:.78rem; font-weight: 800; box-shadow: 5px 5px 12px rgba(151,164,179,.34),-5px -5px 12px rgba(255,255,255,.82); }
+.button:hover { box-shadow: inset 3px 3px 7px rgba(20,68,120,.3); }
+.button:focus-visible,.actions button:focus-visible,.field input:focus-visible,.field select:focus-visible,.field textarea:focus-visible { outline: 3px solid rgba(40,114,202,.28); outline-offset: 2px; }
+.danger { background: #a74842; }.secondary { background: #e9eef4; color: #2b3d51; }
+.actions { display: flex; flex-wrap: wrap; gap: 7px; }.actions form { display: flex; gap: 6px; }.actions input { width: 110px; min-height: 35px; border: 0; border-radius: 6px; padding: 6px; background: #f2f5f8; }
+.actions button { min-height: 35px; border: 0; border-radius: 6px; padding: 6px 10px; background: #2872ca; color: #fff; font-size: .75rem; font-weight: 800; }
+.actions button[data-kind="danger"] { background: #a74842; }
+@media(max-width:850px){.form{grid-template-columns:1fr 1fr}.fieldWide{grid-column:span 2}}
+@media(max-width:560px){.form{grid-template-columns:1fr;padding-inline:16px}.fieldWide{grid-column:auto}.table th,.table td{padding:12px 10px}.surface h2{padding-inline:16px}.actions form{width:100%;flex-wrap:wrap}.actions input{width:min(180px,100%)}.button{width:100%}}
+@media(prefers-reduced-motion:reduce){.metric{transition:none}}

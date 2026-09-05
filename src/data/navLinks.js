@@ -10,7 +10,7 @@ const navLinks = [
       { label: "Residential", href: "/properties/residential" },
       { label: "Commercial", href: "/properties/commercial" },
       // { label: "Farm House", href: "/properties/farm-house" },
-      // { label: "Flat", href: "/properties/flat" },
+      { label: "Flat", href: "/properties/flat" },
       // { label: "Simplex", href: "/properties/simplex" },
       // { label: "Duplex", href: "/properties/duplex" },
       // { label: "Villas", href: "/properties/villas" },

@@ -20,14 +20,14 @@ const MapSection = () => {
             <FaMapMarkerAlt className={styles.mobileIcon} />
             <div>
               <h4>Our Office</h4>
-              <p>H-169, 1st Floor, Office No. F-04 Sector-63, Noida, U.P. 201301</p>
+              <p>2nd Floor, H-174, H Block, Sector 63, Noida - 201301</p>
             </div>
           </div>
 
           <div className={styles.mapOverlay}>
             <FaMapMarkerAlt className={styles.icon} />
             <h3>Our Office</h3>
-            <p>H-169, 1st Floor, Office No. F-04 Sector-63, Noida, U.P. 201301</p>
+            <p>2nd Floor, H-174, H Block, Sector 63, Noida - 201301</p>
           </div>
         </div>
       </div>

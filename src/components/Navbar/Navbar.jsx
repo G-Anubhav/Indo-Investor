@@ -5,8 +5,7 @@ import { useState, useEffect } from "react";
 import { Navbar as BootstrapNavbar, Nav, Container } from "react-bootstrap";
 import navLinks from "@/data/navLinks";
 import styles from "./Navbar.module.css";
-import logo from "@/images/logo/logo.png";
-import logo2 from "@/images/logo/logo.svg";
+import logo from "@/images/logo/new-logo.png";
 
 const SiteNavbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -52,8 +51,10 @@ const SiteNavbar = () => {
                             <Image
                                 src={logo}
                                 alt="IndoRealEstate Logo"
-                                width={250}
-                                height={60}
+                                width={112}
+                                height={112}
+                                quality={100}
+                                sizes="(max-width: 767px) 76px, 108px"
                                 priority
                             />
                         </div>
@@ -107,6 +108,14 @@ const SiteNavbar = () => {
                                     )
                                 )}
                             </ul>
+                            <div className={styles.authActions}>
+                                <Link href="/login" className={`${styles.authButton} ${styles.loginButton}`}>
+                                    Login
+                                </Link>
+                                <Link href="/signup" className={`${styles.authButton} ${styles.signupButton}`}>
+                                    Sign Up
+                                </Link>
+                            </div>
                         </Nav>
                     </BootstrapNavbar.Collapse>
                 </Container>

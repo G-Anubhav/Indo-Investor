@@ -90,11 +90,17 @@
 }
 
 .logoImg {
-  width: 250px;
+  width: 168px;
   height: auto;
-  margin-left: -10px;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-left: 0;
   margin-bottom: 15px;
-  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.24);
+  object-fit: contain;
 }
 
 .column h4 {

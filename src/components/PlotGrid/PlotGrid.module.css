@@ -1,0 +1,40 @@
+.inventoryBar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; margin-bottom: 20px; padding: 16px 18px; border: 1px solid #d6dee7; border-bottom-color:#b8c5d1; border-radius: 8px; background: linear-gradient(#fff,#f4f7fa); box-shadow: var(--portal-shadow); }
+.legend { display: flex; flex-wrap: wrap; gap: 16px; }
+.legend span, .liveStatus { display: inline-flex; align-items: center; gap: 7px; color: #4e6074; font-size: .78rem; font-weight: 800; }
+.legend i, .liveStatus i { width: 11px; height: 11px; border-radius: 2px; background: #1e8d51; }
+.legend i[data-status="hold"] { background: #e3b425; }
+.legend i[data-status="sold"] { background: #c7463b; }
+.liveStatus i { width: 8px; height: 8px; border-radius: 50%; }
+.liveStatus[data-state="reconnecting"] i, .liveStatus[data-state="connecting"] i { background: #e3b425; }
+.viewport { min-height: 440px; overflow: auto; padding: 30px; border: 1px solid #d1dbe5; border-radius: 8px; background: #f3f6f9; box-shadow: var(--portal-shadow-inset); }
+.grid { width: max-content; min-width: 100%; display: grid; grid-auto-rows: 104px; gap: 10px; align-content: start; justify-content: start; }
+.plotCell { width: 92px; min-height: 104px; display: grid; place-items: center; align-content: center; gap: 5px; padding: 8px; border: 2px solid transparent; border-radius: 6px; font-family: inherit; cursor: pointer; box-shadow: 4px 4px 9px rgba(134, 148, 164, .3), -4px -4px 9px rgba(255, 255, 255, .72); transition: transform .16s ease,box-shadow .16s ease; }
+.plotCell strong { font-size: .94rem; }
+.plotCell span { max-width: 76px; font-size: .65rem; line-height: 1.25; }
+.available { border-color: #5a9f77; background: #e4f4ea; color: #125f39; }
+.hold { border-color: #d2a918; background: #fff3c6; color: #745700; }
+.sold { border-color: #bc5b53; background: #fae5e3; color: #8a2e27; }
+.plotCell[data-owned] { box-shadow: 0 0 0 3px #0b62bd; }
+.plotCell:hover, .plotCell:focus-visible { transform: translateY(-2px); box-shadow: 7px 7px 15px rgba(134, 148, 164, .36), -7px -7px 15px rgba(255, 255, 255, .82); }
+@media(prefers-reduced-motion:reduce){.plotCell{transition:none}}
+.backdrop { position: fixed; z-index: 1200; inset: 0; display: grid; place-items: center; padding: 20px; background: rgba(5, 14, 25, .72); }
+.dialog { position: relative; width: min(100%, 460px); max-height: calc(100vh - 40px); overflow-y: auto; padding: 27px; border-radius: 8px; background: #e9eef4; color: #23364b; box-shadow: 16px 16px 38px rgba(0, 0, 0, .28), -8px -8px 24px rgba(255, 255, 255, .18); }
+.closeButton { position: absolute; top: 12px; right: 12px; width: 38px; height: 38px; display: grid; place-items: center; border: 0; border-radius: 50%; background: #e9eef4; color: #42546a; box-shadow: 4px 4px 9px rgba(151, 164, 179, .3), -4px -4px 9px rgba(255, 255, 255, .86); }
+.dialogEyebrow { color: #0b62bd; font-size: .74rem; font-weight: 850; text-transform: uppercase; }
+.dialog h2 { margin: 7px 40px 18px 0; font-size: 1.45rem; }
+.dialog dl { margin: 0; border-top: 1px solid #e4eaf0; }
+.dialog dl div { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 11px 0; border-bottom: 1px solid #e4eaf0; }
+.dialog dt { color: #66768a; }
+.dialog dd { margin: 0; font-weight: 800; text-align: right; overflow-wrap: anywhere; }
+.dialog p { color: #627185; line-height: 1.55; }
+.dialog .feedback { color: #184f84; font-weight: 750; }
+.actionButton, .releaseButton { width: 100%; min-height: 39px; display: flex; align-items: center; justify-content: center; gap: 7px; margin-top: 18px; border: 0; border-radius: 6px; color: #fff; font-size:.78rem; font-weight: 850; }
+.actionButton { background: #12643c; }
+.releaseButton { background: #9b3d34; }
+.actionButton:disabled, .releaseButton:disabled { opacity: .55; }
+@media (max-width: 620px) {
+  .viewport { padding: 18px; }
+  .inventoryBar { align-items: flex-start; flex-direction: column; }
+  .dialog { padding: 22px 18px; }
+  .dialog dl div { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 10px; }
+}

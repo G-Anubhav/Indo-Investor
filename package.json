@@ -2,11 +2,25 @@
   "name": "indo-real-estate",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20 <23"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint . --max-warnings=0",
+    "check": "eslint . --max-warnings=0",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "test:db": "npx --yes supabase@2.116.0 test db",
+    "test:hosted": "node --env-file=.env.local tests/integration/hosted-supabase.mjs",
+    "test:financial-hosted": "node --env-file=.env.local tests/integration/phase3-hosted.mjs",
+    "test:kyc-hosted": "node --env-file=.env.local tests/integration/phase4-hosted.mjs",
+    "test:kyc-load": "node --env-file=.env.local tests/performance/phase4-load.mjs",
+    "test:production-db": "npx --yes supabase@2.116.0 db query --linked --file supabase/tests/production_readiness.test.sql",
+    "test:ui-profile-hosted": "node --env-file=.env.local tests/integration/ui-profile-member-code-hosted.mjs",
+    "test:visual-portal": "node --env-file=.env.local scripts/visual-portal-qa.mjs",
+    "seed:dev": "node --env-file=.env.local scripts/seed-dev-users.mjs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
@@ -14,21 +28,26 @@
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@supabase/ssr": "^0.12.5",
+    "@supabase/supabase-js": "^2.112.4",
     "bootstrap": "^5.3.7",
     "framer-motion": "^12.23.0",
-    "next": "15.3.8",
-    "nodemailer": "^7.0.5",
+    "next": "^15.5.24",
+    "nodemailer": "^9.0.6",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.10",
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
-    "swiper": "^11.2.10",
+    "swiper": "^14.2.0",
     "yet-another-react-lightbox": "^3.24.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.3.4"
+    "eslint-config-next": "^15.5.24"
+  },
+  "overrides": {
+    "postcss": "8.5.26"
   }
 }

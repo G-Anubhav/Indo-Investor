@@ -43,8 +43,6 @@ const HeroBanner = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    console.log("Searching:", { city, query });
-
     // Example: redirect to search results page
     // router.push(`/search?city=${city}&q=${query}`);
   };

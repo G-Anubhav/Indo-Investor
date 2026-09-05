@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Indo Investor
 
-## Getting Started
+Next.js real-estate website and Supabase-backed affiliate portal. Phase 1 provides secure authentication and authorization. Phase 2 adds the binary network, downline reports, project/plot inventory, atomic 48-hour holds, and focused Supabase Realtime updates. Wallets, payments, commissions, and other later-phase modules remain intentionally absent.
 
-First, run the development server:
+## Start Here
 
-```bash
+1. Read [docs/requirements.md](docs/requirements.md) and [docs/architecture.md](docs/architecture.md).
+2. Complete [Phase 1 setup](docs/phase-1-manual-setup.md), then [Phase 2 setup](docs/phase-2-manual-setup.md).
+3. Copy `.env.example` to `.env.local` and supply local values.
+4. Install and run:
+
+```powershell
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site runs at `http://localhost:3000` by default.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Checks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```powershell
+npm run check
+npm test
+npm run build
+npm run test:hosted
+```
 
-## Learn More
+`npm run test:hosted` requires a linked, migrated development project and the guarded test accounts. Local Docker is optional. See [docs/testing.md](docs/testing.md).
 
-To learn more about Next.js, take a look at the following resources:
+## Documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Implementation status](docs/implementation-status.md)
+- [Database and RLS](docs/database.md)
+- [Security model](docs/security.md)
+- [Testing](docs/testing.md)
+- [Phase 1 requirements matrix](docs/phase-1-requirements-matrix.md)
+- [Phase 1 file change report](docs/phase-1-file-change-report.md)
+- [Phase 2 plan](docs/phase-2-plan.md)
+- [Phase 2 requirements matrix](docs/phase-2-requirements-matrix.md)
+- [Phase 2 file change report](docs/phase-2-file-change-report.md)

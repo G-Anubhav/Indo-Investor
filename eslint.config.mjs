@@ -2,7 +2,7 @@ import nextPlugin from "@next/eslint-plugin-next";
 
 const eslintConfig = [
   {
-    ignores: [".next/**", "node_modules/**", "out/**"],
+    ignores: [".next/**", "node_modules/**", "out/**", "artifacts/**"],
   },
   {
     files: ["**/*.{js,jsx}"],

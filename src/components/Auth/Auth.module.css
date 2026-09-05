@@ -1,0 +1,193 @@
+.authPage {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(380px, 0.9fr) minmax(540px, 1.1fr);
+  background: #f7f9fc;
+  color: #1b2635;
+}
+
+.visual {
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  height: 100vh;
+  background: url('/images/about/Office-building1.jpeg') center / cover no-repeat;
+  border-right: 1px solid #b9c6d2;
+  box-shadow: 9px 0 24px rgba(38, 57, 78, 0.16), inset -1px 0 rgba(255, 255, 255, 0.7);
+}
+.visualLogo { position: absolute; z-index: 2; top: 24px; left: clamp(28px,5vw,72px); display: inline-flex; padding: 7px; border: 1px solid rgba(255,255,255,.72); border-bottom-color: rgba(159,176,191,.9); border-radius: 8px; background: linear-gradient(#fff,#eef3f7); box-shadow: 0 7px 18px rgba(4,20,36,.24),inset 0 1px #fff; }
+.visualLogo img { width: 104px; height: 104px; object-fit: contain; }
+
+.visualShade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(5, 23, 42, 0.08), rgba(5, 23, 42, 0.78));
+}
+
+.visualText {
+  position: absolute;
+  left: clamp(28px, 5vw, 72px);
+  right: 32px;
+  bottom: clamp(36px, 8vh, 88px);
+  display: grid;
+  gap: 8px;
+  color: #fff;
+}
+
+.visualText span { width: fit-content; padding: 7px 11px; border: 1px solid rgba(255,255,255,.34); border-radius: 6px; background: rgba(5,23,42,.28); box-shadow: inset 0 1px rgba(255,255,255,.2); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; }
+.visualText strong { max-width: 620px; font-size: clamp(2.2rem, 4vw, 4rem); line-height: 1.04; text-shadow: 0 3px 12px rgba(0,0,0,.32); }
+
+.formSide {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 24px clamp(24px, 5vw, 76px) 46px;
+  background: linear-gradient(135deg,#fbfcfe 0%,#f2f6fa 100%);
+}
+
+.mobileLogo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.mobileLogo { display: none; }
+.mobileLogo a { display: inline-flex; align-items: center; min-height: 70px; padding: 5px; border: 1px solid #d3dde7; border-bottom-color: #afbdca; border-radius: 8px; background: linear-gradient(#fff,#eef3f7); box-shadow: 0 5px 12px rgba(49,68,89,.12),inset 0 1px #fff; }
+.mobileLogo img { width: 68px; height: 68px; object-fit: contain; }
+
+.formContainer {
+  width: min(100%, 590px);
+  margin: auto;
+  padding: 42px 0 20px;
+}
+
+.authCard { width: 100%; padding: clamp(28px,4vw,42px); border: 1px solid #d4dee8; border-bottom-color: #afbdca; border-radius: 8px; background: linear-gradient(#fff,#fafbfd); box-shadow: 0 18px 42px rgba(44,64,85,.14),0 3px 8px rgba(44,64,85,.08),inset 0 1px #fff; }
+.mfaSurface { min-height: calc(100vh - 140px); display: grid; place-items: center; padding: 24px; }
+.mfaCard { width: min(100%, 560px); padding: 28px; border-radius: 8px; background: #e9eef4; box-shadow: 9px 9px 20px rgba(151,164,179,.3),-9px -9px 20px rgba(255,255,255,.86); }
+.mfaCard img { display: block; max-width: 100%; height: auto; padding: 8px; border-radius: 6px; background: #fff; }
+.heading { margin-bottom: 26px; padding-bottom: 22px; border-bottom: 1px solid #dfe6ed; }
+.heading > span { color: var(--theme-color); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; }
+.heading h1 { margin: 8px 0 8px; font-size: 2.15rem; font-weight: 800; color: #172235; }
+.heading p { margin: 0; color: #667487; line-height: 1.6; }
+
+.authForm { display: grid; gap: 18px; }
+.field { display: grid; gap: 7px; }
+.field label { font-size: 0.9rem; font-weight: 750; color: #27374a; }
+.field input {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 13px;
+  border: 1px solid #c8d3de;
+  border-radius: 7px;
+  background: #fbfcfe;
+  color: #172235;
+  outline: none;
+  box-shadow: inset 0 2px 5px rgba(57,76,97,.13), inset 0 -1px rgba(255,255,255,.9);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.field select {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 13px;
+  border: 1px solid #c8d3de;
+  border-radius: 7px;
+  background: #fbfcfe;
+  color: #172235;
+  box-shadow: inset 0 2px 5px rgba(57,76,97,.13), inset 0 -1px rgba(255,255,255,.9);
+}
+.inlineControl { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; }
+.inlineControl button {
+  min-height: 48px;
+  padding: 8px 14px;
+  border: 1px solid #8eb1d5;
+  border-bottom-color: #658bb2;
+  border-radius: 7px;
+  background: linear-gradient(#fff,#e8f0f7);
+  color: var(--theme-color);
+  font-weight: 750;
+  box-shadow: 0 4px 9px rgba(45,74,104,.13),inset 0 1px #fff;
+}
+.inlineControl button:disabled { opacity: 0.65; }
+.field input:focus,.field select:focus { border-color: var(--theme-color); box-shadow: inset 0 2px 5px rgba(57,76,97,.12),0 0 0 3px rgba(0, 74, 173, 0.12); outline: none; }
+.field input[aria-invalid='true'] { border-color: #b42318; }
+.field small,
+.passwordHint { margin: 0; color: #6c7888; font-size: 0.78rem; line-height: 1.45; }
+
+.passwordControl { position: relative; }
+.passwordControl input { padding-right: 46px; }
+.passwordControl button {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: #657486;
+  transform: translateY(-50%);
+}
+.passwordControl button:hover { border-color: #d1dbe5; background: linear-gradient(#fff,#eef3f7); box-shadow: 0 2px 5px rgba(45,65,85,.1); }
+
+.formOptions { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; }
+.formOptions a,
+.authFooter a { color: var(--theme-color); font-weight: 750; text-decoration: none; }
+.checkLabel { display: flex; align-items: flex-start; gap: 9px; color: #4e5c6d; font-size: 0.86rem; line-height: 1.45; }
+.checkLabel input { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--theme-color); flex: 0 0 auto; }
+
+.submitButton {
+  min-height: 50px;
+  border: 1px solid #07549b;
+  border-bottom-color: #003d77;
+  border-radius: 7px;
+  background: linear-gradient(#1977c9,#075da9);
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 7px 14px rgba(0,74,145,.24),inset 0 1px rgba(255,255,255,.3),inset 0 -1px rgba(0,0,0,.14);
+  transition: filter 0.2s ease, transform 0.2s ease,box-shadow .2s ease;
+}
+.submitButton:hover:not(:disabled) { filter: brightness(1.04); transform: translateY(-1px); box-shadow: 0 9px 18px rgba(0,74,145,.28),inset 0 1px rgba(255,255,255,.35); }
+.submitButton:active:not(:disabled) { transform: translateY(1px); box-shadow: inset 0 3px 7px rgba(0,37,74,.3); }
+.submitButton:disabled { opacity: 0.68; cursor: wait; }
+.submitLink { display: flex; align-items: center; justify-content: center; text-decoration: none; }
+.submitLink:hover { color: #fff; }
+
+.fieldError { color: #b42318; font-size: 0.78rem; }
+.fieldSuccess { color: #17663b; font-size: 0.78rem; }
+.errorMessage,
+.successMessage { margin-bottom: 20px; padding: 12px 14px; border-radius: 6px; font-size: 0.88rem; line-height: 1.5; }
+.errorMessage { border: 1px solid #f2b8b5; background: #fff1f0; color: #8f1d18; }
+.successMessage { border: 1px solid #a7d7bd; background: #edf9f2; color: #17663b; }
+
+.authFooter { display: grid; justify-items: center; gap: 12px; margin-top: 24px; padding-top: 20px; border-top: 1px solid #dfe6ed; color: #667487; font-size: 0.9rem; text-align: center; }
+.authFooter p { margin: 0; }
+.authCard[data-mode="signup"] { padding-block: 28px; }
+.authCard[data-mode="signup"] .heading { margin-bottom: 18px; padding-bottom: 16px; }
+.authCard[data-mode="signup"] .heading h1 { font-size: 1.9rem; }
+.authCard[data-mode="signup"] .authForm { gap: 12px; }
+.authCard[data-mode="signup"] .field { gap: 5px; }
+.authCard[data-mode="signup"] .field input,
+.authCard[data-mode="signup"] .field select,
+.authCard[data-mode="signup"] .inlineControl button { min-height: 40px; padding-block: 7px; }
+.authCard[data-mode="signup"] .submitButton { min-height: 44px; }
+.authCard[data-mode="signup"] .authFooter { margin-top: 18px; padding-top: 16px; }
+@media (max-width: 900px) {
+  .authPage { grid-template-columns: 1fr; }
+  .visual { display: none; }
+  .formSide { padding: 22px 22px 42px; }
+  .mobileLogo { display: flex; align-items: center; justify-content: flex-start; }
+  .formContainer { padding-top: 34px; }
+}
+
+@media (max-width: 520px) {
+  .mobileLogo { align-items: flex-start; }
+  .mobileLogo img { width: 64px; height: 64px; }
+  .mobileLogo a { min-height: 66px; padding: 4px; }
+  .authCard { padding: 24px 19px; }
+  .heading h1 { font-size: 1.8rem; }
+  .formOptions { display: grid; }
+  .inlineControl { grid-template-columns: 1fr; }
+}

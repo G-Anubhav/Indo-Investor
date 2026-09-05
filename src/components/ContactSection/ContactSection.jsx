@@ -113,7 +113,7 @@ const ContactSection = () => {
               <FaMapMarkerAlt className={styles.icon} />
               <div>
                 <h5>Our Location</h5>
-                <p>H-169, 1st Floor, Office No. F-04 Sector-63, Noida, U.P. 201301</p>
+                <p>2nd Floor, H-174, H Block, Sector 63, Noida - 201301</p>
               </div>
             </div>
 

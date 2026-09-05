@@ -39,13 +39,13 @@ const focusData = [
     //     linkText: "Explore Farm House",
     //     href: "/properties/farm-house",
     // },
-    // {
-    //     icon: flatIcon,
-    //     title: "Flat",
-    //     description: "Modern flats with functional layouts and smart amenities for comfortable urban living.",
-    //     linkText: "Explore Flat",
-    //     href: "/properties/flat",
-    // },
+    {
+        icon: flatIcon,
+        title: "Flat",
+        description: "Modern flats with functional layouts and smart amenities for comfortable urban living.",
+        linkText: "Explore Flat",
+        href: "/properties/flat",
+    },
     // {
     //     icon: simplexIcon,
     //     title: "Simplex",

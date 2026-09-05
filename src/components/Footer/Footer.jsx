@@ -5,7 +5,7 @@ import Link from "next/link";
 import styles from "./Footer.module.css";
 import { FaCaretRight, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
-import logo from "@/images/logo/logo.png";
+import logo from "@/images/logo/new-logo.png";
 
 const companyLinks = [
   { label: "Home", href: "/" },
@@ -21,7 +21,7 @@ const propertyLinks = [
   { label: "Residential", href: "/properties/residential" },
   { label: "Commercial", href: "/properties/commercial" },
   // { label: "Farm House", href: "/properties/farm-house" },
-  // { label: "Flat", href: "/properties/flat" },
+  { label: "Flat", href: "/properties/flat" },
   // { label: "Simplex", href: "/properties/simplex" },
   // { label: "Duplex", href: "/properties/duplex" },
   // { label: "Villas", href: "/properties/villas" },
@@ -82,10 +82,10 @@ const Footer = () => {
       <div className={styles.footerRow}>
         {/* Column 1: Logo and Address */}
         <div className={styles.column}>
-          <Image src={logo} alt="logo" className={styles.logoImg} />
+          <Image src={logo} alt="Indo Investor Infra World" className={styles.logoImg} />
           <p>Indo Investor Infra World is a Trusted Real Estate Investment Firm specializing in Secure, High-return Properties.</p>
           <ul className={styles.contactInfo}>
-            <li><FaMapMarkerAlt className={styles.marker} /> H-169, 1st Floor, Office No. F-04 Sector-63, Noida, U.P. 201301</li>
+            <li><FaMapMarkerAlt className={styles.marker} /> 2nd Floor, H-174, H Block, Sector 63, Noida - 201301</li>
             <li><Link href="tel:9910464557"><FaPhoneAlt /> +91 99104 64557</Link> </li>
             <li><Link href="mailto:info@indoinvestorinfraworld.com"><FaEnvelope /> info@indoinvestorinfraworld.com</Link></li>
           </ul>

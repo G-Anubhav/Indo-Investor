@@ -14,7 +14,7 @@ import {
 import styles from "./WhyChooseUs.module.css";
 
 const stats = [
-    { icon: <FaCalendarAlt />, label: "Years of Experience", value: 16 },
+    { icon: <FaCalendarAlt />, label: "Years of Experience", value: 8 },
     { icon: <FaSmile />, label: "Happy Customers", value: 25500 },
     { icon: <FaUserTie />, label: "Real Estate Agents", value: 500 },
 ];

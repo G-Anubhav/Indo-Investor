@@ -1,0 +1,215 @@
+.contextBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 16px 18px;
+  border: 1px solid #d6dee7;
+  border-bottom-color: #b8c5d1;
+  border-radius: 8px;
+  background: linear-gradient(#fff, #f4f7fa);
+  box-shadow: var(--portal-shadow);
+}
+.contextBar div {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+.contextBar span {
+  color: #68778a;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.contextBar strong {
+  color: #203248;
+  overflow-wrap: anywhere;
+}
+.contextBar a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex: 0 0 auto;
+  color: #0b62bd;
+  font-weight: 800;
+  text-decoration: none;
+}
+.viewport {
+  min-height: 520px;
+  overflow: auto;
+  border: 1px solid #d1dbe5;
+  border-radius: 8px;
+  background: #f3f6f9;
+  box-shadow: var(--portal-shadow-inset);
+}
+.treeCanvas {
+  position: relative;
+  isolation: isolate;
+  width: max-content;
+  min-width: 100%;
+  padding: 34px 24px 48px;
+  text-align: center;
+}
+.branch {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+}
+.memberNode,
+.emptyNode {
+  position: relative;
+  width: 174px;
+  min-height: 92px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 7px;
+  font-family: inherit;
+  text-decoration: none;
+}
+.memberNode {
+  border: 1px solid #cbd6e1;
+  border-bottom-color: #aebdca;
+  border-top: 4px solid #3576d3;
+  background: linear-gradient(#fff, #eef3f7);
+  color: #26384d;
+  cursor: pointer;
+  box-shadow: var(--portal-shadow-sm);
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease;
+}
+.memberNode[data-root] {
+  border-top-color: #15866c;
+  box-shadow:
+    7px 7px 16px rgba(142, 156, 173, 0.38),
+    -7px -7px 16px rgba(255, 255, 255, 0.9);
+}
+.memberNode:hover,
+.memberNode:focus-visible {
+  z-index: 60;
+  transform: translateY(-2px);
+  box-shadow: var(--portal-shadow);
+  outline: none;
+}
+.memberNode > svg {
+  color: #0b62bd;
+}
+.memberNode > strong {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.memberNode > span {
+  color: #68778a;
+  font-size: 0.72rem;
+}
+.nodeDetails {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: calc(100% + 10px);
+  width: 220px;
+  display: none;
+  gap: 6px;
+  padding: 12px;
+  border-radius: 6px;
+  background: #10243d;
+  color: #fff;
+  text-align: left;
+  transform: translateX(-50%);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+.memberNode:hover .nodeDetails,
+.memberNode:focus .nodeDetails {
+  display: grid;
+}
+.nodeDetails span {
+  font-size: 0.78rem;
+}
+.children {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(190px, 1fr));
+  gap: 28px;
+  padding-top: 48px;
+}
+.children::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 25%;
+  right: 25%;
+  height: 2px;
+  background: #aab9c9;
+}
+.child {
+  position: relative;
+  min-width: 190px;
+}
+.child::before {
+  content: "";
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  width: 2px;
+  height: 28px;
+  background: #aab9c9;
+}
+.legLabel {
+  position: absolute;
+  z-index: 1;
+  top: -42px;
+  left: 50%;
+  padding: 2px 7px;
+  background: #f3f6f9;
+  color: #647286;
+  font-size: 0.68rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+.emptyNode {
+  border: 1px dashed #99aabc;
+  background: #f8fafc;
+  color: #506175;
+  box-shadow: var(--portal-shadow-inset);
+}
+.emptyNode:hover {
+  border-color: #12643c;
+  color: #12643c;
+}
+.emptyNode span {
+  font-size: 0.7rem;
+}
+.empty {
+  padding: 42px;
+  color: #657487;
+  text-align: center;
+}
+@media (max-width: 620px) {
+  .contextBar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .viewport {
+    min-height: 460px;
+  }
+  .treeCanvas {
+    padding: 28px 12px 46px;
+  }
+  .nodeDetails { width: min(220px,calc(100vw - 52px)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .memberNode {
+    transition: none;
+  }
+}

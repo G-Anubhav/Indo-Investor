@@ -1,3 +1,8 @@
+import {
+  isValidLoginIdentifier,
+  normalizeLoginIdentifier,
+} from "./login-identifier.mjs";
+
 export const SUPPORTED_LANGUAGES = ["en", "ru", "hi"];
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -26,16 +31,16 @@ export function validatePassword(password) {
 }
 
 export function validateLoginInput(input) {
-  const email = normalizeEmail(input.email);
+  const identifier = normalizeLoginIdentifier(input.identifier ?? input.email);
   const password = typeof input.password === "string" ? input.password : "";
   const errors = {};
 
-  if (!EMAIL_PATTERN.test(email) || email.length > 254) {
-    errors.email = "invalid_email";
+  if (!isValidLoginIdentifier(identifier)) {
+    errors.identifier = "validation_failed";
   }
   if (!password) errors.password = "password_required";
 
-  return { valid: Object.keys(errors).length === 0, errors, values: { email, password } };
+  return { valid: Object.keys(errors).length === 0, errors, values: { identifier, password } };
 }
 
 export function validateSignupInput(input) {

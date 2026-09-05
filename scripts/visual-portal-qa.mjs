@@ -73,7 +73,7 @@ async function runSession({ label, email, password, routes, port }) {
     cdp = await connect(await waitForTarget(port));
     await cdp.send("Page.enable");
     await cdp.send("Runtime.enable");
-    await waitFor(cdp, `document.readyState === "complete" && Boolean(document.querySelector('[name="email"]'))`);
+    await waitFor(cdp, `document.readyState === "complete" && Boolean(document.querySelector('[name="identifier"]'))`);
     if (label === "affiliate") {
       for (const mobile of [false, true]) {
         await cdp.send("Emulation.setDeviceMetricsOverride", { width: mobile ? 390 : 1440, height: mobile ? 844 : 1000, deviceScaleFactor: 1, mobile });
@@ -112,9 +112,9 @@ async function runSession({ label, email, password, routes, port }) {
       }
       await cdp.send("Emulation.setDeviceMetricsOverride", { width: 1440, height: 1000, deviceScaleFactor: 1, mobile: false });
       await cdp.send("Page.navigate", { url: `${baseUrl}/login` });
-      await waitFor(cdp, `document.readyState === "complete" && Boolean(document.querySelector('[name="email"]'))`);
+      await waitFor(cdp, `document.readyState === "complete" && Boolean(document.querySelector('[name="identifier"]'))`);
     }
-    await typeInto(cdp, '[name="email"]', email);
+    await typeInto(cdp, '[name="identifier"]', email);
     await typeInto(cdp, '[name="password"]', password);
     await evaluate(cdp, `document.querySelector('form')?.requestSubmit()`);
     try {

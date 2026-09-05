@@ -148,7 +148,24 @@ export default function AuthForm({ mode, dictionary, locale, noticeCode, initial
           </>
         )}
 
-        {(mode === "login" || mode === "signup" || mode === "forgot") && (
+        {mode === "login" && (
+          <div className={styles.field}>
+            <label htmlFor="identifier">{dictionary.auth.email} / {dictionary.auth.sponsorCode}</label>
+            <input
+              id="identifier"
+              name="identifier"
+              type="text"
+              autoComplete="username"
+              autoCapitalize="none"
+              spellCheck="false"
+              required
+              aria-invalid={Boolean(fields.identifier)}
+            />
+            {fields.identifier && <span className={styles.fieldError}>{dictionary.messages[fields.identifier]}</span>}
+          </div>
+        )}
+
+        {(mode === "signup" || mode === "forgot") && (
           <div className={styles.field}>
             <label htmlFor="email">{dictionary.auth.email}</label>
             <input id="email" name="email" type="email" autoComplete="email" required aria-invalid={Boolean(fields.email)} />

@@ -7,9 +7,21 @@ import {
 } from "../src/lib/auth/validation.mjs";
 
 test("login validation normalizes email and accepts a password", () => {
-  const result = validateLoginInput({ email: " USER@Example.Test ", password: "Password1" });
+  const result = validateLoginInput({ identifier: " USER@Example.Test ", password: "Password1" });
   assert.equal(result.valid, true);
-  assert.equal(result.values.email, "user@example.test");
+  assert.equal(result.values.identifier, "user@example.test");
+});
+
+test("login validation accepts and normalizes an IIIW member ID", () => {
+  const result = validateLoginInput({ identifier: " iiiw1001 ", password: "Password1" });
+  assert.equal(result.valid, true);
+  assert.equal(result.values.identifier, "IIIW1001");
+});
+
+test("login validation rejects an invalid email or member ID", () => {
+  const result = validateLoginInput({ identifier: "unknown-user", password: "Password1" });
+  assert.equal(result.valid, false);
+  assert.equal(result.errors.identifier, "validation_failed");
 });
 
 test("password policy requires length, mixed case, and a number", () => {

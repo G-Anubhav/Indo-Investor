@@ -15,6 +15,8 @@ import {
   validateResetInput,
   validateSignupInput,
 } from "@/lib/auth/validation.mjs";
+import { resolveLoginEmail } from "@/lib/auth/login-identifier.mjs";
+import { createAdminSupabaseClient } from "@/lib/supabase/admin";
 import { getSiteUrl, SupabaseConfigurationError } from "@/lib/supabase/config";
 import {
   createServerSupabaseClient,
@@ -37,7 +39,7 @@ function configurationFailure(error) {
 
 export async function loginAction(_previousState, formData) {
   const input = validateLoginInput({
-    email: value(formData, "email"),
+    identifier: value(formData, "identifier"),
     password: value(formData, "password"),
   });
   if (!input.valid) return initialFailure("validation_failed", input.errors);
@@ -54,8 +56,26 @@ export async function loginAction(_previousState, formData) {
       ...(remember ? { maxAge: 60 * 60 * 24 * 30 } : {}),
     });
 
+    const email = await resolveLoginEmail(input.values.identifier, async (memberCode) => {
+      const admin = createAdminSupabaseClient();
+      const { data: node, error: nodeError } = await admin
+        .from("network_nodes")
+        .select("user_id")
+        .eq("member_code", memberCode)
+        .maybeSingle();
+      if (nodeError) throw nodeError;
+      if (!node) return null;
+
+      const { data: profile, error: profileError } = await admin
+        .from("profiles")
+        .select("email")
+        .eq("user_id", node.user_id)
+        .maybeSingle();
+      if (profileError) throw profileError;
+      return profile?.email || null;
+    });
     const supabase = await createServerSupabaseClient({ persistent: remember });
-    const result = await performSignIn(supabase, input.values);
+    const result = await performSignIn(supabase, { email, password: input.values.password });
     if (!result.ok) return initialFailure(result.code);
   } catch (error) {
     return configurationFailure(error);

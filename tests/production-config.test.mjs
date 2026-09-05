@@ -1,6 +1,10 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { isProductionConfigurationSafe, productionConfigurationIssues } from "../src/lib/production/config.mjs";
+import {
+  isProductionConfigurationSafe,
+  portalRuntimeConfigurationIssues,
+  productionConfigurationIssues,
+} from "../src/lib/production/config.mjs";
 import { validateSeedEnvironment } from "../scripts/seed-guard.mjs";
 
 const safeProduction = {
@@ -21,6 +25,26 @@ test("unsafe production configuration is rejected without exposing values", () =
   assert.ok(issues.includes("development_seed_not_disabled"));
   assert.ok(issues.includes("development_credentials_present"));
   assert.equal(issues.some((issue) => issue.includes("admin@example.test")), false);
+});
+
+test("portal runtime is available without unrelated production operations configuration", () => {
+  assert.deepEqual(portalRuntimeConfigurationIssues({
+    NODE_ENV: "production",
+    NEXT_PUBLIC_SUPABASE_URL: "https://productionref.supabase.co",
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: "anon",
+  }), []);
+});
+
+test("portal runtime rejects missing or insecure production Supabase configuration", () => {
+  assert.deepEqual(portalRuntimeConfigurationIssues({ NODE_ENV: "production" }), [
+    "missing:NEXT_PUBLIC_SUPABASE_URL",
+    "missing:NEXT_PUBLIC_SUPABASE_ANON_KEY",
+  ]);
+  assert.ok(portalRuntimeConfigurationIssues({
+    NODE_ENV: "production",
+    NEXT_PUBLIC_SUPABASE_URL: "http://localhost:54321",
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: "anon",
+  }).includes("insecure_production_supabase_url"));
 });
 
 test("development seed refuses production even when its opt-in flag is true", () => {

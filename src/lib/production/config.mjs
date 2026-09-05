@@ -16,6 +16,22 @@ function parsedUrl(value) {
   try { return new URL(value); } catch { return null; }
 }
 
+export function portalRuntimeConfigurationIssues(environment = process.env) {
+  const issues = ["NEXT_PUBLIC_SUPABASE_URL", "NEXT_PUBLIC_SUPABASE_ANON_KEY"]
+    .filter((name) => !environment[name])
+    .map((name) => `missing:${name}`);
+  const supabaseUrl = parsedUrl(environment.NEXT_PUBLIC_SUPABASE_URL);
+
+  if (environment.NEXT_PUBLIC_SUPABASE_URL && (!supabaseUrl || !["http:", "https:"].includes(supabaseUrl.protocol))) {
+    issues.push("invalid_supabase_url");
+  }
+  if (environment.NODE_ENV === "production" && supabaseUrl && supabaseUrl.protocol !== "https:") {
+    issues.push("insecure_production_supabase_url");
+  }
+
+  return [...new Set(issues)];
+}
+
 export function productionConfigurationIssues(environment = process.env) {
   if (environment.NODE_ENV !== "production") return [];
   const issues = REQUIRED_PRODUCTION_VARIABLES.filter((name) => !environment[name]).map((name) => `missing:${name}`);

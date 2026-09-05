@@ -1,22 +1,20 @@
 import { NextResponse } from "next/server";
 import { refreshSupabaseSession } from "@/lib/supabase/middleware";
-import { productionConfigurationIssues } from "@/lib/production/config.mjs";
+import { portalRuntimeConfigurationIssues } from "@/lib/production/config.mjs";
 
 const protectedPrefixes = ["/dashboard", "/admin", "/network", "/inventory", "/wallets", "/earnings", "/property-payments", "/kyc", "/profile", "/mfa"];
-const productionApplicationPrefixes = [...protectedPrefixes, "/login", "/signup", "/forgot-password", "/reset-password", "/auth"];
 
 export async function middleware(request) {
-  if (process.env.NODE_ENV === "production"
-    && productionApplicationPrefixes.some((prefix) => request.nextUrl.pathname.startsWith(prefix))
-    && productionConfigurationIssues().length > 0) {
-    return new NextResponse("Application configuration is unavailable.", {
-      status: 503,
-      headers: { "Cache-Control": "no-store", "Retry-After": "300" },
-    });
-  }
   const isProtected = protectedPrefixes.some((prefix) =>
     request.nextUrl.pathname.startsWith(prefix),
   );
+
+  if (isProtected && portalRuntimeConfigurationIssues().length > 0) {
+    const loginUrl = request.nextUrl.clone();
+    loginUrl.pathname = "/login";
+    loginUrl.search = "?error=configuration_error";
+    return NextResponse.redirect(loginUrl);
+  }
 
   try {
     const { response, user } = await refreshSupabaseSession(request);

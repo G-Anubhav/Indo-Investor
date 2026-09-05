@@ -2,6 +2,8 @@
 
 ## Ordered Deployment
 
+The public authentication pages can render before optional operational integrations are configured. A working login and protected portal require these deployment variables at build and runtime: `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Signup and password-recovery links additionally require `NEXT_PUBLIC_SITE_URL` to be the exact public HTTPS origin. Add or change every `NEXT_PUBLIC_*` value before building, then redeploy; values added only after a static build may not be present in the browser bundle.
+
 1. Create isolated production hosting and Supabase projects in the approved region; do not clone development data blindly.
 2. Store unique production secrets in the deployment secret manager. Set `APP_ENVIRONMENT=production`, `SUPABASE_ENVIRONMENT=production`, and `ALLOW_DEV_SEED=false`; omit every `DEV_SEED_*` value.
 3. Configure Supabase plan/region/backups, API restrictions, private network options if selected, Log Drains and operational owners.

@@ -14,6 +14,7 @@ const csp = [
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: { serverActions: { bodySizeLimit: "6mb" } },
+  images: { qualities: [75, 100] },
   async headers() { return [{ source: "/(.*)", headers: [
     { key: "Content-Security-Policy", value: csp },
     { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
